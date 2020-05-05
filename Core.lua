@@ -22,6 +22,7 @@ local Details = _G.Details
 -- GLOBALS: ElitismLog
 
 DE.debug = false
+DE.debugFakeData = false
 DE.CustomDisplay = {
     name = L["Avoidable Damage Taken"],
     icon = 2175503,
@@ -514,8 +515,10 @@ function DE:COMBAT_LOG_EVENT_UNFILTERED()
     end
 	local timestamp, eventType, hideCaster, srcGUID, srcName, srcFlags, srcFlags2, dstGUID, dstName, dstFlags, dstFlags2 = CombatLogGetCurrentEventInfo(); -- Those arguments appear for all combat event variants.
     local eventPrefix, eventSuffix = eventType:match("^(.-)_?([^_]*)$");
-    DE:SpellDamage(0, 0, UnitGUID("player"), "Bass", 0, UnitGUID("player"), "Bass", 0, 296142, 0, 0, 30)
-    DE:AuraApply(0, 0, UnitGUID("player"), "Bass", 0, UnitGUID("player"), "Bass", 0, 274516, 0, 0, 0, 0)
+    if self.debugFakeData then
+        DE:SpellDamage(0, 0, UnitGUID("player"), "Bass", 0, UnitGUID("player"), "Bass", 0, 296142, 0, 0, 30)
+        DE:AuraApply(0, 0, UnitGUID("player"), "Bass", 0, UnitGUID("player"), "Bass", 0, 274516, 0, 0, 0, 0)
+    end
 	if (eventPrefix:match("^SPELL") or eventPrefix:match("^RANGE")) and eventSuffix == "DAMAGE" then
 		local spellId, spellName, spellSchool, sAmount, aOverkill, sSchool, sResisted, sBlocked, sAbsorbed, sCritical, sGlancing, sCrushing, sOffhand, _ = select(12,CombatLogGetCurrentEventInfo())
 		DE:SpellDamage(timestamp, eventType, srcGUID, srcName, srcFlags, dstGUID, dstName, dstFlags, spellId, spellName, spellSchool, sAmount)
