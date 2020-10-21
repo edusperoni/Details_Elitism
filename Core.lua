@@ -794,5 +794,6 @@ function DE:OnInitialize()
     self:RegisterEvent('PLAYER_ENTERING_WORLD', 'InitDataCollection')
     self:RegisterEvent('CHALLENGE_MODE_START', 'InitDataCollection')
 
-    self:SecureHook(Details, 'Start', 'LoadHooks')
+
+    self:SecureHook(Details, 'StartMeUp', 'LoadHooks')
 end
