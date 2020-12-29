@@ -287,7 +287,6 @@ DE.Spells = {
 	[320784] = 20,		-- Comet Storm (Nalthor the Rimebinder)
 	
 	-- Plaguefall
-	[320072] = 20, 		-- Toxic Pool (Decaying Flesh Giant)
 	-- id ?[335882] = 20, 		-- Clinging Infestation (Fen Hatchling)
 	[330404] = 20,		-- Wing Buffet (Plagueroc)
 	-- id ?[320040] = 20,		-- Plagued Carrion (Decaying Flesh Giant)
