@@ -399,6 +399,11 @@ DE.AurasNoTank = {
 
 }
 
+DE.Swings = {
+	[161917] = 20,		-- DEBUG
+	[174773] = 20,		-- Spiteful Shade
+}
+
 -- Public APIs
 
 function Engine:GetRecord(combatID, playerGUID)
@@ -487,6 +492,31 @@ function DE:SpellDamage(timestamp, eventType, srcGUID, srcName, srcFlags, dstGUI
 end
 
 function DE:SwingDamage(timestamp, eventType, srcGUID, srcName, srcFlags, dstGUID, dstName, dstFlags, aAmount)
+	local unitGUID = dstGUID 
+	local meleeSpellId = 260421
+	
+	if (DE.Swings[DE:srcGUIDtoID(srcGUID)] and UnitIsPlayer(dstName)) then
+		if not self.db[self.current] then self.db[self.current] = {} end
+        if not self.db[self.current][unitGUID] then self.db[self.current][unitGUID] = {
+            sum = 0,
+            cnt = 0,
+            spells = {},
+            auras = {},
+            auracnt = 0
+        } end
+		if not self.db[self.current][unitGUID].spells then
+            self.db[self.current][unitGUID].spells = {}
+        end
+		if not self.db[self.current][unitGUID].spells[meleeSpellId] then self.db[self.current][unitGUID].spells[meleeSpellId] = {
+            cnt = 0,
+            sum = 0
+        } end
+		
+		self.db[self.current][unitGUID].sum = self.db[self.current][unitGUID].sum + aAmount
+        self.db[self.current][unitGUID].cnt = self.db[self.current][unitGUID].cnt + 1
+        self.db[self.current][unitGUID].spells[meleeSpellId].sum = self.db[self.current][unitGUID].spells[meleeSpellId].sum + aAmount
+        self.db[self.current][unitGUID].spells[meleeSpellId].cnt = self.db[self.current][unitGUID].spells[meleeSpellId].cnt + 1
+	end
 end
 
 function DE:AuraApply(timestamp, eventType, srcGUID, srcName, srcFlags, dstGUID, dstName, dstFlags, spellId, spellName, spellSchool, auraType, auraAmount)
@@ -717,4 +747,13 @@ function DE:OnInitialize()
 
 
     self:SecureHook(Details, 'StartMeUp', 'LoadHooks')
+end
+
+function DE:srcGUIDtoID(srcGUID)
+    local sep = "-"
+    local t={}
+    for str in string.gmatch(srcGUID, "([^"..sep.."]+)") do
+            table.insert(t, str)
+    end
+    return tonumber(t[#t-1])
 end
