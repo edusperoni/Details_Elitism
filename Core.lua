@@ -437,8 +437,10 @@ function DE:COMBAT_LOG_EVENT_UNFILTERED()
     local timestamp, eventType, hideCaster, srcGUID, srcName, srcFlags, srcFlags2, dstGUID, dstName, dstFlags, dstFlags2 = CombatLogGetCurrentEventInfo(); -- Those arguments appear for all combat event variants.
     local eventPrefix, eventSuffix = eventType:match("^(.-)_?([^_]*)$");
     if self.debugFakeData then
-        DE:SpellDamage(0, 0, UnitGUID("player"), "Bass", 0, UnitGUID("player"), "Bass", 0, 296142, 0, 0, 30)
-        DE:AuraApply(0, 0, UnitGUID("player"), "Bass", 0, UnitGUID("player"), "Bass", 0, 274516, 0, 0, 0, 0)
+        DE:SpellDamage(0, 0, UnitGUID("player"), UnitName("player"), 0, UnitGUID("player"), UnitName("player"), 0, 324141, 0, 0, 30)
+        DE:AuraApply(0, 0, UnitGUID("player"), UnitName("player"), 0, UnitGUID("player"), UnitName("player"), 0, 323137, 0, 0, 0, 0)
+        -- only the second last number matters! "Creature-this-does-not-matter-174773-thisdoesnteither"
+        DE:SwingDamage(0, 0, "Creature-0-1465-0-2105-174773-000043F59F", UnitName("player"), 0, UnitGUID("player"), UnitName("player"), 0, 100)
     end
     if (eventPrefix:match("^SPELL") or eventPrefix:match("^RANGE")) and eventSuffix == "DAMAGE" then
         local spellId, spellName, spellSchool, sAmount, aOverkill, sSchool, sResisted, sBlocked, sAbsorbed, sCritical, sGlancing, sCrushing, sOffhand, _ = select(12, CombatLogGetCurrentEventInfo())
@@ -460,26 +462,68 @@ function DE:COMBAT_LOG_EVENT_UNFILTERED()
     end
 end
 
+function DE:EnsureUnitData(combatNumber, unitGUID)
+    if not self.db[combatNumber] then
+        self.db[combatNumber] = {}
+    end
+    if not self.db[combatNumber][unitGUID] then
+        self.db[combatNumber][unitGUID] = {sum = 0, cnt = 0, spells = {}, auras = {}, auracnt = 0}
+    end
+end
+
+function DE:EnsureSpellData(combatNumber, unitGUID, spellId)
+    DE:EnsureUnitData(combatNumber, unitGUID)
+    if not self.db[combatNumber][unitGUID].spells then
+        self.db[combatNumber][unitGUID].spells = {}
+    end
+    if not self.db[combatNumber][unitGUID].spells[spellId] then
+        self.db[combatNumber][unitGUID].spells[spellId] = {cnt = 0, sum = 0}
+    end
+end
+
+function DE:EnsureAuraData(combatNumber, unitGUID, spellId)
+    DE:EnsureUnitData(combatNumber, unitGUID)
+    if not self.db[combatNumber][unitGUID].auras then
+        self.db[combatNumber][unitGUID].auras = {}
+    end
+    if not self.db[combatNumber][unitGUID].auras[spellId] then
+        self.db[combatNumber][unitGUID].auras[spellId] = {cnt = 0}
+    end
+end
+
+function DE:RecordSpellDamage(unitGUID, spellId, aAmount)
+    DE:EnsureSpellData(self.current, unitGUID, spellId)
+    DE:EnsureSpellData(self.overall, unitGUID, spellId)
+
+    local registerHit = function(where)
+        where.sum = where.sum + aAmount
+        where.cnt = where.cnt + 1
+        where.spells[spellId].sum = where.spells[spellId].sum + aAmount
+        where.spells[spellId].cnt = where.spells[spellId].cnt + 1
+    end
+
+    registerHit(self.db[self.overall][unitGUID])
+    registerHit(self.db[self.current][unitGUID])
+end
+
+function DE:RecordAuraHit(unitGUID, spellId)
+    DE:EnsureAuraData(self.current, unitGUID, spellId)
+    DE:EnsureAuraData(self.overall, unitGUID, spellId)
+
+    local registerHit = function(where)
+        where.auracnt = where.auracnt + 1
+        where.auras[spellId].cnt = where.auras[spellId].cnt + 1
+    end
+
+    registerHit(self.db[self.overall][unitGUID])
+    registerHit(self.db[self.current][unitGUID])
+end
+
 function DE:SpellDamage(timestamp, eventType, srcGUID, srcName, srcFlags, dstGUID, dstName, dstFlags, spellId, spellName, spellSchool, aAmount)
     local unitGUID = dstGUID
     if (DE.Spells[spellId] or (DE.SpellsNoTank[spellId] and UnitGroupRolesAssigned(dstName) ~= "TANK")) and UnitIsPlayer(dstName) then
-        if not self.db[self.current] then
-            self.db[self.current] = {}
-        end
-        if not self.db[self.current][unitGUID] then
-            self.db[self.current][unitGUID] = {sum = 0, cnt = 0, spells = {}, auras = {}, auracnt = 0}
-        end
-        if not self.db[self.current][unitGUID].spells then
-            self.db[self.current][unitGUID].spells = {}
-        end
-        if not self.db[self.current][unitGUID].spells[spellId] then
-            self.db[self.current][unitGUID].spells[spellId] = {cnt = 0, sum = 0}
-        end
+        DE:RecordSpellDamage(unitGUID, spellId, aAmount)
 
-        self.db[self.current][unitGUID].sum = self.db[self.current][unitGUID].sum + aAmount
-        self.db[self.current][unitGUID].cnt = self.db[self.current][unitGUID].cnt + 1
-        self.db[self.current][unitGUID].spells[spellId].sum = self.db[self.current][unitGUID].spells[spellId].sum + aAmount
-        self.db[self.current][unitGUID].spells[spellId].cnt = self.db[self.current][unitGUID].spells[spellId].cnt + 1
     end
 end
 
@@ -488,91 +532,19 @@ function DE:SwingDamage(timestamp, eventType, srcGUID, srcName, srcFlags, dstGUI
     local meleeSpellId = 260421
 
     if (DE.Swings[DE:srcGUIDtoID(srcGUID)] and UnitIsPlayer(dstName)) then
-        if not self.db[self.current] then
-            self.db[self.current] = {}
-        end
-        if not self.db[self.current][unitGUID] then
-            self.db[self.current][unitGUID] = {sum = 0, cnt = 0, spells = {}, auras = {}, auracnt = 0}
-        end
-        if not self.db[self.current][unitGUID].spells then
-            self.db[self.current][unitGUID].spells = {}
-        end
-        if not self.db[self.current][unitGUID].spells[meleeSpellId] then
-            self.db[self.current][unitGUID].spells[meleeSpellId] = {cnt = 0, sum = 0}
-        end
-
-        self.db[self.current][unitGUID].sum = self.db[self.current][unitGUID].sum + aAmount
-        self.db[self.current][unitGUID].cnt = self.db[self.current][unitGUID].cnt + 1
-        self.db[self.current][unitGUID].spells[meleeSpellId].sum = self.db[self.current][unitGUID].spells[meleeSpellId].sum + aAmount
-        self.db[self.current][unitGUID].spells[meleeSpellId].cnt = self.db[self.current][unitGUID].spells[meleeSpellId].cnt + 1
+        DE:RecordSpellDamage(unitGUID, meleeSpellId, aAmount)
     end
 end
 
 function DE:AuraApply(timestamp, eventType, srcGUID, srcName, srcFlags, dstGUID, dstName, dstFlags, spellId, spellName, spellSchool, auraType, auraAmount)
     local unitGUID = dstGUID
     if (DE.Auras[spellId] or (DE.AurasNoTank[spellId] and UnitGroupRolesAssigned(dstName) ~= "TANK")) and UnitIsPlayer(dstName) then
-        if not self.db[self.current] then
-            self.db[self.current] = {}
-        end
-        if not self.db[self.current][unitGUID] then
-            self.db[self.current][unitGUID] = {sum = 0, cnt = 0, spells = {}, auras = {}, auracnt = 0}
-        end
-        if not self.db[self.current][unitGUID].auras[spellId] then
-            self.db[self.current][unitGUID].auras[spellId] = {cnt = 0}
-        end
-        self.db[self.current][unitGUID].auracnt = self.db[self.current][unitGUID].auracnt + 1
-        self.db[self.current][unitGUID].auras[spellId].cnt = self.db[self.current][unitGUID].auras[spellId].cnt + 1
+        DE:RecordAuraHit(unitGUID, spellId)
         -- if auraAmount and ElitismHelperDB.Loud then
         --     maybeSendChatMessage("<EH> "..dstName.." got hit by "..GetSpellLink(spellId)..". "..auraAmount.." Stacks.")
         -- elseif ElitismHelperDB.Loud then
         --     maybeSendChatMessage("<EH> "..dstName.." got hit by "..GetSpellLink(spellId)..".")
         -- end
-    end
-end
-
-function DE:RecordTarget(unitGUID, targetGUID)
-    if not self.current then
-        return
-    end
-
-    -- self:Debug("%s target %s in combat %s", unitGUID, targetGUID, self.current)
-
-    if not self.db[self.current] then
-        self.db[self.current] = {}
-    end
-    if not self.db[self.current][unitGUID] then
-        self.db[self.current][unitGUID] = {}
-    end
-    if not self.db[self.current][unitGUID][targetGUID] then
-        self.db[self.current][unitGUID][targetGUID] = 0
-    end
-
-    if self.db[self.current][unitGUID][targetGUID] ~= 1 and self.db[self.current][unitGUID][targetGUID] ~= 3 then
-        self.db[self.current][unitGUID][targetGUID] = self.db[self.current][unitGUID][targetGUID] + 1
-        self.db[self.current][unitGUID].target = (self.db[self.current][unitGUID].target or 0) + 1
-    end
-end
-
-function DE:RecordHit(unitGUID, targetGUID)
-    if not self.current then
-        return
-    end
-
-    -- self:Debug("%s hit %s in combat %s", unitGUID, targetGUID, self.current)
-
-    if not self.db[self.current] then
-        self.db[self.current] = {}
-    end
-    if not self.db[self.current][unitGUID] then
-        self.db[self.current][unitGUID] = {}
-    end
-    if not self.db[self.current][unitGUID][targetGUID] then
-        self.db[self.current][unitGUID][targetGUID] = 0
-    end
-
-    if self.db[self.current][unitGUID][targetGUID] ~= 2 and self.db[self.current][unitGUID][targetGUID] ~= 3 then
-        self.db[self.current][unitGUID][targetGUID] = self.db[self.current][unitGUID][targetGUID] + 2
-        self.db[self.current][unitGUID].hit = (self.db[self.current][unitGUID].hit or 0) + 1
     end
 end
 
@@ -646,7 +618,9 @@ function DE:MergeTrashCleanup()
     if prevCombat then
         local prev = prevCombat:GetCombatNumber()
         for i = prev + 1, base - 1 do
-            self:MergeCombat(base, i)
+            if i ~= self.overall then
+                self:MergeCombat(base, i)
+            end
         end
     else
         local minCombat
@@ -716,14 +690,27 @@ function DE:OnDetailsEvent(event, combat)
         -- end
     elseif event == 'DETAILS_DATA_RESET' then
         DE:Debug("DETAILS_DATA_RESET")
+        self.overall = Details:GetCombat(-1):GetCombatNumber()
         DE:CleanDiscardCombat()
     end
+end
+
+function DE:ResetOverall()
+    self:Debug("on Details Reset Overall (Details.historico.resetar_overall)")
+
+    if self.overall and self.db[self.overall] then
+        self.db[self.overall] = nil
+    end
+    self.overall = Details:GetCombat(-1):GetCombatNumber()
 end
 
 function DE:LoadHooks()
     self:SecureHook(_G.DetailsMythicPlusFrame, 'MergeSegmentsOnEnd')
     self:SecureHook(_G.DetailsMythicPlusFrame, 'MergeTrashCleanup')
     self:SecureHook(_G.DetailsMythicPlusFrame, 'MergeRemainingTrashAfterAllBossesDone')
+
+    self:SecureHook(Details.historico, 'resetar_overall', 'ResetOverall')
+    self.overall = Details:GetCombat(-1):GetCombatNumber()
 
     self.EventListener = Details:CreateEventListener()
     self.EventListener:RegisterEvent('COMBAT_PLAYER_ENTER')
