@@ -270,9 +270,10 @@ DE.Spells = {
 
     -- The Necrotic Wakes
     [324391] = 20, -- Frigid Spikes (Skeletal Monstrosity)
-    -- id ?[324372] = 20,        -- Reaping Winds (Skeletal Monstrosity)
-    -- id ?[320574] = 20,        -- Shadow Well (Zolramus Sorcerer)
+    [324381] = 20, -- Chill Scythe (Skeletal Monstrosity)
+    [320574] = 20, -- Shadow Well (Zolramus Sorcerer)
     [333477] = 20, -- Gut Slice (Goregrind)
+    [345625] = 20, -- Death Burst (Nar'zudah)
 
     -- id ?[320637] = 20,         -- Fetid Gas (Blightbone)
     [333489] = 20, -- Necrotic Breath (Amarth)
@@ -358,6 +359,7 @@ DE.SpellsNoTank = {
 
     -- The Necrotic Wakes
     [324323] = 20, -- Gruesome Cleave (Skeletal Marauder)
+    [323489] = 20, -- Throw Cleaver (Flesh Crafter, Stitching Assistant)
     -- Plaguefall
 
     -- Theater of Pain
@@ -382,6 +384,7 @@ DE.Auras = {
     -- Spires of Ascension
 
     -- The Necrotic Wakes
+    [324293] = 20 -- Rasping Scream (Skeletal Marauder)
 
     -- Plaguefall
 
