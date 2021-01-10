@@ -379,7 +379,7 @@ DE.Auras = {
     [321893] = true, --- Freezing Burst (Illusionary Vulpin)
 
     -- De Other Side
-    [331381] = 20 -- Slipped (Lubricator)
+    [331381] = 20, -- Slipped (Lubricator)
 
     -- Spires of Ascension
 
