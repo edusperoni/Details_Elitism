@@ -10,3 +10,11 @@ ignore:
   - .luacheckrc
   - babelfish_config.lua
   - README.md
+  - package.json
+  - .npmrc
+
+manual-changelog:
+    filename: CHANGELOG.md
+    markup-type: markdown
+
+enable-nolib-creation: yes

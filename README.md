@@ -8,6 +8,10 @@ Huge thanks to [@LiangYuxuan](https://github.com/LiangYuxuan) for his work in [D
 
 Pull Request to this project.
 
+## Dependencies
+
+Please check under `.pkgmeta`. All external dependencies are under the `externals` key.
+
 ## License
 
 The MIT License

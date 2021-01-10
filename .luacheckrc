@@ -8,7 +8,7 @@ ignore = {
 	"11./BINDING_.*", -- Setting an undefined (Keybinding header) global variable
 	"113/LE_.*", -- Accessing an undefined (Lua ENUM type) global variable
 	"113/NUM_LE_.*", -- Accessing an undefined (Lua ENUM type) global variable
-	-- "211", -- Unused local variable
+	"211", -- Unused local variable
 	"212", -- Unused argument
 	-- "213", -- Unused loop variable
 	-- "231", -- Set but never accessed
@@ -17,6 +17,7 @@ ignore = {
 	"42.", -- Shadowing a local variable, an argument, a loop variable.
 	"43.", -- Shadowing an upvalue, an upvalue argument, an upvalue loop variable.
 	"542", -- An empty if branch
+	"614", -- trailing whitespace in a comment
 }
 globals = {
 	"_G",
