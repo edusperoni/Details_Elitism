@@ -425,6 +425,22 @@ function Engine:GetDisplayText(combatID, playerGUID)
     return L["Damage: "] .. "0 " .. L["Hits: "] .. "0"
 end
 
+function Engine:PrintDebugInfo()
+    local oldDebug = DE.debug
+    DE.debug = true
+    DE.Debug("Overall Combat ID: %s", tostring(DE.overall))
+    -- TODO: add more debug information
+    DE.debug = oldDebug
+end
+
+function Engine:setDebug(enabled)
+    DE.debug = enabled
+end
+
+function Engine:setDebugFakeData(enabled)
+    DE.debugFakeData = enabled
+end
+
 -- Private Functions
 
 function DE:Debug(...)
