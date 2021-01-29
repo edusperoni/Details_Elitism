@@ -680,6 +680,9 @@ function DE:CleanDiscardCombat()
 
         remain[combat:GetCombatNumber()] = true
     end
+    if self.overall then
+        remain[self.overall] = true
+    end
 
     for key in pairs(self.db) do
         if not remain[key] then
@@ -709,15 +712,20 @@ function DE:OnDetailsEvent(event, combat)
         -- end
     elseif event == 'DETAILS_DATA_RESET' then
         DE:Debug("DETAILS_DATA_RESET")
-        self.overall = Details:GetCombat(-1):GetCombatNumber()
+        DE:UpdateOverall()
         DE:CleanDiscardCombat()
     end
 end
 
 function DE:ResetOverall()
     self:Debug("on Details Reset Overall (Details.historico.resetar_overall)")
+    DE:UpdateOverall()
+end
 
-    if self.overall and self.db[self.overall] then
+function DE:UpdateOverall()
+    local newOverall = Details:GetCombat(-1):GetCombatNumber()
+
+    if self.overall and self.overall ~= newOverall and self.db[self.overall] then
         self.db[self.overall] = nil
     end
     self.overall = Details:GetCombat(-1):GetCombatNumber()
