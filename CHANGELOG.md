@@ -1,3 +1,12 @@
+## [2.1.3](https://github.com/edusperoni/Details_Elitism/compare/v2.1.2...v2.1.3) (2021-01-29)
+
+
+### Bug Fixes
+
+* do not wipe overall data unnecessarily ([bb2e9cb](https://github.com/edusperoni/Details_Elitism/commit/bb2e9cb7eb4eda8000808d1e6579144fb441537b))
+
+
+
 ## [2.1.2](https://github.com/edusperoni/Details_Elitism/compare/v2.1.1...v2.1.2) (2021-01-10)
 
 
