@@ -1,3 +1,12 @@
+## [2.1.4](https://github.com/edusperoni/Details_Elitism/compare/v2.1.3...v2.1.4) (2021-02-01)
+
+
+### Features
+
+* update spell list ([33b5de3](https://github.com/edusperoni/Details_Elitism/commit/33b5de32277f88ba5b7d6a6a1d77d2010d5973d6)), closes [#6](https://github.com/edusperoni/Details_Elitism/issues/6)
+
+
+
 ## [2.1.3](https://github.com/edusperoni/Details_Elitism/compare/v2.1.2...v2.1.3) (2021-01-29)
 
 
