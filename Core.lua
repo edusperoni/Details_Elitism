@@ -201,7 +201,9 @@ DE.Spells = {
     -- Debug
     -- [] = 20,      --  ()
     -- [252144] = 1,
-    -- [252150] = 1,
+    -- [190984] = 1,       -- DEBUG Druid Wrath
+    -- [285452] = 1,       -- DEBUG Shaman Lava Burst
+    -- [188389] = 1,       -- DEBUG Shaman Flame Shock
 
     -- Affixes
     [209862] = 20, -- Volcanic Plume (Environment)
@@ -243,6 +245,7 @@ DE.Spells = {
     [323992] = 20, -- Echo Finger Laser X-treme (Millificent Manastorm)
 
     [320723] = 20, -- Displaced Blastwave (Dealer Xy'exa)
+    [320232] = 20, -- Explosive Contrivance (Dealer Xy'exa)
     [334913] = 20, -- Master of Death (Mueh'zala)
     [327427] = 20, -- Shattered Dominion (Mueh'zala)
     [325691] = 20, -- Cosmic Collapse (Mueh'zala)
@@ -264,13 +267,13 @@ DE.Spells = {
     [321034] = 20, -- Charged Spear (Kin-Tara)
     [324370] = 20, -- Attenuated Barrage (Kin-Tara)
     [324141] = 20, -- Dark Bolt (Ventunax)
-    [324154] = 20, -- Dark Stride (Venturax)
     [323943] = 20, -- Run Through (Devos)
-    [334625] = 20, -- Seed of the Abyss (Devos)
+    -- [] = 20,        -- Seed of the Abyss (Devos) ???
 
     -- The Necrotic Wakes
     [324391] = 20, -- Frigid Spikes (Skeletal Monstrosity)
     [324381] = 20, -- Chill Scythe (Skeletal Monstrosity)
+    -- id ?[324372] = 20,        -- Reaping Winds (Skeletal Monstrosity)
     [320574] = 20, -- Shadow Well (Zolramus Sorcerer)
     [333477] = 20, -- Gut Slice (Goregrind)
     [345625] = 20, -- Death Burst (Nar'zudah)
@@ -398,7 +401,7 @@ DE.Auras = {
 DE.AurasNoTank = {}
 
 DE.Swings = {
-    [161917] = 20, -- DEBUG
+    -- [161917] = 20, -- DEBUG
     [174773] = 20 -- Spiteful Shade
 }
 
