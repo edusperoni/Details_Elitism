@@ -1,3 +1,12 @@
+# [2.2.0](https://github.com/edusperoni/Details_Elitism/compare/v2.1.4...v2.2.0) (2021-02-16)
+
+
+### Features
+
+* experimental raid damage tracking ([03703fe](https://github.com/edusperoni/Details_Elitism/commit/03703fef4e03dc9dbff2d8bf3458dc4f691c7a72))
+
+
+
 ## [2.1.4](https://github.com/edusperoni/Details_Elitism/compare/v2.1.3...v2.1.4) (2021-02-01)
 
 
