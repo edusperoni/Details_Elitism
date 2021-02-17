@@ -313,6 +313,8 @@ function DE:COMBAT_LOG_EVENT_UNFILTERED()
     elseif eventType == "SPELL_AURA_APPLIED_DOSE" then
         local spellId, spellName, spellSchool, auraType, auraAmount = select(12, CombatLogGetCurrentEventInfo())
         DE:AuraApply(timestamp, eventType, srcGUID, srcName, srcFlags, dstGUID, dstName, dstFlags, spellId, spellName, spellSchool, auraType, auraAmount)
+    elseif eventType == "UNIT_DIED" then
+        DE:ResetTracking(dstGUID)
     end
 end
 
@@ -384,6 +386,11 @@ function DE:RecordAuraHit(unitGUID, spellId)
 
     registerHit(self.db[self.overall][unitGUID])
     registerHit(self.db[self.current][unitGUID])
+end
+
+function DE:ResetTracking(unitGUID)
+    -- TODO: what if a debuff persists after death?
+    self.tracker[unitGUID] = nil
 end
 
 function DE:SpellDamage(timestamp, eventType, srcGUID, srcName, srcFlags, dstGUID, dstName, dstFlags, spellId, spellName, spellSchool, aAmount)
