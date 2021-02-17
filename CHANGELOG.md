@@ -1,3 +1,12 @@
+## [2.2.1](https://github.com/edusperoni/Details_Elitism/compare/v2.2.0...v2.2.1) (2021-02-17)
+
+
+### Bug Fixes
+
+* validate that raidspell is a table ([2d964db](https://github.com/edusperoni/Details_Elitism/commit/2d964db7d98664cb0b207fa4b314b4017cd642e1))
+
+
+
 # [2.2.0](https://github.com/edusperoni/Details_Elitism/compare/v2.1.4...v2.2.0) (2021-02-16)
 
 
