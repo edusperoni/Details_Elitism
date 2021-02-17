@@ -1,3 +1,17 @@
+## [2.2.2-beta0](https://github.com/edusperoni/Details_Elitism/compare/v2.2.1...v2.2.2-beta0) (2021-02-17)
+
+
+### Bug Fixes
+
+* reset tracking when unit dies ([ab72793](https://github.com/edusperoni/Details_Elitism/commit/ab727935a80d4399946d5cdc07b612443a6ad84e))
+
+
+### Features
+
+* support for most of CN spells ([5740519](https://github.com/edusperoni/Details_Elitism/commit/5740519724bfa3784dd5a7e5f85775a905bf7e07))
+
+
+
 ## [2.2.1](https://github.com/edusperoni/Details_Elitism/compare/v2.2.0...v2.2.1) (2021-02-17)
 
 
