@@ -390,7 +390,7 @@ function DE:SpellDamage(timestamp, eventType, srcGUID, srcName, srcFlags, dstGUI
     local unitGUID = dstGUID
     if DE.RaidSpells[spellId] then
         local recordHit = true
-        if DE.RaidSpells[spellId].ignoreDebuffs then
+        if type(DE.RaidSpells[spellId]) == "table" and DE.RaidSpells[spellId].ignoreDebuffs then
             for debuffId, _ in pairs(DE.RaidSpells[spellId].ignoreDebuffs) do
                 DE:EnsureDebuffTrackingData(unitGUID, debuffId)
                 local lastHitCount = (self.tracker[unitGUID].debuffs[debuffId].spellTracker[spellId] or {hits = 0}).hits
