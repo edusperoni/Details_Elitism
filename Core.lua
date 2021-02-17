@@ -284,8 +284,8 @@ function DE:COMBAT_LOG_EVENT_UNFILTERED()
     if self.debugFakeData then
         DE:SpellDamage(0, 0, UnitGUID("player"), UnitName("player"), 0, UnitGUID("player"), UnitName("player"), 0, 324141, 0, 0, 30)
         -- raid test
-        -- Wicked Blade
-        DE:SpellDamage(0, 0, UnitGUID("player"), UnitName("player"), 0, UnitGUID("player"), UnitName("player"), 0, 344230, 0, 0, 30)
+        -- Wicked Blast (Wicked Blade)
+        DE:SpellDamage(0, 0, UnitGUID("player"), UnitName("player"), 0, UnitGUID("player"), UnitName("player"), 0, 333716, 0, 0, 30)
         -- Wicked Blade debuff
         DE:AuraApply(0, 0, UnitGUID("player"), UnitName("player"), 0, UnitGUID("player"), UnitName("player"), 0, 333377, 0, 0, 0, 0)
 
@@ -397,8 +397,11 @@ function DE:SpellDamage(timestamp, eventType, srcGUID, srcName, srcFlags, dstGUI
     local unitGUID = dstGUID
     if DE.RaidSpells[spellId] then
         local recordHit = true
-        if type(DE.RaidSpells[spellId]) == "table" and DE.RaidSpells[spellId].ignoreDebuffs then
-            for debuffId, _ in pairs(DE.RaidSpells[spellId].ignoreDebuffs) do
+        local spellData = type(DE.RaidSpells[spellId]) == "table" and DE.RaidSpells[spellId] or {}
+        if spellData.ignoreTanks and UnitGroupRolesAssigned(dstName) == "TANK" then
+            recordHit = false
+        elseif spellData.ignoreDebuffs then
+            for debuffId, _ in pairs(spellData.ignoreDebuffs) do
                 DE:EnsureDebuffTrackingData(unitGUID, debuffId)
                 local lastHitCount = (self.tracker[unitGUID].debuffs[debuffId].spellTracker[spellId] or {hits = 0}).hits
                 local currentHitCount = self.tracker[unitGUID].debuffs[debuffId].hits
@@ -408,6 +411,27 @@ function DE:SpellDamage(timestamp, eventType, srcGUID, srcName, srcFlags, dstGUI
                 end
                 self.tracker[unitGUID].debuffs[debuffId].spellTracker[spellId] = {hits = self.tracker[unitGUID].debuffs[debuffId].hits}
 
+            end
+        elseif spellData.ignoreActiveDebuffs then
+            for debuffId, _ in pairs(spellData.ignoreActiveDebuffs) do
+                DE:EnsureDebuffTrackingData(unitGUID, debuffId)
+                if self.tracker[unitGUID].debuffs[debuffId].active then
+                    recordHit = false
+                end
+            end
+        end
+        if spellData.isDot then -- this spell has a DoT effect
+            DE:EnsureDebuffTrackingData(unitGUID, spellId)
+            local debuff = self.tracker[unitGUID].debuffs[spellId]
+            local lastHitCount = (debuff.spellTracker[spellId] or {hits = 0}).hits
+            local currentHitCount = debuff.hits
+            local debuffActive = debuff.active
+            if recordHit then -- this seems to be a fail, but is this a fail or the dot of a success?
+                if (lastHitCount == currentHitCount) then -- the dot of a success is ticking
+                    recordHit = false
+                end
+            else -- this is a success, store the current (or future) aura application count (hits)
+                debuff.spellTracker[spellId] = {hits = debuffActive and currentHitCount or currentHitCount + 1} -- maybe the dot isn't yet active (hit+dot)
             end
         end
         if recordHit then
@@ -437,6 +461,15 @@ function DE:AuraApply(timestamp, eventType, srcGUID, srcName, srcFlags, dstGUID,
             local debuffs = self.tracker[unitGUID].debuffs[spellId]
             debuffs.hits = debuffs.hits + 1
             debuffs.active = true
+            if DE.AuraTracker[spellId].isFail then
+                local recordFail = true
+                if DE.AuraTracker[spellId].ignoreTanks and UnitGroupRolesAssigned(dstName) == "TANK" then
+                    recordFail = false
+                end
+                if recordFail then
+                    DE:RecordAuraHit(unitGUID, spellId)
+                end
+            end
         end
     end
     if (DE.Auras[spellId] or (DE.AurasNoTank[spellId] and UnitGroupRolesAssigned(dstName) ~= "TANK")) and UnitIsPlayer(dstName) then
