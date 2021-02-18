@@ -32,7 +32,7 @@ DE.CustomDisplay = {
     target = false,
     author = "Bass",
     desc = L["Show how much avoidable damage was taken."],
-    script_version = 1,
+    script_version = 2,
     script = [[
         local Combat, CustomContainer, Instance = ...
         local total, top, amount = 0, 0, 0
@@ -74,7 +74,7 @@ DE.CustomDisplay = {
             local sortedList = {}
             _, _, spells = _G.Details_Elitism:GetRecord(Combat:GetCombatNumber(), realCombat[1]:GetActor(Actor.nome):guid())
             for spellID, spelldata in pairs(spells) do
-                tinsert(sortedList, {spellID, spelldata.sum})
+                tinsert(sortedList, {spellID, spelldata.sum, spelldata.cnt})
             end
             -- local spellList = realCombat[1]:GetActor(Actor.nome):GetSpellList()
             -- local orbName = _G.Details_Elitism:RequireOrbName()
@@ -88,10 +88,10 @@ DE.CustomDisplay = {
 
             local format_func = Details:GetCurrentToKFunction()
             for _, tbl in ipairs(sortedList) do
-                local spellID, amount = unpack(tbl)
+                local spellID, amount, cnt = unpack(tbl)
                 local spellName, _, spellIcon = Details.GetSpellInfo(spellID)
 
-                GameCooltip:AddLine(spellName, format_func(_, amount))
+                GameCooltip:AddLine(spellName, "(" .. cnt .. ") " .. format_func(_, amount))
                 Details:AddTooltipBackgroundStatusbar()
                 GameCooltip:AddIcon(spellIcon, 1, 1, _detalhes.tooltip.line_height, _detalhes.tooltip.line_height)
             end
