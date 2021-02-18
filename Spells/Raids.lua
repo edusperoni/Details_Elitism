@@ -54,6 +54,7 @@ local RaidSpells = {
 
     -- Stone Legion Generals
     [333716] = {ignoreDebuffs = {[333377] = true}}, -- Wicked Blast (Wicked Blade)
+    -- [333913] = {ignoreDebuffs = {[333377] = true}, isDot = true}, -- Wicked Laceration (Wicked Blast) (should we track this dot's damage when it was applied by a fail? What about fail then not fail or not fail then fail?)
     [336231] = true, -- Cluster Bombardment
     [334500] = true, -- Seismic Upheaval (General Grashaal)
     [339693] = {ignoreDebuffs = {[333913] = true, [343881] = true, [339690] = true}}, -- Crystalline Burst
