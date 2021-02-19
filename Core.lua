@@ -621,6 +621,7 @@ function DE:OnDetailsEvent(event, combat)
     -- self here is not DE, this function is called from DE.EventListener
     if event == 'COMBAT_PLAYER_ENTER' then
         DE.current = combat:GetCombatNumber()
+        DE:UpdateOverall()
         DE:Debug("COMBAT_PLAYER_ENTER: %s", DE.current)
     elseif event == 'COMBAT_PLAYER_LEAVE' then
         DE.current = combat:GetCombatNumber()
@@ -654,7 +655,7 @@ function DE:UpdateOverall()
     if self.overall and self.overall ~= newOverall and self.db[self.overall] then
         self.db[self.overall] = nil
     end
-    self.overall = Details:GetCombat(-1):GetCombatNumber()
+    self.overall = newOverall
 end
 
 function DE:LoadHooks()
