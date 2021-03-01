@@ -1,3 +1,17 @@
+## [2.2.2](https://github.com/edusperoni/Details_Elitism/compare/v2.2.2-beta0...v2.2.2) (2021-03-01)
+
+
+### Bug Fixes
+
+* ensure overall combat id is correct at combat start ([c17ae65](https://github.com/edusperoni/Details_Elitism/commit/c17ae65d701a2dc5f4373a212c525b64ebb81bcc))
+
+
+### Features
+
+* add count to damage tooltip ([16cf443](https://github.com/edusperoni/Details_Elitism/commit/16cf4431da13f43adb0a40b0726328d7639cba02))
+
+
+
 ## [2.2.2-beta0](https://github.com/edusperoni/Details_Elitism/compare/v2.2.1...v2.2.2-beta0) (2021-02-17)
 
 
