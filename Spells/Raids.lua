@@ -65,7 +65,10 @@ local RaidSpells = {
     [327823] = {ignoreDebuffs = {[327796] = true}}, -- Insatiable Hunger (Night Hunter)
     [330137] = true, -- Massacre (Remornia)
     [335873] = true, -- Rancor
-    [329181] = {ignoreTanks = true} -- Wracking Pain
+    [329181] = {ignoreTanks = true}, -- Wracking Pain
+    [327464] = true, -- Turbulent Anima (Remornia)
+    [332797] = {ignoreDebuffs = {[332794] = true}, isDot = true}, -- Fatal Finesse
+    [332734] = true -- Indignation
 }
 
 -- TODO: remove this and iterate over RaidSpells identifying what needs to be tracked
@@ -102,7 +105,8 @@ local AurasToTrack = {
     -- Sire Denathrius
     [329951] = {debuff = true}, -- Impale
     [327796] = {debuff = true}, -- Night Hunter
-    [329181] = {debuff = true, isFail = true, ignoreTanks = true} -- Wracking Pain
+    [329181] = {debuff = true, isFail = true, ignoreTanks = true}, -- Wracking Pain
+    [332794] = {debuff = true}, -- Fatal Finesse
 }
 
 DE:MergeTables(DE.RaidSpells, RaidSpells)
