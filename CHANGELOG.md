@@ -1,3 +1,12 @@
+## [2.2.3-beta0](https://github.com/edusperoni/Details_Elitism/compare/v2.2.2...v2.2.3-beta0) (2021-03-01)
+
+
+### Features
+
+* add denathrius 3rd phase fails ([120be71](https://github.com/edusperoni/Details_Elitism/commit/120be71b8346de56f8af5b065548caa90ef3253d))
+
+
+
 ## [2.2.2](https://github.com/edusperoni/Details_Elitism/compare/v2.2.2-beta0...v2.2.2) (2021-03-01)
 
 
