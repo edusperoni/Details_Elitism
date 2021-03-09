@@ -533,13 +533,19 @@ function DE:MergeCombat(to, from)
     end
 end
 
+function DE:isSameDungeon(combat1, combat2)
+    local isMythic1, runId1 = combat1:IsMythicDungeon()
+    local isMythic2, runId2 = combat2:IsMythicDungeon()
+    return isMythic1 and isMythic2 and runId1 == runId2
+end
+
 function DE:MergeSegmentsOnEnd()
     self:Debug("on Details MergeSegmentsOnEnd")
-
-    local overall = Details:GetCombat(1):GetCombatNumber()
+    local overallCombat = Details:GetCombat(1)
+    local overall = overallCombat:GetCombatNumber()
     for i = 2, 25 do
         local combat = Details:GetCombat(i)
-        if not combat or not combat:IsMythicDungeon() or combat:IsMythicDungeonOverall() then
+        if not combat or not self:isSameDungeon(overallCombat, combat) or combat:IsMythicDungeonOverall() then
             break
         end
 
