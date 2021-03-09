@@ -1,3 +1,12 @@
+## [2.2.3-beta1](https://github.com/edusperoni/Details_Elitism/compare/v2.2.3-beta0...v2.2.3-beta1) (2021-03-09)
+
+
+### Bug Fixes
+
+* prevent merging of different runs ([2e40b7f](https://github.com/edusperoni/Details_Elitism/commit/2e40b7f2ffd6bd54b378d980e3bee03a695a9d7e))
+
+
+
 ## [2.2.3-beta0](https://github.com/edusperoni/Details_Elitism/compare/v2.2.2...v2.2.3-beta0) (2021-03-01)
 
 
