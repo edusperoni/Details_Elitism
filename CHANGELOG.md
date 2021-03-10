@@ -1,3 +1,12 @@
+# [2.3.0](https://github.com/edusperoni/Details_Elitism/compare/v2.2.3-beta1...v2.3.0) (2021-03-10)
+
+
+### Features
+
+* 9.0.5 toc bump ([e2409d7](https://github.com/edusperoni/Details_Elitism/commit/e2409d7cf48a33d0f661959792222c3a1108c840))
+
+
+
 ## [2.2.3-beta1](https://github.com/edusperoni/Details_Elitism/compare/v2.2.3-beta0...v2.2.3-beta1) (2021-03-09)
 
 
