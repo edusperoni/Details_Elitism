@@ -704,10 +704,7 @@ function DE:OnInitialize()
 end
 
 function DE:srcGUIDtoID(srcGUID)
-    local sep = "-"
-    local t = {}
-    for str in string.gmatch(srcGUID, "([^" .. sep .. "]+)") do
-        table.insert(t, str)
-    end
-    return tonumber(t[#t - 1])
+    -- local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",srcGUID);
+    local _, _, _, _, _, npc_id, _ = strsplit("-", srcGUID);
+    return tonumber(npc_id)
 end
