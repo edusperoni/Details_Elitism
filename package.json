@@ -3,7 +3,7 @@
   "version": "2.3.0",
   "description": "A simple *Details!* plugin which provides similar data from [ElitismHelper](https://github.com/amki/ElitismHelper) but inside Details!.",
   "scripts": {
-    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md --skip-unstable -s && git add CHANGELOG.md",
     "build": "curl -s https://raw.githubusercontent.com/BigWigsMods/packager/master/release.sh | bash -s -- -d"
   },
   "repository": {
