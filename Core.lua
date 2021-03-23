@@ -1,4 +1,5 @@
 local addon, Engine = ...
+---@class DE
 local DE = LibStub('AceAddon-3.0'):NewAddon(addon, 'AceEvent-3.0', 'AceHook-3.0')
 local L = Engine.L
 
@@ -282,6 +283,24 @@ function DE:MergeTableImmmutable(t1, t2)
     local result = {}
     DE.MergeTables(result, t2)
     DE.MergeTables(result, t1, false)
+    return result
+end
+
+---Generates an aura tracker table from an advanced spell table
+---@param spellTable table
+---@return table
+function DE:GenerateAuraTrackerFromSpells(spellTable)
+    local result = {}
+    for _, spellData in pairs(spellTable) do
+        if (type(spellData) == "table") then
+            local ignoreDebuffs = spellData.ignoreDebuffs or {}
+            for auraId, track in pairs(ignoreDebuffs) do
+                if track then
+                    result[auraId] = {debuff = true}
+                end
+            end
+        end
+    end
     return result
 end
 
