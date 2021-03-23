@@ -1,3 +1,14 @@
+## [2.3.1-alpha.0](https://github.com/edusperoni/Details_Elitism/compare/v2.3.0...v2.3.1-alpha.0) (2021-03-23)
+
+
+### Features
+
+* auto generate aura tracking ([a91b571](https://github.com/edusperoni/Details_Elitism/commit/a91b571d34a944fe15066f285d0a494793ad0adb))
+* better guid matching ([dd0ea83](https://github.com/edusperoni/Details_Elitism/commit/dd0ea83e05e03a1b003e00a6850e72aa2f49b6d2))
+* support overkill data ([e3aef3a](https://github.com/edusperoni/Details_Elitism/commit/e3aef3a6029928d0db0ad6896bc0a7a3079a6ebd))
+
+
+
 # [2.3.0](https://github.com/edusperoni/Details_Elitism/compare/v2.2.3-beta1...v2.3.0) (2021-03-10)
 
 
