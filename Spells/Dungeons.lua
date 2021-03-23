@@ -66,7 +66,6 @@ local Spells = {
     [323786] = 20, -- Swift Slice (Kyrian Dark-Praetor)
     [324662] = 20, -- Ionized Plasma (Multiple) Can this be avoided?
     [317943] = 20, -- Sweeping Blow (Frostsworn Vanguard)
-    [324608] = 20, -- Charged Stomp (Oryphrion)
     [323740] = 20, -- Impact (Forsworn Squad-Leader)
     [336447] = 20, -- Crashing Strike (Forsworn Squad-Leader)
     [336444] = 20, -- Crescendo (Forsworn Helion)
@@ -168,6 +167,7 @@ local SpellsNoTank = {
     -- Spires of Ascension
     [320966] = 20, -- Overhead Slash (Kin-Tara)
     [336444] = 20, -- Crescendo (Forsworn Helion)
+    [324608] = 20, -- Charged Stomp (Oryphrion)
 
     -- The Necrotic Wakes
     [324323] = 20, -- Gruesome Cleave (Skeletal Marauder)
