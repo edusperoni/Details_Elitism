@@ -32,7 +32,7 @@ DE.CustomDisplay = {
     target = false,
     author = "Bass",
     desc = L["Show how much avoidable damage was taken."],
-    script_version = 2,
+    script_version = 3,
     script = [[
         local Combat, CustomContainer, Instance = ...
         local total, top, amount = 0, 0, 0
@@ -76,14 +76,6 @@ DE.CustomDisplay = {
             for spellID, spelldata in pairs(spells) do
                 tinsert(sortedList, {spellID, spelldata.sum, spelldata.cnt})
             end
-            -- local spellList = realCombat[1]:GetActor(Actor.nome):GetSpellList()
-            -- local orbName = _G.Details_Elitism:RequireOrbName()
-            -- for spellID, spellTable in pairs(spellList) do
-            --     local amount = spellTable.targets[orbName]
-            --     if amount then
-            --         tinsert(sortedList, {spellID, amount})
-            --     end
-            -- end
             sort(sortedList, Details.Sort2)
 
             local format_func = Details:GetCurrentToKFunction()
@@ -100,11 +92,8 @@ DE.CustomDisplay = {
     total_script = [[
         local value, top, total, Combat, Instance, Actor = ...
 
-        local format_func = Details:GetCurrentToKFunction()
         if _G.Details_Elitism then
-            local damage, cnt = _G.Details_Elitism:GetRecord(Combat:GetCombatNumber(), Actor.my_actor.serial)
-            return "" .. format_func(_, damage) .. " (" .. cnt .. ")"
-            -- return _G.Details_Elitism:GetDisplayText(Combat:GetCombatNumber(), Actor.my_actor.serial)
+            return _G.Details_Elitism:GetSpellDisplayText(Combat:GetCombatNumber(), Actor.my_actor.serial)
         end
         return ""
     ]]
@@ -119,7 +108,7 @@ DE.CustomDisplayAuras = {
     target = false,
     author = "Bass",
     desc = L["Show how many avoidable abilities hit players."],
-    script_version = 1,
+    script_version = 2,
     script = [[
         local Combat, CustomContainer, Instance = ...
         local total, top, amount = 0, 0, 0
@@ -164,14 +153,6 @@ DE.CustomDisplayAuras = {
             for spellID, spelldata in pairs(spells) do
                 tinsert(sortedList, {spellID, spelldata.cnt})
             end
-            -- local spellList = realCombat[1]:GetActor(Actor.nome):GetSpellList()
-            -- local orbName = _G.Details_Elitism:RequireOrbName()
-            -- for spellID, spellTable in pairs(spellList) do
-            --     local amount = spellTable.targets[orbName]
-            --     if amount then
-            --         tinsert(sortedList, {spellID, amount})
-            --     end
-            -- end
             sort(sortedList, Details.Sort2)
 
             local format_func = Details:GetCurrentToKFunction()
@@ -188,10 +169,8 @@ DE.CustomDisplayAuras = {
     total_script = [[
         local value, top, total, Combat, Instance, Actor = ...
 
-        local format_func = Details:GetCurrentToKFunction()
         if _G.Details_Elitism then
-            local cnt, _ = _G.Details_Elitism:GetAuraRecord(Combat:GetCombatNumber(), Actor.my_actor.serial)
-            return "" .. cnt
+            return _G.Details_Elitism:GetAuraDisplayText(Combat:GetCombatNumber(), Actor.my_actor.serial)
         end
         return ""
     ]]
@@ -213,13 +192,25 @@ DE.AuraTracker = {}
 
 -- Public APIs
 
+--- Returns the Spell Record
+--- @param combatID integer
+--- @param playerGUID string
+--- @return number totalDamageSum
+--- @return integer totalDamageCount
+--- @return table spellTable
+--- @return number totalOverkillSum
 function Engine:GetRecord(combatID, playerGUID)
     if DE.db[combatID] and DE.db[combatID][playerGUID] then
-        return DE.db[combatID][playerGUID].sum or 0, DE.db[combatID][playerGUID].cnt or 0, DE.db[combatID][playerGUID].spells
+        return DE.db[combatID][playerGUID].sum or 0, DE.db[combatID][playerGUID].cnt or 0, DE.db[combatID][playerGUID].spells, DE.db[combatID][playerGUID].sumOverkill or 0
     end
-    return 0, 0, {}
+    return 0, 0, {}, 0
 end
 
+--- Returns the Aura Record
+--- @param combatID integer
+--- @param playerGUID string
+--- @return integer totalAuraApplyCount
+--- @return table auraTable
 function Engine:GetAuraRecord(combatID, playerGUID)
     if DE.db[combatID] and DE.db[combatID][playerGUID] then
         return DE.db[combatID][playerGUID].auracnt or 0, DE.db[combatID][playerGUID].auras
@@ -227,11 +218,26 @@ function Engine:GetAuraRecord(combatID, playerGUID)
     return 0, {}
 end
 
-function Engine:GetDisplayText(combatID, playerGUID)
-    if DE.db[combatID] and DE.db[combatID][playerGUID] then
-        return L["Damage: "] .. (DE.db[combatID][playerGUID].sum or 0) .. " " .. L["Hits: "] .. (DE.db[combatID][playerGUID].cnt or 0)
+--- Returns the display text for the aura tooltip
+--- @param combatID integer
+--- @param playerGUID string
+function Engine:GetAuraDisplayText(combatID, playerGUID)
+    local cnt, _ = _G.Details_Elitism:GetAuraRecord(combatID, playerGUID)
+    return "" .. cnt
+end
+
+--- Returns the display text for the spell tooltip
+--- @param combatID integer
+--- @param playerGUID string
+function Engine:GetSpellDisplayText(combatID, playerGUID)
+    local format_func = Details:GetCurrentToKFunction() --- @type function
+    local damage, cnt, _, overkill = _G.Details_Elitism:GetRecord(combatID, playerGUID)
+    local overkillText = ""
+    if overkill > 0 then
+        damage = damage - overkill
+        overkillText = ", " .. format_func(nil, overkill) .. " |cFFFF8800overkill|r"
     end
-    return L["Damage: "] .. "0 " .. L["Hits: "] .. "0"
+    return "" .. format_func(nil, damage) .. " (" .. cnt .. overkillText .. ")"
 end
 
 function Engine:PrintDebugInfo()
@@ -242,16 +248,23 @@ function Engine:PrintDebugInfo()
     DE.debug = oldDebug
 end
 
+--- @param enabled boolean
 function Engine:setDebug(enabled)
     DE.debug = enabled
 end
 
+--- @param enabled boolean
 function Engine:setDebugFakeData(enabled)
     DE.debugFakeData = enabled
 end
 
 -- Private Functions
 
+---Merge t2 into t1
+---@param t1 table
+---@param t2 table
+---@param replace boolean should replace t1 values with t2 values if they exist? Defaults to true
+---@return table
 function DE:MergeTables(t1, t2, replace)
     local force_replace = (replace ~= false)
     for k, v in pairs(t2) do
@@ -261,7 +274,10 @@ function DE:MergeTables(t1, t2, replace)
     end
     return t1
 end
-
+---Same as MergeTables, but merges into a new table without changing t1 or t2
+---@param t1 table
+---@param t2 table
+---@return table
 function DE:MergeTableImmmutable(t1, t2)
     local result = {}
     DE.MergeTables(result, t2)
@@ -295,10 +311,10 @@ function DE:COMBAT_LOG_EVENT_UNFILTERED()
     end
     if (eventPrefix:match("^SPELL") or eventPrefix:match("^RANGE")) and eventSuffix == "DAMAGE" then
         local spellId, spellName, spellSchool, sAmount, aOverkill, sSchool, sResisted, sBlocked, sAbsorbed, sCritical, sGlancing, sCrushing, sOffhand, _ = select(12, CombatLogGetCurrentEventInfo())
-        DE:SpellDamage(timestamp, eventType, srcGUID, srcName, srcFlags, dstGUID, dstName, dstFlags, spellId, spellName, spellSchool, sAmount)
+        DE:SpellDamage(timestamp, eventType, srcGUID, srcName, srcFlags, dstGUID, dstName, dstFlags, spellId, spellName, spellSchool, sAmount, aOverkill)
     elseif eventPrefix:match("^SWING") and eventSuffix == "DAMAGE" then
         local aAmount, aOverkill, aSchool, aResisted, aBlocked, aAbsorbed, aCritical, aGlancing, aCrushing, aOffhand, _ = select(12, CombatLogGetCurrentEventInfo())
-        DE:SwingDamage(timestamp, eventType, srcGUID, srcName, srcFlags, dstGUID, dstName, dstFlags, aAmount)
+        DE:SwingDamage(timestamp, eventType, srcGUID, srcName, srcFlags, dstGUID, dstName, dstFlags, aAmount, aOverkill)
     elseif eventPrefix:match("^SPELL") and eventSuffix == "MISSED" then
         local spellId, spellName, spellSchool, missType, isOffHand, mAmount = select(12, CombatLogGetCurrentEventInfo())
         if mAmount then
@@ -336,7 +352,7 @@ function DE:EnsureUnitData(combatNumber, unitGUID)
         self.db[combatNumber] = {}
     end
     if not self.db[combatNumber][unitGUID] then
-        self.db[combatNumber][unitGUID] = {sum = 0, cnt = 0, spells = {}, auras = {}, auracnt = 0}
+        self.db[combatNumber][unitGUID] = {sum = 0, sumOverkill = 0, cnt = 0, spells = {}, auras = {}, auracnt = 0}
     end
 end
 
@@ -346,7 +362,7 @@ function DE:EnsureSpellData(combatNumber, unitGUID, spellId)
         self.db[combatNumber][unitGUID].spells = {}
     end
     if not self.db[combatNumber][unitGUID].spells[spellId] then
-        self.db[combatNumber][unitGUID].spells[spellId] = {cnt = 0, sum = 0}
+        self.db[combatNumber][unitGUID].spells[spellId] = {cnt = 0, sum = 0, sumOverkill = 0}
     end
 end
 
@@ -360,14 +376,18 @@ function DE:EnsureAuraData(combatNumber, unitGUID, spellId)
     end
 end
 
-function DE:RecordSpellDamage(unitGUID, spellId, aAmount)
+function DE:RecordSpellDamage(unitGUID, spellId, aAmount, aOverkill)
+    aOverkill = aOverkill or 0
+    aAmount = aAmount or 0
     DE:EnsureSpellData(self.current, unitGUID, spellId)
     DE:EnsureSpellData(self.overall, unitGUID, spellId)
 
     local registerHit = function(where)
         where.sum = where.sum + aAmount
+        where.sumOverkill = where.sumOverkill + aOverkill
         where.cnt = where.cnt + 1
         where.spells[spellId].sum = where.spells[spellId].sum + aAmount
+        where.spells[spellId].sumOverkill = where.spells[spellId].sumOverkill + aOverkill
         where.spells[spellId].cnt = where.spells[spellId].cnt + 1
     end
 
@@ -393,7 +413,7 @@ function DE:ResetTracking(unitGUID)
     self.tracker[unitGUID] = nil
 end
 
-function DE:SpellDamage(timestamp, eventType, srcGUID, srcName, srcFlags, dstGUID, dstName, dstFlags, spellId, spellName, spellSchool, aAmount)
+function DE:SpellDamage(timestamp, eventType, srcGUID, srcName, srcFlags, dstGUID, dstName, dstFlags, spellId, spellName, spellSchool, aAmount, aOverkill)
     local unitGUID = dstGUID
     if DE.RaidSpells[spellId] then
         local recordHit = true
@@ -435,21 +455,21 @@ function DE:SpellDamage(timestamp, eventType, srcGUID, srcName, srcFlags, dstGUI
             end
         end
         if recordHit then
-            DE:RecordSpellDamage(unitGUID, spellId, aAmount)
+            DE:RecordSpellDamage(unitGUID, spellId, aAmount, aOverkill)
         end
     end
     if (DE.Spells[spellId] or (DE.SpellsNoTank[spellId] and UnitGroupRolesAssigned(dstName) ~= "TANK")) and UnitIsPlayer(dstName) then
-        DE:RecordSpellDamage(unitGUID, spellId, aAmount)
+        DE:RecordSpellDamage(unitGUID, spellId, aAmount, aOverkill)
 
     end
 end
 
-function DE:SwingDamage(timestamp, eventType, srcGUID, srcName, srcFlags, dstGUID, dstName, dstFlags, aAmount)
+function DE:SwingDamage(timestamp, eventType, srcGUID, srcName, srcFlags, dstGUID, dstName, dstFlags, aAmount, aOverkill)
     local unitGUID = dstGUID
     local meleeSpellId = 260421
 
     if (DE.Swings[DE:srcGUIDtoID(srcGUID)] and UnitIsPlayer(dstName)) then
-        DE:RecordSpellDamage(unitGUID, meleeSpellId, aAmount)
+        DE:RecordSpellDamage(unitGUID, meleeSpellId, aAmount, aOverkill)
     end
 end
 
@@ -504,21 +524,19 @@ function DE:MergeCombat(to, from)
             self.db[to] = {}
         end
         for playerGUID, tbl in pairs(self.db[from]) do
-            if not self.db[to][playerGUID] then
-                self.db[to][playerGUID] = {sum = 0, cnt = 0, spells = {}, auras = {}, auracnt = 0}
-            end
+            self:EnsureUnitData(to, playerGUID)
             self.db[to][playerGUID].sum = self.db[to][playerGUID].sum + (tbl.sum or 0)
+            self.db[to][playerGUID].sumOverkill = self.db[to][playerGUID].sumOverkill + (tbl.sumOverkill or 0)
             self.db[to][playerGUID].cnt = self.db[to][playerGUID].cnt + (tbl.cnt or 0)
 
             self.db[to][playerGUID].auracnt = self.db[to][playerGUID].auracnt + (tbl.auracnt or 0)
 
             for spellId, spelltbl in pairs(tbl.spells) do
 
-                if not self.db[to][playerGUID].spells[spellId] then
-                    self.db[to][playerGUID].spells[spellId] = {cnt = 0, sum = 0}
-                end
+                self:EnsureSpellData(to, playerGUID, spellId)
                 self.db[to][playerGUID].spells[spellId].cnt = self.db[to][playerGUID].spells[spellId].cnt + spelltbl.cnt
                 self.db[to][playerGUID].spells[spellId].sum = self.db[to][playerGUID].spells[spellId].sum + spelltbl.sum
+                self.db[to][playerGUID].spells[spellId].sumOverkill = self.db[to][playerGUID].spells[spellId].sumOverkill + spelltbl.sumOverkill
             end
 
             for spellId, spelltbl in pairs(tbl.auras) do
