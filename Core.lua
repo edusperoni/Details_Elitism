@@ -255,9 +255,9 @@ function Engine:GetSpellTooltipText(combatID, playerGUID, spellId)
     local overkillText = ""
     if overkill > 0 then
         damage = damage - overkill
-        overkillText = ", " .. format_func(nil, overkill) .. " |cFFFF8800overkill|r"
+        overkillText = " (" .. format_func(nil, overkill) .. " |cFFFF8800overkill|r)"
     end
-    return  format_func(_, damage) .. " (" .. cnt .. overkillText .. ")"
+    return "(" .. cnt .. ") " ..  format_func(_, damage) .. overkillText
 end
 
 function Engine:PrintDebugInfo()
