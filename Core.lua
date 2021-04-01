@@ -33,7 +33,7 @@ DE.CustomDisplay = {
     target = false,
     author = "Bass",
     desc = L["Show how much avoidable damage was taken."],
-    script_version = 3,
+    script_version = 4,
     script = [[
         local Combat, CustomContainer, Instance = ...
         local total, top, amount = 0, 0, 0
@@ -73,7 +73,8 @@ DE.CustomDisplay = {
             if not realCombat then return end
 
             local sortedList = {}
-            _, _, spells = _G.Details_Elitism:GetRecord(Combat:GetCombatNumber(), realCombat[1]:GetActor(Actor.nome):guid())
+            local playerGuid = realCombat[1]:GetActor(Actor.nome):guid()
+            _, _, spells = _G.Details_Elitism:GetRecord(Combat:GetCombatNumber(), playerGuid)
             for spellID, spelldata in pairs(spells) do
                 tinsert(sortedList, {spellID, spelldata.sum, spelldata.cnt})
             end
@@ -84,7 +85,8 @@ DE.CustomDisplay = {
                 local spellID, amount, cnt = unpack(tbl)
                 local spellName, _, spellIcon = Details.GetSpellInfo(spellID)
 
-                GameCooltip:AddLine(spellName, "(" .. cnt .. ") " .. format_func(_, amount))
+                local tooltipText = _G.Details_Elitism:GetSpellTooltipText(Combat:GetCombatNumber(), playerGuid, spellID)
+                GameCooltip:AddLine(spellName, tooltipText)
                 Details:AddTooltipBackgroundStatusbar()
                 GameCooltip:AddIcon(spellIcon, 1, 1, _detalhes.tooltip.line_height, _detalhes.tooltip.line_height)
             end
@@ -219,7 +221,7 @@ function Engine:GetAuraRecord(combatID, playerGUID)
     return 0, {}
 end
 
---- Returns the display text for the aura tooltip
+--- Returns the display text for the aura total
 --- @param combatID integer
 --- @param playerGUID string
 function Engine:GetAuraDisplayText(combatID, playerGUID)
@@ -227,18 +229,35 @@ function Engine:GetAuraDisplayText(combatID, playerGUID)
     return "" .. cnt
 end
 
---- Returns the display text for the spell tooltip
+--- Returns the display text for the spell total
 --- @param combatID integer
 --- @param playerGUID string
 function Engine:GetSpellDisplayText(combatID, playerGUID)
     local format_func = Details:GetCurrentToKFunction() --- @type function
-    local damage, cnt, _, overkill = _G.Details_Elitism:GetRecord(combatID, playerGUID)
+    local damage, cnt, _ = _G.Details_Elitism:GetRecord(combatID, playerGUID)
+    return "" .. format_func(nil, damage) .. " (" .. cnt .. ")"
+end
+
+--- Returns the display text for the spell tooltip
+--- @param combatID integer
+--- @param playerGUID string
+--- @param spellId integer
+function Engine:GetSpellTooltipText(combatID, playerGUID, spellId)
+    local format_func = Details:GetCurrentToKFunction() --- @type function
+    local _, _, spells = _G.Details_Elitism:GetRecord(combatID, playerGUID)
+    local spell = spells[spellId]
+    if not spell then
+        return ""
+    end
+    local overkill = spell.sumOverkill
+    local damage = spell.sum
+    local cnt = spell.cnt
     local overkillText = ""
     if overkill > 0 then
         damage = damage - overkill
         overkillText = ", " .. format_func(nil, overkill) .. " |cFFFF8800overkill|r"
     end
-    return "" .. format_func(nil, damage) .. " (" .. cnt .. overkillText .. ")"
+    return  format_func(_, damage) .. " (" .. cnt .. overkillText .. ")"
 end
 
 function Engine:PrintDebugInfo()
