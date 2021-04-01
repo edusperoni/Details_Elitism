@@ -14,7 +14,7 @@ ignore:
   - .npmrc
 
 manual-changelog:
-    filename: CHANGELOG.md
+    filename: PARTIALCHANGELOG.md
     markup-type: markdown
 
 enable-nolib-creation: yes
