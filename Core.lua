@@ -257,7 +257,7 @@ function Engine:GetSpellTooltipText(combatID, playerGUID, spellId)
         damage = damage - overkill
         overkillText = " (" .. format_func(nil, overkill) .. " |cFFFF8800overkill|r)"
     end
-    return "(" .. cnt .. ") " ..  format_func(_, damage) .. overkillText
+    return "(" .. cnt .. ") " .. format_func(_, damage) .. overkillText
 end
 
 function Engine:PrintDebugInfo()
@@ -552,7 +552,7 @@ function DE:AuraRemove(timestamp, eventType, srcGUID, srcName, srcFlags, dstGUID
 end
 
 function DE:InitDataCollection()
-    self:RegisterEvent('COMBAT_LOG_EVENT_UNFILTERED')
+    self:RegisterEvent('COMBAT_LOG_EVENT_UNFILTERED') ---@diagnostic disable-line: undefined-field
 end
 
 function DE:MergeCombat(to, from)
@@ -721,11 +721,11 @@ function DE:UpdateOverall()
 end
 
 function DE:LoadHooks()
-    self:SecureHook(_G.DetailsMythicPlusFrame, 'MergeSegmentsOnEnd')
-    self:SecureHook(_G.DetailsMythicPlusFrame, 'MergeTrashCleanup')
-    self:SecureHook(_G.DetailsMythicPlusFrame, 'MergeRemainingTrashAfterAllBossesDone')
+    self:SecureHook(_G.DetailsMythicPlusFrame, 'MergeSegmentsOnEnd') ---@diagnostic disable-line: undefined-field
+    self:SecureHook(_G.DetailsMythicPlusFrame, 'MergeTrashCleanup') ---@diagnostic disable-line: undefined-field
+    self:SecureHook(_G.DetailsMythicPlusFrame, 'MergeRemainingTrashAfterAllBossesDone') ---@diagnostic disable-line: undefined-field
 
-    self:SecureHook(Details.historico, 'resetar_overall', 'ResetOverall')
+    self:SecureHook(Details.historico, 'resetar_overall', 'ResetOverall') ---@diagnostic disable-line: undefined-field
     self.overall = Details:GetCombat(-1):GetCombatNumber()
 
     self.EventListener = Details:CreateEventListener()
@@ -753,10 +753,10 @@ function DE:OnInitialize()
     --     self.eventFrames[i]:SetScript('OnEvent', targetChanged)
     -- end
 
-    self:RegisterEvent('PLAYER_ENTERING_WORLD', 'InitDataCollection')
-    self:RegisterEvent('CHALLENGE_MODE_START', 'InitDataCollection')
+    self:RegisterEvent('PLAYER_ENTERING_WORLD', 'InitDataCollection') ---@diagnostic disable-line: undefined-field
+    self:RegisterEvent('CHALLENGE_MODE_START', 'InitDataCollection') ---@diagnostic disable-line: undefined-field
 
-    self:SecureHook(Details, 'StartMeUp', 'LoadHooks')
+    self:SecureHook(Details, 'StartMeUp', 'LoadHooks') ---@diagnostic disable-line: undefined-field
 end
 
 function DE:srcGUIDtoID(srcGUID)
