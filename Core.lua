@@ -20,6 +20,12 @@ local tContains = tContains
 
 local Details = _G.Details
 
+---@alias trackingTable Table<string, boolean>
+---@alias spellTrack {isDot?: boolean, debuffIsFail?: boolean, ignoreTanks?: boolean, ignoreActiveDebuffs?: trackingTable, ignoreDebuffs?: trackingTable }
+---@alias raidSpellTable table<number, spellTrack>
+---@alias auraTrack {debuff?: boolean, isFail?: boolean, ignoreTanks?: boolean}
+---@alias auraTrackTable table<number, auraTrack>
+
 -- GLOBALS: ElitismLog
 
 DE.debug = false
@@ -189,6 +195,7 @@ DE.AurasNoTank = {}
 
 DE.Swings = {}
 
+---@type raidSpellTable
 DE.RaidSpells = {}
 
 DE.AuraTracker = {}
@@ -279,12 +286,12 @@ function Engine:setDebugFakeData(enabled)
 end
 
 -- Private Functions
-
 ---Merge t2 into t1
----@param t1 table
----@param t2 table
+---@generic T : table
+---@param t1 T
+---@param t2 T
 ---@param replace boolean should replace t1 values with t2 values if they exist? Defaults to true
----@return table
+---@return T
 function DE:MergeTables(t1, t2, replace)
     local force_replace = (replace ~= false)
     for k, v in pairs(t2) do
@@ -295,9 +302,10 @@ function DE:MergeTables(t1, t2, replace)
     return t1
 end
 ---Same as MergeTables, but merges into a new table without changing t1 or t2
----@param t1 table
----@param t2 table
----@return table
+---@generic T : table
+---@param t1 T
+---@param t2 T
+---@return T
 function DE:MergeTableImmmutable(t1, t2)
     local result = {}
     DE.MergeTables(result, t2)
@@ -306,16 +314,23 @@ function DE:MergeTableImmmutable(t1, t2)
 end
 
 ---Generates an aura tracker table from an advanced spell table
----@param spellTable table
----@return table
+---@param spellTable raidSpellTable
+---@return raidSpellTable
 function DE:GenerateAuraTrackerFromSpells(spellTable)
+    ---@type raidSpellTable
     local result = {}
-    for _, spellData in pairs(spellTable) do
+    for spellId, spellData in pairs(spellTable) do
         if (type(spellData) == "table") then
             local ignoreDebuffs = spellData.ignoreDebuffs or {}
+            local debuffIsFail = spellData.debuffIsFail
+            if debuffIsFail then
+                result[spellId] = result[spellId] or {}
+                DE:MergeTables(result[spellId], {debuff = true, isFail = true, ignoreTanks = spellData.ignoreTanks}, false)
+            end
             for auraId, track in pairs(ignoreDebuffs) do
                 if track then
-                    result[auraId] = {debuff = true}
+                    result[auraId] = result[auraId] or {}
+                    DE:MergeTables(result[auraId], {debuff = true}, false)
                 end
             end
         end
