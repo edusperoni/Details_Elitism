@@ -1,4 +1,13 @@
-# [2.4.0-beta.0](https://github.com/edusperoni/Details_Elitism/compare/v2.3.1...v2.4.0-beta.0) (2021-08-06)
+# [2.4.0](https://github.com/edusperoni/Details_Elitism/compare/v2.3.1...v2.4.0) (2021-11-02)
+
+
+### Features
+
+* TOC bump to 9.1.5 ([7f9a76c](https://github.com/edusperoni/Details_Elitism/commit/7f9a76cbeb6dd6c668adfe557ee65d289ab886b7))
+
+
+
+# 2.4.0-beta.0 (2021-08-06)
 
 
 ### Features
