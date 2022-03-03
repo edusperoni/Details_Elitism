@@ -1,6 +1,6 @@
 {
   "name": "details_elitism",
-  "version": "2.5.0",
+  "version": "2.6.0",
   "description": "A simple *Details!* plugin which provides similar data from [ElitismHelper](https://github.com/amki/ElitismHelper) but inside Details!.",
   "scripts": {
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md && conventional-changelog -p angular --skip-unstable -o PARTIALCHANGELOG.md && git add PARTIALCHANGELOG.md",
