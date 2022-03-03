@@ -6,6 +6,7 @@
 ## Version: @project-version@
 ## X-License: MIT
 ## X-Curse-Project-ID: 381128
+## X-Wago-ID: nQN5VP6B
 ## SavedVariablesPerCharacter: ElitismLog
 
 Libs\Load_Libs.xml
