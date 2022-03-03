@@ -27,6 +27,8 @@ local Spells = {
     [355806] = 20,        -- Massive Smash (Season 2 Soggodon)
     [355737] = 20,        -- Scorching Blast (Season 2 Arkolath)
     [355738] = 20,        -- Scorching Blast DoT (Season 2 Arkolath)
+    [366288] = 20,        -- Force Slam (Season 3 Urh Dismantler)
+    [366409] = 20,        -- Fusion Beam (Season 3 Vy Interceptor)
 
 
     -- Mists of Tirna Scithe
@@ -160,8 +162,8 @@ local Spells = {
     [333297] = 20,        -- Death Winds (Nefarious Darkspeaker)
     [331243] = 20,        -- Bone Spikes (Soulforged Bonereaver)
     [331224] = 20,        -- Bonestorm (Soulforged Bonereaver)
-    [330608] = 20,        -- Vile Eruption (Rancid Gasbag) ?? TODO: Which one is correct?
-    [330614] = 20,        -- Vile Eruption (Rancid Gasbag) ?? TODO: Which one is correct?
+    [330592] = 20,        -- Vile Eruption (back) (Rancid Gasbag)
+    [330608] = 20,        -- Vile Eruption (front) (Rancid Gasbag)
     [321039] = 20,        -- Disgusting Burst (Disgusting Refuse and Blighted Sludge-Spewer)
     [321041] = 20,        -- Disgusting Burst (Disgusting Refuse and Blighted Sludge-Spewer)
 
@@ -210,6 +212,53 @@ local Spells = {
     [329113] = 20,        -- Telekinteic Onslaught (Lord Chamberlain)
     [327885] = 20,        -- Erupting Torment (Lord Chamberlain)
     [323236] = 20,        -- Unleashed Suffering (Lord Chamberlain)
+
+
+    -- Tazavesh: Streets of Wonder
+    [355903] = 20,        -- Disruption Grenade (Customs Security)
+    [356011] = 20,        -- Beam Splicer (Armored Overseer / Tracker Zo'Korss)
+    [355306] = 20,        -- Rift Blast (Portalmancer Zo'honn)
+    [357019] = 20,        -- Lightshard Retreat (Cartel Wiseguy)
+    [355502] = 20,        -- Shocklight Barrier (Environment)
+    [355476] = 20,        -- Shock Mines (Commander Zo'far)
+    [355487] = 20,        -- Lethal Force (Commander Zo'far)
+
+    [348366] = 20,        -- Armed Security (Zo'phex)
+    [357799] = 20,        -- Bounced! (Zo'gron)
+    [350921] = 20,        -- Crowd Control (Zo'gron)
+    [356482] = 20,        -- Rotten Food (Zo'gron)
+    [346329] = 20,        -- Spilled Liquids (P.O.S.T. Master)
+    [349801] = 20,        -- Grand Consumption (Alcruux)
+    [349663] = 20,        -- Grip of Hunger (Alcruux)
+    [349999] = 20,        -- Anima Detonation (Achillite) TODO avoidable?
+    [351070] = 20,        -- Venting Concussion (Achillite) TODO avoidable?
+    [349989] = 20,        -- Volatile Anima TODO verify
+    [350090] = 20,        -- Whirling Annihilation (Venza Goldfuse)
+    [347481] = 20,        -- Shuri (So'azmi)
+
+
+    -- Tazavesh: So'leah's Gambit
+    [355234] = 20,        -- Volatile Pufferfish (Murkbrine Fishmancer) TODO verify
+    [355465] = 20,        -- Boulder Throw (Coastwalker Goliath)
+    [355581] = 20,        -- Crackle (Stormforged Guardian)
+    [355584] = 20,        -- Charged Pulse (Stormforged Guardian)
+    [356260] = 20,        -- Tidal Burst (Hourglass Tidesage)
+    [368661] = 20,        -- Sword Toss (Corsair Officer)
+    [357228] = 20,        -- Drifting Star (Adorned Starseer)
+
+    --[346828] = 20,    -- Sanitizing Field (Hylbrande) - more like a wipe mechanic
+    [356796] = 20,        -- Runic Feedback (Hylbrande)
+    [346960] = 20,        -- Purged by Fire (Hylbrande)
+    [346961] = 20,        -- Purging Field (Hylbrande)
+    [347094] = 20,        -- Titanic Crash (Hylbrande)
+    [347149] = 20,        -- Infinite Breath (Timecap'n Hooktail)
+    [347370] = 20,        -- Cannon Barrage (Timecap'n Hooktail)
+    [358947] = 20,        -- Burning Tar (Timecap'n Hooktail)
+    [347151] = 20,        -- Hook Swipe (Timecap'n Hooktail)
+    [354334] = 20,        -- Hook'd! (Timecap'n Hooktail)
+    --[?] = 20,            -- Deadly Seas (Timecap'n Hooktail) (oneshot from going in water, debuff?)
+    [351101] = 20,        -- Energy Fragmentation (So'leah)
+    [351646] = 20,        -- Hyperlight Nova (So'leah)
 }
 
 local SpellsNoTank = {
@@ -235,6 +284,9 @@ local SpellsNoTank = {
     --[323001] = 20,        -- Glass Shards (Halkias) This is always unavoidable for tanks but sometimes unavoidable for everyone
     [322936] = 20,        -- Crumbling Slam (Halkias)
     [346866] = 20,        -- Stone Breath (Loyal Stoneborn)
+
+    -- Tazavesh: Streets of Wonder
+    -- Tazavesh: So'leah's Gambit
 }
 
 local Auras = {
@@ -260,6 +312,9 @@ local Auras = {
 
     -- Affixes
     [358973] = 20,        -- Wave of Terror (Season 2 Affix - Varruth)
+
+    -- Tazavesh: Streets of Wonder
+    -- Tazavesh: So'leah's Gambit
 }
 
 local AurasNoTank = {}
