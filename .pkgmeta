@@ -8,6 +8,7 @@ required-dependencies:
 
 ignore:
   - .luacheckrc
+  - .luacheckrc_header
   - babelfish_config.lua
   - README.md
   - package.json
