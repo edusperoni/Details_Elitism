@@ -1,9 +1,10 @@
-# [2.6.0](https://github.com/edusperoni/Details_Elitism/compare/v2.5.0...v2.6.0) (2022-03-03)
+## [2.6.1](https://github.com/edusperoni/Details_Elitism/compare/v2.6.0...v2.6.1) (2022-06-12)
 
 
 ### Features
 
-* add season 3 spells ([0454717](https://github.com/edusperoni/Details_Elitism/commit/04547173f0a91228bb874b111301fc7f14c3980e))
+* S3 updates ([#22](https://github.com/edusperoni/Details_Elitism/issues/22)) ([66694fa](https://github.com/edusperoni/Details_Elitism/commit/66694fabad2fc6c355d642fb849f0419807d1344))
+* TOC bump ([4fa1c4a](https://github.com/edusperoni/Details_Elitism/commit/4fa1c4a597eaca4bd6302b16d78dd5d8d8e1d0f6))
 
 
 
