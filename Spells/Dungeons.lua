@@ -227,7 +227,7 @@ local Spells = {
     [347481] = 20, -- Shuri (So'azmi)
 
     -- Tazavesh: So'leah's Gambit
-    [355234] = 20, -- Volatile Pufferfish (Murkbrine Fishmancer) TODO verify
+    [355423] = 20, -- Volatile Pufferfish (Murkbrine Fishmancer)
     [355465] = 20, -- Boulder Throw (Coastwalker Goliath)
     [355581] = 20, -- Crackle (Stormforged Guardian)
     [355584] = 20, -- Charged Pulse (Stormforged Guardian)
