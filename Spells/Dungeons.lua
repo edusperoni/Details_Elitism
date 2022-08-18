@@ -477,7 +477,7 @@ local Auras = {
         -- Affixes
     [358973] = true, -- Wave of Terror (Season 2 Affix - Varruth)
     [373391] = true, -- Nightmare (Season 4 Affix - Nightmare Cloud)
-    
+
     -- Mists of Tirna Scithe
 
     -- De Other Side
