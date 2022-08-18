@@ -375,7 +375,7 @@ local Spells = {
     [301680] = 20, -- Rapid Fire (Mechagon Cavalry)
     [301681] = 20, -- Charge (Mechagon Cavalry) - TODO does deal avoidable dmg, but Details does not show it?
 
-    --[298259] = 20, -- Gooped (Gunker) - should dmg be tracked for this?
+    -- [298259] = 20, -- Gooped (Gunker) - should dmg be tracked for this?
     [297283] = 20, -- Cave In (King Gobbamak)
     [302681] = 20, -- Mega Taze (Trixie Tazer)
     [298947] = 20, -- Roadkill (Naeno Megacrash)
@@ -474,7 +474,7 @@ local SpellsNoTank = {
 }
 
 local Auras = {
-        -- Affixes
+    -- Affixes
     [358973] = true, -- Wave of Terror (Season 2 Affix - Varruth)
     [373391] = true, -- Nightmare (Season 4 Affix - Nightmare Cloud)
 
