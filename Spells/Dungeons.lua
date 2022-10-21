@@ -412,7 +412,24 @@ local Spells = {
     [294869] = 20, -- Roaring Flame (Machinist's Garden)
     [291613] = 20, -- Take Off! (King Mechagon)
     [291915] = 20, -- Plasma Orb (King Mechagon)
-    [291856] = 20 -- Recalibrate (King Mechagon)
+    [291856] = 20, -- Recalibrate (King Mechagon)
+
+    -- Uldaman: Legacy of Tyr
+    [369811] = 20, -- Brutal Slam (Hulking Berserker)
+    [369854] = 20, -- Throw Rock (Burly Rock-Thrower)
+    [382576] = 20, -- Scorn of Tyr (Earthen Guardian)
+    --[369368] = 20, -- Stone Eruption (Earthen Warder) - TODO does this hit cursed player?
+
+    [369573] = 20, -- Heavy Arrow (Baelog, The Lost Dwarves)
+    [369792] = 20, -- Skullcracker (Eric "The Swift", The Lost Dwarves)
+    [375286] = 20, -- Searing Cannonfire (The Lost Dwarves)
+    [377825] = 20, -- Burning Pitch (The Lost Dwarves)
+    [369703] = 20, -- Thundering Slam (Bromach)
+    [368996] = 20, -- Purging Flames (Emberon)
+    [369029] = 20, -- Heat Engine (Emberon)
+    [369052] = 20, -- Seeking Flame (Vault Keeper, Emberon)
+    [376319] = 20, -- Eternity Orb (Chrono-Lord Deios)
+    [376325] = 20 -- Eternity Zone (Chrono-Lord Deios)
 }
 
 local SpellsNoTank = {
@@ -470,7 +487,13 @@ local SpellsNoTank = {
     -- Operation: Mechagon - Junkyard
 
     -- Operation: Mechagon - Workshop
-    [294291] = 20 -- Process Waste (Waste Processing Unit)
+    [294291] = 20, -- Process Waste (Waste Processing Unit)
+
+    -- Uldaman: Legacy of Tyr
+    [369409] = 20, -- Cleave (Earthen Custodian)
+    [369563] = 20, -- Wild Cleave (Baelog, The Lost Dwarves)
+    [369061] = 20, -- Searing Clap (Emberon)
+    [375727] = 20 -- Sand Breath (Chrono-Lord Deios)
 }
 
 local Auras = {
@@ -516,7 +539,11 @@ local Auras = {
     [398529] = true, -- Gooped (Gunker)
 
     -- Operation: Mechagon - Workshop
-    [285153] = true -- Foe Flipper (Gnomercy 4.U.)
+    [285153] = true, -- Foe Flipper (Gnomercy 4.U.)
+
+    -- Uldaman: Legacy of Tyr
+    [369411] = true, -- Sonic Burst (Cavern Seeker) - 369412 seems to be variant with damage
+    [372652] = true -- Resonating Orb (Sentinel Talondras)
 }
 
 local AurasNoTank = {}
