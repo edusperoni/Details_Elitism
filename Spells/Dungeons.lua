@@ -43,6 +43,30 @@ local Spells = {
 
 
     -- Ruby Life Pools
+    [372696] = 20, -- Excavating Blast (Primal Juggernaut)
+    [372697] = 20, -- Jagged Earth (Primal Juggernaut)
+    [373458] = 20, -- Stone Missile (Primal Terrasentry)
+    [372088] = 20, -- Blazing Rush, Hit (Defier Draghar)
+    [372796] = 20, -- Blazing Rush, DoT (Defier Draghar)
+    [385292] = 20, -- Molten Steel (Defier Draghar)
+    [373973] = 20, -- Blaze of Glory, AoE (Primalist Flamedancer)
+    [373977] = 20, -- Blaze of Glory, Projectile (Primalist Flamedancer)
+    [391727] = 20, -- Storm Breath (Thunderhead)
+    [391724] = 20, -- Flame Breath (Flamegullet)
+    [373614] = 20, -- Burnout (Blazebound Destroyer)
+    --[392406] = 20, -- Thunderclap (Storm Warrior) - TODO probably not avoidable for melee
+    [392399] = 20, -- Crackling Detonation (Primal Thundercloud)
+
+    [384024] = 20, -- Hailbombs (Melidrussa Chillworm)
+    [372863] = 20, -- Ritual of Blazebinding (Kokia Blazehoof)
+    [372811] = 20, -- Molten Boulder, Projectile (Kokia Blazehoof)
+    [872819] = 20, -- Molten Boulder, Explosion (Kokia Blazehoof)
+    [372820] = 20, -- Scorched Earth (Kokia Blazehoof)
+    [373087] = 20, -- Burnout (Blazebound Firestorm, Kokia Blazehoof)
+    [381526] = 20, -- Roaring Firebreath (Kyrakka)
+    [384773] = 20, -- Flaming Embers (Kyrakka)
+
+
     -- Neltharus
     -- The Nokhud Offensive
     -- Brackenhide Hollow
