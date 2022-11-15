@@ -70,7 +70,29 @@ local Spells = {
     -- Neltharus
     -- The Nokhud Offensive
     -- Brackenhide Hollow
+
+
     -- The Azure Vault
+    [370766] = 20, -- Crystalline Rupture (Crystal Thrasher)
+    [371021] = 20, -- Splintering Shards, Aura (Crystal Thrasher)
+    [375649] = 20, -- Infused Ground (Arcane Tender)
+    [375591] = 20, -- Sappy Burst (Volatile Sapling / Bubbling Sapling)
+    [371352] = 20, -- Forbidden Knowledge (Unstable Curator)
+    [387067] = 20, -- Arcane Bash (Arcane Construct)
+    [374868] = 20, -- Unstable Power (Astral Attendant)
+    [386536] = 20, -- Null Stomp (Nullmagic Hornswog)
+
+    [374523] = 20, -- Stinging Sap (Leymor)
+    [386660] = 20, -- Erupting Fissure (Leymor)
+    [374582] = 20, -- Explosive Brand, Area (Leymor)
+    [385579] = 20, -- Ancient Orb (Azureblade)
+    [390462] = 20, -- Ancient Orb Fragment (Azureblade)
+    [389855] = 20, -- Unstable Magic (Draconic Image / Draconic Illusion, Azureblade)
+    [384699] = 20, -- Crystalline Roar (Umbrelskul)
+    [385078] = 20, -- Arcane Eruption (Umbrelskul)
+    [385267] = 20, -- Crackling Vortex (Umbrelskul)
+
+
     -- Halls of Infusion
     -- Algeth'ar Academy
 
@@ -168,6 +190,11 @@ local SpellsNoTank = {
     [369061] = 20, -- Searing Clap (Emberon)
     [375727] = 20, -- Sand Breath (Chrono-Lord Deios)
 
+    -- The Azure Vault
+    [370764] = 20, -- Piercing Shards (Crystal Fury) - TODO is this avoidable by tank?
+    [391120] = 20, -- Spellfrost Breath (Scalebane Lieutenant)
+    [372222] = 20, -- Arcane Cleave (Azureblade)
+
     -- Court of Stars
     [209036] = 20, -- Throw Torch (Duskwatch Sentry)
     [209495] = 20, -- Charged Smash (Guardian Construct)
@@ -187,6 +214,10 @@ local Auras = {
     -- Uldaman: Legacy of Tyr
     [369411] = true, -- Sonic Burst (Cavern Seeker) - 369412 seems to be variant with damage
     [372652] = true, -- Resonating Orb (Sentinel Talondras)
+
+    -- The Azure Vault
+    [386368] = true, -- Polymorphed (Polymorphic Rune, Environment) - TODO confirm ID
+    [396722] = true, -- Absolute Zero, Root (Telash Greywing)
 
     -- Court of Stars
     [224333] = true -- Enveloping Winds (Advisor Melandrus)
