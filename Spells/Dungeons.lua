@@ -418,7 +418,6 @@ local Spells = {
     [369811] = 20, -- Brutal Slam (Hulking Berserker)
     [369854] = 20, -- Throw Rock (Burly Rock-Thrower)
     [382576] = 20, -- Scorn of Tyr (Earthen Guardian)
-    --[369368] = 20, -- Stone Eruption (Earthen Warder) - TODO does this hit cursed player?
 
     [369573] = 20, -- Heavy Arrow (Baelog, The Lost Dwarves)
     [369792] = 20, -- Skullcracker (Eric "The Swift", The Lost Dwarves)
@@ -428,8 +427,7 @@ local Spells = {
     [368996] = 20, -- Purging Flames (Emberon)
     [369029] = 20, -- Heat Engine (Emberon)
     [369052] = 20, -- Seeking Flame (Vault Keeper, Emberon)
-    [376319] = 20, -- Eternity Orb (Chrono-Lord Deios)
-    [376325] = 20 -- Eternity Zone (Chrono-Lord Deios)
+    [376325] = 20, -- Eternity Zone (Chrono-Lord Deios)
 }
 
 local SpellsNoTank = {
