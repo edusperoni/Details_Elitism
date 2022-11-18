@@ -94,7 +94,29 @@ local Spells = {
 
 
     -- Halls of Infusion
+
+
     -- Algeth'ar Academy
+    [388884] = 20, -- Arcane Rain (Spellbound Scepter)
+    [388957] = 20, -- Riftbreath (Arcane Ravager)
+    [378011] = 20, -- Deadly Winds (Guardian Sentry)
+    [377516] = 20, -- Dive Bomb (Territorial Eagle)
+    [377524] = 20, -- Dive Bomb (Alpha Eagle)
+    [377383] = 20, -- Gust (Alpha Eagle)
+    [390918] = 20, -- Seed Detonation (Vile Lasher)
+
+    [385970] = 20, -- Arcane Orb, Spawn (Vexamus)
+    [386201] = 20, -- Corrupted Mana (Vexamus) - TODO is first tick avoidable?
+    [388537] = 20, -- Arcane Fissure, Swirly (Vexamus)
+    [377034] = 20, -- Overpowering Gust (Crawth)
+    [376449] = 20, -- Firestorm (Crawth)
+    [393122] = 20, -- Roving Cyclone (Crawth)
+    [388799] = 20, -- Germinate (Overgrown Ancient)
+    [388625] = 20, -- Branch Out (Overgrown Ancient)
+    [388822] = 20, -- Power Vacuum (Echo of Doragosa)
+    [374361] = 20, -- Astral Breath (Echo of Doragosa)
+    [388902] = 20, -- Arcane Rift (Echo of Doragosa) - TODO is first tick avoidable?
+    [388996] = 20, -- Energy Eruption (Echo of Doragosa)
 
 
     -- Court of Stars
@@ -194,6 +216,10 @@ local SpellsNoTank = {
     [370764] = 20, -- Piercing Shards (Crystal Fury) - TODO is this avoidable by tank?
     [391120] = 20, -- Spellfrost Breath (Scalebane Lieutenant)
     [372222] = 20, -- Arcane Cleave (Azureblade)
+
+    -- Algeth'ar Academy
+    [387932] = 20, -- Astral Whirlwind (Algeth'ar Echoknight) - TODO should the tank care?
+    [385958] = 20, -- Arcane Expulsion (Vexamus)
 
     -- Court of Stars
     [209036] = 20, -- Throw Torch (Duskwatch Sentry)
