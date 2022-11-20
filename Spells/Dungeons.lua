@@ -68,7 +68,42 @@ local Spells = {
 
 
     -- Neltharus
+
+
     -- The Nokhud Offensive
+    [384868] = 20, -- Multi-Shot (Nokhud Longbow) - TODO confirm
+    [384479] = 20, -- Rain of Arrows (Nokhud Longbow)
+    [384336] = 20, -- War Stomp (Nokhud Plainstomper / Nokhud Lancemaster / Nokhud Defender)
+    [386028] = 20, -- Thunder Clap (Primalist Thunderbeast)
+    [384882] = 20, -- Stormsurge Lightning (Stormsurge Totem)
+    [386694] = 20, -- Stormsurge (Stormsurge Totem)
+    [386912] = 20, -- Stormsurge Cloud (Stormsurge Totem)
+    [396376] = 20, -- Chant of the Dead (Ukhel Deathspeaker)
+    [387611] = 20, -- Necrotic Eruption (Ukhel Corruptor)
+    [387629] = 20, -- Rotting Wind (Desecrated Ohuna)
+    [388451] = 20, -- Stormcaller's Fury (Environment)
+    [382233] = 20, -- Broad Stomp (Nokhud Defender / Batak)
+    [382274] = 20, -- Vehement Charge (Nokhud Defender / Balara)
+    [374711] = 20, -- Ravaging Spear (Nokhud Warspear / Balara)
+
+    [385916] = 20, -- Tectonic Stomp (Granyth)
+    --[??????] = 20, -- Swirlies prior to pull (The Raging Tempest) - TODO
+    [391967] = 20, -- Electrical Overload (The Raging Tempest)
+    [386916] = 20, -- The Raging Tempest (The Raging Tempest)
+    [388104] = 20, -- Ritual of Desecration (Environment) - TODO confirm ID
+    [385193] = 20, -- Earthsplitter (Maruuk) - TODO which is correct?
+    [384960] = 20, -- Earthsplitter (Maruuk) - TODO which is correct?
+    [395669] = 20, -- Aftershock (Maruuk)
+    [386063] = 20, -- Frightful Roar (Maruuk)
+    [386037] = 20, -- Gale Arrow, Whirls (Teera)
+    [376685] = 20, -- Iron Stampede (Balakar Khan) - TODO which is correct?
+    [376688] = 20, -- Iron Stampede (Balakar Khan) - TODO which is correct?
+    [375943] = 20, -- Upheaval (Balakar Khan)
+    [376737] = 20, -- Lightning (Balakar Khan)
+    [376892] = 20, -- Crackling Upheaval (Balakar Khan)
+    [376899] = 20, -- Crackling Cloud (Balakar Khan) - TODO is first tick avoidable?
+
+
     -- Brackenhide Hollow
 
 
@@ -211,6 +246,10 @@ local SpellsNoTank = {
     [369563] = 20, -- Wild Cleave (Baelog, The Lost Dwarves)
     [369061] = 20, -- Searing Clap (Emberon)
     [375727] = 20, -- Sand Breath (Chrono-Lord Deios)
+
+    -- The Nokhud Offensive
+    [384512] = 20, -- Cleaving Strikes (Nokhud Lancemaster / Nokhud Defender) - TODO confirm
+    [387135] = 20, -- Arcing Strike (Primalist Arcblade)
 
     -- The Azure Vault
     [370764] = 20, -- Piercing Shards (Crystal Fury) - TODO is this avoidable by tank?
