@@ -105,6 +105,31 @@ local Spells = {
 
 
     -- Brackenhide Hollow
+    [368297] = 20, -- Toxic Trap, Trigger (Bonebolt Hunter)
+    [368299] = 20, -- Toxic Trap, Area (Bonebolt Hunter)
+    [382556] = 20, -- Ragestorm (Bracken Warscourge)
+    --[??????] = 20, -- area during Decay Ritual (Environment) - TODO
+    --[381770] = 20, -- Gushing Ooze (Decaying Slime) - TODO probably not avoidable for melee
+    [378055] = 20, -- Burst (Decaying Slime)
+    [378054] = 20, -- Withering Away! (Decaying Slime)
+    --[373872] = 20, -- Gushing Ooze (Monstrous Decay) - TODO probably not avoidable for melee
+    [374569] = 20, -- Burst (Monstrous Decay)
+    [373943] = 20, -- Stomp (Wilted Oak)
+    --[??????] = 20, -- bear traps (Environment) - TODO
+    --[??????] = 20, -- arrow swirlies (Environment) - TODO
+    [385805] = 20, -- Violent Whirlwind (Stinkbreath)
+    [385186] = 20, -- Stink Breath (Stinkbreath) - TODO can targeted player outrange?
+    --[??????] = 20, -- does river deal damage? (Environment) - TODO
+    [383392] = 20, -- Rotting Surge, Impact (Filth Caller)
+    [383399] = 20, -- Rotting Surge, periodic (Filth Caller)
+
+    [377830] = 20, -- Bladestorm (Rira Hackclaw)
+    [384148] = 20, -- Ensnaring Trap (Gutshot)
+    [384558] = 20, -- Bounding Leap (Rotfang Hyena, Gutshot)
+    [376797] = 20, -- Decay Spray (Treemouth)
+    [373944] = 20, -- Rotburst Totem, Spawn (Decatriarch Wratheye)
+    [376170] = 20, -- Choking Rotcloud, Frontal (Decatriarch Wratheye)
+    [376149] = 20, -- Choking Rotcloud, Area (Decatriarch Wratheye)
 
 
     -- The Azure Vault
@@ -272,6 +297,13 @@ local SpellsNoTank = {
     -- The Nokhud Offensive
     [384512] = 20, -- Cleaving Strikes (Nokhud Lancemaster / Nokhud Defender) - TODO confirm
     [387135] = 20, -- Arcing Strike (Primalist Arcblade)
+
+    -- Brackenhide Hollow
+    [382712] = 20, -- Necrotic Breath, Initial (Wilted Oak) - TODO is this avoidable by tank?
+    [382805] = 20, -- Necrotic Breath, DoT (Wilted Oak) - TODO is this avoidable by tank?
+    [377807] = 20, -- Cleave (Rira Hackclaw)
+    [381419] = 20, -- Savage Charge (Rira Hackclaw)
+    [377559] = 20, -- Vine Whip (Treemouth)
 
     -- The Azure Vault
     [370764] = 20, -- Piercing Shards (Crystal Fury) - TODO is this avoidable by tank?
