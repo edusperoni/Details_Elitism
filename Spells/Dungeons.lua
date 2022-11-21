@@ -129,6 +129,28 @@ local Spells = {
 
 
     -- Halls of Infusion
+    [374075] = 20, -- Seismic Slam (Primalist Geomancer)
+    [393444] = 20, -- Spear Flurry / Gushing Wound (Refti Defender)
+    --[374045] = 20, -- Expulse (Containment Apparatus) - no indicator
+    [375215] = 20, -- Cave In (Curious Swoglet) - TODO check ID
+    [374563] = 20, -- Dazzle (Dazzling Dragonfly)
+    [375080] = 20, -- Whirling Fury (Squallbringer Cyraz)
+    --[385168] = 20, -- Thunderstorm (Primalist Galesinger) - TODO is first tick avoidable?
+    [375384] = 20, -- Rumbling Earth (Primalist Earthshaker)
+    [383204] = 20, -- Crashing Tsunami (Environment)
+    [390290] = 20, -- Flash Flood (Infuser Sariya)
+
+    [383935] = 20, -- Spark Volley (Watcher Irideus)
+    [389446] = 20, -- Nullifying Pulse (Nullification Device, Watcher Irideus)
+    [385691] = 20, -- Belly Slam (Gulping Goliath)
+    [386757] = 20, -- Hailstorm (Khajin the Unyielding)
+    [386562] = 20, -- Glacial Surge (Khajin the Unyielding)
+    [386295] = 20, -- Avalanche (Khajin the Unyielding)
+    [390118] = 20, -- Frost Cyclone (Khajin the Unyielding)
+    [387474] = 20, -- Infused Globule, Impact (Primal Tsunami)
+    [387359] = 20, -- Waterlogged (Primal Tsunami)
+    [387363] = 20, -- Infused Globule, Explosion (Primal Tsunami)
+    [388786] = 20, -- Rogue Waves (Primal Tsunami)
 
 
     -- Algeth'ar Academy
@@ -255,6 +277,13 @@ local SpellsNoTank = {
     [370764] = 20, -- Piercing Shards (Crystal Fury) - TODO is this avoidable by tank?
     [391120] = 20, -- Spellfrost Breath (Scalebane Lieutenant)
     [372222] = 20, -- Arcane Cleave (Azureblade)
+
+    -- Halls of Infusion
+    [375349] = 20, -- Gusting Breath (Gusting Proto-Drake) - TODO is this avoidable by tank?
+    [375341] = 20, -- Tectonic Breath (Subterranean Proto-Drake) - TODO is this avoidable by tank?
+    [375353] = 20, -- Oceanic Breath (Glacial Proto-Drake) - TODO is this avoidable by tank?
+    [384524] = 20, -- Titanic Fist (Watcher Irideus)
+    --[388245] = 20, -- Gulp (Gulping Goliath) - TODO how to handle this properly?
 
     -- Algeth'ar Academy
     [387932] = 20, -- Astral Whirlwind (Algeth'ar Echoknight) - TODO should the tank care?
