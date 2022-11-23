@@ -288,7 +288,7 @@ local Spells = {
     [398154] = 20, -- Cry of Anguish (Defiled Spirit)
     [394524] = 20, -- Void Eruptions (Void Spawn)
     [153395] = 20, -- Body Slam (Carrion Worm)
-    
+
     [153232] = 20, -- Daggerfall (Sadana Bloodfury)
     [153373] = 20, -- Daggerfall (Sadana Bloodfury) - TODO is this relevant?
     [153224] = 20, -- Shadow Burn (Sadana Bloodfury)
