@@ -68,6 +68,38 @@ local Spells = {
 
 
     -- Neltharus
+    [372459] = 20, -- Burning (Environment)
+    [382708] = 20, -- Volcanic Guard (Qalashi Warden) - TODO which one is correct?
+    [397010] = 20, -- Volcanic Guard (Qalashi Warden) - TODO which one is correct?
+    [372583] = 20, -- Binding Spear, Impact (Qalashi Hunter)
+    [373540] = 20, -- Binding Spear, periodic (Qalashi Hunter)
+    [376186] = 20, -- Eruptive Crush, Area (Overseer Lahar)
+    [383928] = 20, -- Eruptive Crush, Projectiles (Overseer Lahar)
+    [395427] = 20, -- Burning Roar (Overseer Lahar)
+    [372372] = 20, -- Magma Fist (Qalashi Trainee)
+    [379410] = 20, -- Throw Lava (Qalashi Lavabearer) - TODO which one is correct?
+    [394969] = 20, -- Throw Lava (Qalashi Lavabearer) - TODO which one is correct?
+    [372208] = 20, -- Djaradin Lava (Qalashi Lavabearer) - TODO confirm, which one is correct?
+    [398200] = 20, -- Djaradin Lava (Qalashi Lavabearer) - TODO confirm, which one is correct?
+    [372203] = 20, -- Scorching Breath (Qalashi Irontorch)
+    [372293] = 20, -- Conflagrant Battery (Irontorch Commander)
+    [378831] = 20, -- Explosive Concoction (Qalashi Plunderer)
+
+    [373756] = 20, -- Magma Wave (Chargath, Bane of Scales)
+    [375397] = 20, -- Lava Splash (Chargath, Bane of Scales)
+    [375061] = 20, -- Blazing Eruption (Forgemaster Gorek)
+    [375241] = 20, -- Forgestorm (Forgemaster Gorek)
+    [374397] = 20, -- Heated Swings, Jump (Forgemaster Gorek) - TODO which one is correct?
+    [374517] = 20, -- Heated Swings, Jump (Forgemaster Gorek) - TODO which one is correct?
+    [381482] = 20, -- Forgefire (Forgemaster Gorek)
+    [375071] = 20, -- Magma Lob (Magmatusk)
+    [375204] = 20, -- Liquid Hot Magma (Magmatusk)
+    [375449] = 20, -- Blazing Charge (Magmatusk)
+    [375535] = 20, -- Lava Wave (Magmatusk)
+    [377204] = 20, -- The Dragon's Kiln (Warlord Sargha)
+    [377477] = 20, -- Burning Ember (Warlord Sargha)
+    [377542] = 20, -- Burning Ground (Warlord Sargha)
+    [391773] = 20, -- The Dragon's Eruption (Warlord Sargha)
 
 
     -- The Nokhud Offensive
@@ -293,6 +325,9 @@ local SpellsNoTank = {
     [369563] = 20, -- Wild Cleave (Baelog, The Lost Dwarves)
     [369061] = 20, -- Searing Clap (Emberon)
     [375727] = 20, -- Sand Breath (Chrono-Lord Deios)
+
+    -- Neltharus
+    [384019] = 20, -- Fiery Focus (Chargath, Bane of Scales) - TODO check ID
 
     -- The Nokhud Offensive
     [384512] = 20, -- Cleaving Strikes (Nokhud Lancemaster / Nokhud Defender) - TODO confirm
