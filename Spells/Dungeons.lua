@@ -28,7 +28,6 @@ local Spells = {
     [369811] = 20, -- Brutal Slam (Hulking Berserker)
     [369854] = 20, -- Throw Rock (Burly Rock-Thrower)
     [382576] = 20, -- Scorn of Tyr (Earthen Guardian)
-    --[369368] = 20, -- Stone Eruption (Earthen Warder) - TODO does this hit cursed player?
 
     [369573] = 20, -- Heavy Arrow (Baelog, The Lost Dwarves)
     [369792] = 20, -- Skullcracker (Eric "The Swift", The Lost Dwarves)
@@ -38,8 +37,8 @@ local Spells = {
     [368996] = 20, -- Purging Flames (Emberon)
     [369029] = 20, -- Heat Engine (Emberon)
     [369052] = 20, -- Seeking Flame (Vault Keeper, Emberon)
-    [376319] = 20, -- Eternity Orb (Chrono-Lord Deios)
     [376325] = 20, -- Eternity Zone (Chrono-Lord Deios)
+    [377561] = 20, -- Time Eruption (Chrono-Lord Deios)
 
 
     -- Ruby Life Pools
@@ -49,15 +48,17 @@ local Spells = {
     [372088] = 20, -- Blazing Rush, Hit (Defier Draghar)
     [372796] = 20, -- Blazing Rush, DoT (Defier Draghar)
     [385292] = 20, -- Molten Steel (Defier Draghar)
+    [378968] = 20, -- Flame Patch (Scorchling)
     [373973] = 20, -- Blaze of Glory, AoE (Primalist Flamedancer)
     [373977] = 20, -- Blaze of Glory, Projectile (Primalist Flamedancer)
     [391727] = 20, -- Storm Breath (Thunderhead)
     [391724] = 20, -- Flame Breath (Flamegullet)
     [373614] = 20, -- Burnout (Blazebound Destroyer)
+    --[385311] = 20, -- Thunderstorm (Primalist Shockcaster) - no indicator
     --[392406] = 20, -- Thunderclap (Storm Warrior) - TODO probably not avoidable for melee
     [392399] = 20, -- Crackling Detonation (Primal Thundercloud)
 
-    [384024] = 20, -- Hailbombs (Melidrussa Chillworm)
+    [384024] = 20, -- Hailbombs, Projectiles (Melidrussa Chillworm)
     [372863] = 20, -- Ritual of Blazebinding (Kokia Blazehoof)
     [372811] = 20, -- Molten Boulder, Projectile (Kokia Blazehoof)
     [872819] = 20, -- Molten Boulder, Explosion (Kokia Blazehoof)
@@ -72,7 +73,7 @@ local Spells = {
     [382708] = 20, -- Volcanic Guard (Qalashi Warden) - TODO which one is correct?
     [397010] = 20, -- Volcanic Guard (Qalashi Warden) - TODO which one is correct?
     [372583] = 20, -- Binding Spear, Impact (Qalashi Hunter)
-    [373540] = 20, -- Binding Spear, periodic (Qalashi Hunter)
+    --[373540] = 20, -- Binding Spear, periodic (Qalashi Hunter) - should this be tracked?
     [376186] = 20, -- Eruptive Crush, Area (Overseer Lahar)
     [383928] = 20, -- Eruptive Crush, Projectiles (Overseer Lahar)
     [395427] = 20, -- Burning Roar (Overseer Lahar)
@@ -189,7 +190,7 @@ local Spells = {
     [374075] = 20, -- Seismic Slam (Primalist Geomancer)
     [393444] = 20, -- Spear Flurry / Gushing Wound (Refti Defender)
     --[374045] = 20, -- Expulse (Containment Apparatus) - no indicator
-    [375215] = 20, -- Cave In (Curious Swoglet) - TODO check ID
+    [375215] = 20, -- Cave In (Curious Swoglet)
     [374563] = 20, -- Dazzle (Dazzling Dragonfly)
     [375080] = 20, -- Whirling Fury (Squallbringer Cyraz)
     --[385168] = 20, -- Thunderstorm (Primalist Galesinger) - TODO is first tick avoidable?
@@ -218,6 +219,7 @@ local Spells = {
     [377524] = 20, -- Dive Bomb (Alpha Eagle)
     [377383] = 20, -- Gust (Alpha Eagle)
     [390918] = 20, -- Seed Detonation (Vile Lasher)
+    [387932] = 20, -- Astral Whirlwind (Algeth'ar Echoknight)
 
     [385970] = 20, -- Arcane Orb, Spawn (Vexamus)
     [386201] = 20, -- Corrupted Mana (Vexamus) - TODO is first tick avoidable?
@@ -259,9 +261,8 @@ local Spells = {
     [210875] = 20, -- Charged Pulse (Stormforged Sentinel)
     [199818] = 20, -- Crackle (Stormforged Sentinel)
     [199210] = 20, -- Penetrating Shot (Valarjar Marksman)
-    --[192565] = 20, -- Cleansing Flames (Valarjar Purifier) - difficult to dodge reliably
+    [192565] = 20, -- Cleansing Flames (Valarjar Purifier)
     [191508] = 20, -- Blast of Light (Valarjar Aspirant)
-    --[199033] = 20, -- Valkyra's Advance (Valarjar Aspirant) - TODO can this be dodged without movement skills?
     [199337] = 20, -- Bear Trap (Valarjar Trapper)
     [199146] = 20, -- Bucking Charge (Gildedfur Stag)
     [199090] = 20, -- Rumbling Stomp (Angerhoof Bull)
@@ -269,10 +270,10 @@ local Spells = {
     [193234] = 20, -- Dancing Blade (Hymdall)
     [193260] = 20, -- Static Field (Storm Drake, Hymdall)
     [188395] = 20, -- Ball Lightning (Storm Drake, Hymdall)
-    --[192206] = 20, -- Sanctify (Olmyr the Enlightened / Hyrja) - TODO dmg to whole group?
+    [192206] = 20, -- Sanctify, Orb (Olmyr the Enlightened / Hyrja) - TODO does separate tracking work?
+    --[215457] = 20, -- Sanctify, Group Explosion (Olmyr the Enlightened / Hyrja)
     [193827] = 20, -- Ragnarok (God-King Skovald)
     [193702] = 20, -- Infernal Flames (God-King Skovald)
-    --[193660] = 20, -- Felblaze Rush (God-King Skovald) - TODO check ID, is this avoidable after changes?
     [198263] = 20, -- Radiant Tempest (Odyn)
     [198088] = 20, -- Glowing Fragment (Odyn)
     [198412] = 20, -- Feedback (Odyn)
@@ -282,29 +283,32 @@ local Spells = {
     [152688] = 20, -- Shadow Rune (Environment)
     [152690] = 20, -- Shadow Rune (Environment)
     [152696] = 20, -- Shadow Rune (Environment)
-    [394524] = 20, -- Void Eruptions (Void Spawn) - TODO check ID
+    [152854] = 20, -- Void Sphere (Shadowmoon Loyalist) - TODO which is correct?
+    [152855] = 20, -- Void Sphere (Shadowmoon Loyalist) - TODO which is correct?
+    [398154] = 20, -- Cry of Anguish (Defiled Spirit)
+    [394524] = 20, -- Void Eruptions (Void Spawn)
     [153395] = 20, -- Body Slam (Carrion Worm)
     
     [153232] = 20, -- Daggerfall (Sadana Bloodfury)
     [153373] = 20, -- Daggerfall (Sadana Bloodfury) - TODO is this relevant?
     [153224] = 20, -- Shadow Burn (Sadana Bloodfury)
-    [152800] = 20, -- Void Vortex (Nhallish) - TODO check ID
+    [152800] = 20, -- Void Vortex (Nhallish)
     [153070] = 20, -- Void Devastation (Nhallish)
     [153908] = 20, -- Inhale (Bonemaw)
     [153686] = 20, -- Body Slam (Bonemaw)
     --[153692] = 20, -- Necrotic Pitch (Bonemaw) - can be used to avoid Inhale
     [154442] = 20, -- Malevolence (Ner'zhul)
-    [154468] = 20, -- Ritual of Bones (Ner'zhul)
-    [154469] = 20, -- Ritual of Bones (Ner'zhul)
+    [154468] = 20, -- Ritual of Bones, Area (Ner'zhul)
+    [154469] = 20, -- Ritual of Bones, Debuff (Ner'zhul)
 
 
     -- Temple of the Jade Serpent
     [397881] = 20, -- Surging Deluge (Corrupt Living Water)
     [396003] = 20, -- Territorial Display (The Songbird Queen)
     [396010] = 20, -- Tears of Pain (The Crybaby Hozen)
+    [398301] = 20, -- Flames of Doubt (Shambling Infester)
     [397899] = 20, -- Leg Sweep (Sha-Touched Guardian)
-    [110125] = 20, -- Shattered Resolve (Minion of Doubt) - TODO check ID
-    --[??????] = 20, -- Flames of Doubt (Shambling Infester) - TODO
+    [110125] = 20, -- Shattered Resolve (Minion of Doubt)
 
     [397785] = 20, -- Wash Away (Wise Mari)
     [397793] = 20, -- Corrupted Geyser (Wise Mari)
@@ -341,7 +345,7 @@ local SpellsNoTank = {
     [377559] = 20, -- Vine Whip (Treemouth)
 
     -- The Azure Vault
-    [370764] = 20, -- Piercing Shards (Crystal Fury) - TODO is this avoidable by tank?
+    [370764] = 20, -- Piercing Shards (Crystal Fury)
     [391120] = 20, -- Spellfrost Breath (Scalebane Lieutenant)
     [372222] = 20, -- Arcane Cleave (Azureblade)
 
@@ -353,7 +357,6 @@ local SpellsNoTank = {
     --[388245] = 20, -- Gulp (Gulping Goliath) - TODO how to handle this properly?
 
     -- Algeth'ar Academy
-    [387932] = 20, -- Astral Whirlwind (Algeth'ar Echoknight) - TODO should the tank care?
     [385958] = 20, -- Arcane Expulsion (Vexamus)
 
     -- Court of Stars
@@ -367,7 +370,6 @@ local SpellsNoTank = {
     [192018] = 20, -- Shield of Light (Hyrja)
 
     -- Shadowmoon Burial Grounds
-    [152854] = 20, -- Void Sphere (Shadowmoon Loyalist) - TODO is this avoidable by tank?
     [153501] = 20 -- Void Blast (Nhallish)
 }
 
