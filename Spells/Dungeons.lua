@@ -253,6 +253,42 @@ local Spells = {
     [269843] = 20, -- Vile Expulsion, Impact (Unbound Abomination)
     [269838] = 20, -- Vile Expulsion, periodic (Unbound Abomination)
     [270108] = 20, -- Rotting Spore (Unbound Abomination)
+
+
+    -- Freehold
+    [258673] = 20, -- Azerite Grenade (Irontide Crackshot)
+    [257426] = 20, -- Brutal Backhand (Irontide Enforcer)
+    [258779] = 20, -- Sea Spout (Irontide Oarsman)
+    [274400] = 20, -- Duelist Dash (Cutwater Duelist) - not active in DF S2
+    [274389] = 20, -- Rat Traps (Vermin Trapper)
+    [295945] = 20, -- Rat Traps (Vermin Trapper) - TODO ID?
+    [257757] = 20, -- Goin' Bananas (Bilge Rat Buccaneer)
+    [276061] = 20, -- Boulder Throw (Irontide Crusher)
+    [258199] = 20, -- Ground Shatter (Irontide Crusher)
+    [257737] = 20, -- Thundering Squall (Irontide Stormcaller)
+    [257871] = 20, -- Blade Barrage (Irontide Buccaneer) - TODO is first tick avoidable?
+
+    [258773] = 20, -- Charrrrrge (Sharkbait, Skycap'n Kragg)
+    [257274] = 20, -- Vile Coating (Sharkbait, Skycap'n Kragg)
+    [272046] = 20, -- Dive Bomb (Sharkbait, Skycap'n Kragg)
+    [256594] = 20, -- Barrel Smash (Captain Raoul, Council o' Captains)
+    [258352] = 20, -- Grapeshot (Captain Eudora, Council o' Captains)
+    [267523] = 20, -- Cutting Surge (Captain Jolly, Council o' Captains) - not active in DF S2
+    [272374] = 20, -- Whirlpool of Blades, Impact (Captain Jolly, Council o' Captains) - not active in DF S2
+    [272397] = 20, -- Whirlpool of Blades, periodic (Captain Jolly, Council o' Captains) - not active in DF S2
+    [278467] = 20, -- Caustic Freehold Brew (Rummy Mancomb, Council o' Captains)
+    [257902] = 20, -- Shell Bounce (Ludwig Von Tortollan, Ring of Booty)
+    [256546] = 20, -- Shark Tornado (Trothak, Ring of Booty)
+    --[256477] = 20, -- Shark Toss (Trothak, Ring of Booty) - TODO is this avoidable?
+    [256552] = 20, -- Flailing Shark (Trothak, Ring of Booty)
+    [256706] = 20, -- Rearm (Trothak, Ring of Booty)
+    [257310] = 20, -- Cannon Barrage (Harlan Sweete)
+    [257963] = 20, -- Cannon Barrage (Harlan Sweete) - TODO ID?
+    [257308] = 20, -- Flaming Shrapnel (Harlan Sweete)
+    [257460] = 20, -- Fiery Debris (Harlan Sweete)
+    [413146] = 20, -- Swiftwind Saber (Harlan Sweete)
+    [257293] = 20, -- Swiftwind Saber (Harlan Sweete) - TODO ID?
+    [257315] = 20, -- Black Powder Bomb (Irontide Grenadier, Harlan Sweete)
 }
 
 local SpellsNoTank = {
@@ -307,6 +343,10 @@ local Auras = {
     -- The Azure Vault
     [386368] = true, -- Polymorphed (Polymorphic Rune, Environment)
     [396722] = true, -- Absolute Zero, Root (Telash Greywing)
+
+    -- Freehold
+    [274516] = true, -- Slippery Suds (Bilge Rat Swabby)
+    [272554] = true, -- Bloody Mess (Trothak, Ring of Booty)
 }
 
 local AurasNoTank = {}
