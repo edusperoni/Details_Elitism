@@ -233,6 +233,26 @@ local Spells = {
     [374361] = 20, -- Astral Breath (Echo of Doragosa)
     [389007] = 20, -- Arcane Rift / Wild Energy (Echo of Doragosa)
     [388996] = 20, -- Energy Eruption (Echo of Doragosa)
+
+
+    -- The Underrot
+    [265540] = 20, -- Rotten Bile (Fetid Maggot)
+    [265542] = 20, -- Rotten Bile (Fetid Maggot)
+    [265019] = 20, -- Savage Cleave (Chosen Blood Matron)
+    [278789] = 20, -- Wave of Decay (Living Rot)
+    [265665] = 20, -- Foul Sludge (Living Rot)
+    [265511] = 20, -- Spirit Drain (Spirit Drain Totem, Bloodsworn Defiler)
+    [272609] = 20, -- Maddening Gaze (Faceless Corruptor)
+    [272469] = 20, -- Abyssal Slam (Abyssal Reach, Faceless Corruptor)
+
+    [261498] = 20, -- Creeping Rot (Elder Leaxa)
+    [264757] = 20, -- Sanguine Feast (Elder Leaxa)
+    [260312] = 20, -- Charge (Cragmaw the Infested)
+    [259720] = 20, -- Upheaval (Sporecaller Zancha)
+    --[259714] = 20, -- Decaying Spores, Hit (Sporecaller Zancha) - might be necessary to eat
+    [269843] = 20, -- Vile Expulsion, Impact (Unbound Abomination)
+    [269838] = 20, -- Vile Expulsion, periodic (Unbound Abomination)
+    [270108] = 20, -- Rotting Spore (Unbound Abomination)
 }
 
 local SpellsNoTank = {
@@ -270,6 +290,10 @@ local SpellsNoTank = {
 
     -- Algeth'ar Academy
     [385958] = 20, -- Arcane Expulsion (Vexamus)
+
+    -- The Underrot
+    [260793] = 20, -- Indigestion (Cragmaw the Infested)
+    [272457] = 20, -- Shockwave (Sporecaller Zancha)
 }
 
 local Auras = {
