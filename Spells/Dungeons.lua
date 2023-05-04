@@ -20,8 +20,8 @@ local Spells = {
     [343520] = 20, -- Storming (Environment)
     [350163] = 20, -- Melee (Spiteful Shade)
 
-    [394873] = 20, -- Lightning Strike (Season 1 Thundering)
-    [396411] = 20, -- Primal Overload (Season 1 Thundering)
+    [394873] = 20, -- Lightning Strike (Thundering, Environment)
+    [396411] = 20, -- Primal Overload (Thundering, Environment)
 
 
     -- Uldaman: Legacy of Tyr
@@ -70,18 +70,15 @@ local Spells = {
 
     -- Neltharus
     [372459] = 20, -- Burning (Environment)
-    [382708] = 20, -- Volcanic Guard (Qalashi Warden) - TODO which one is correct?
-    [397010] = 20, -- Volcanic Guard (Qalashi Warden) - TODO which one is correct?
+    [382708] = 20, -- Volcanic Guard (Qalashi Warden)
     [372583] = 20, -- Binding Spear, Impact (Qalashi Hunter)
     --[373540] = 20, -- Binding Spear, periodic (Qalashi Hunter) - should this be tracked?
     [376186] = 20, -- Eruptive Crush, Area (Overseer Lahar)
     [383928] = 20, -- Eruptive Crush, Projectiles (Overseer Lahar)
     [395427] = 20, -- Burning Roar (Overseer Lahar)
     [372372] = 20, -- Magma Fist (Qalashi Trainee)
-    [379410] = 20, -- Throw Lava (Qalashi Lavabearer) - TODO which one is correct?
-    [394969] = 20, -- Throw Lava (Qalashi Lavabearer) - TODO which one is correct?
-    [372208] = 20, -- Djaradin Lava (Qalashi Lavabearer) - TODO which one is correct?
-    [398200] = 20, -- Djaradin Lava (Qalashi Lavabearer) - TODO which one is correct?
+    [379410] = 20, -- Throw Lava (Qalashi Lavabearer)
+    [372208] = 20, -- Djaradin Lava (Qalashi Lavabearer)
     [372203] = 20, -- Scorching Breath (Qalashi Irontorch)
     [372293] = 20, -- Conflagrant Battery (Irontorch Commander)
     [378831] = 20, -- Explosive Concoction (Qalashi Plunderer)
@@ -236,92 +233,6 @@ local Spells = {
     [374361] = 20, -- Astral Breath (Echo of Doragosa)
     [389007] = 20, -- Arcane Rift / Wild Energy (Echo of Doragosa)
     [388996] = 20, -- Energy Eruption (Echo of Doragosa)
-
-
-    -- Court of Stars
-    [209027] = 20, -- Quelling Strike (Duskwatch Guard)
-    [209477] = 20, -- Wild Detonation (Mana Wyrm)
-    [212031] = 20, -- Charged Blast (Bound Energy)
-    [209404] = 20, -- Seal Magic (Duskwatch Arcanist)
-    [211391] = 20, -- Felblaze Puddle (Legion Hound) - TODO is first tick avoidable?
-
-    [206574] = 20, -- Resonant Slash, Front (Patrol Captain Gerdo)
-    [206580] = 20, -- Resonant Slash, Back (Patrol Captain Gerdo)
-    [219498] = 20, -- Streetsweeper (Patrol Captain Gerdo)
-    [209378] = 20, -- Whirling Blades (Imacu'tya, Talixae Flamewreath)
-    [207979] = 20, -- Shockwave (Jazshariu, Talixae Flamewreath)
-    [397903] = 20, -- Crushing Leap (Jazshariu, Talixae Flamewreath)
-    [207887] = 20, -- Infernal Eruption, Impact (Talixae Flamewreath)
-    [211457] = 20, -- Infernal Eruption, Area (Talixae Flamewreath)
-    [209628] = 20, -- Piercing Gale (Advisor Melandrus)
-    [209630] = 20, -- Piercing Gale (Image of Advisor Melandrus, Advisor Melandrus)
-    [209667] = 20, -- Blade Surge (Advisor Melandrus)
-
-
-    -- Halls of Valor
-    [198903] = 20, -- Crackling Storm (Storm Drake)
-    [210875] = 20, -- Charged Pulse (Stormforged Sentinel)
-    [199818] = 20, -- Crackle (Stormforged Sentinel)
-    [199210] = 20, -- Penetrating Shot (Valarjar Marksman)
-    [192565] = 20, -- Cleansing Flames (Valarjar Purifier)
-    [191508] = 20, -- Blast of Light (Valarjar Aspirant)
-    [199337] = 20, -- Bear Trap (Valarjar Trapper)
-    [199146] = 20, -- Bucking Charge (Gildedfur Stag)
-    [199090] = 20, -- Rumbling Stomp (Angerhoof Bull)
-
-    [193234] = 20, -- Dancing Blade (Hymdall)
-    [193260] = 20, -- Static Field (Storm Drake, Hymdall)
-    [188395] = 20, -- Ball Lightning (Storm Drake, Hymdall)
-    [192206] = 20, -- Sanctify, Orb (Olmyr the Enlightened / Hyrja) - TODO does separate tracking work?
-    --[215457] = 20, -- Sanctify, Group Explosion (Olmyr the Enlightened / Hyrja)
-    [193827] = 20, -- Ragnarok (God-King Skovald)
-    [193702] = 20, -- Infernal Flames (God-King Skovald)
-    [198263] = 20, -- Radiant Tempest (Odyn)
-    [198088] = 20, -- Glowing Fragment (Odyn)
-    [198412] = 20, -- Feedback (Odyn)
-
-
-    -- Shadowmoon Burial Grounds
-    [152688] = 20, -- Shadow Rune (Environment)
-    [152690] = 20, -- Shadow Rune (Environment)
-    [152696] = 20, -- Shadow Rune (Environment)
-    [152854] = 20, -- Void Sphere (Shadowmoon Loyalist) - TODO which is correct?
-    [152855] = 20, -- Void Sphere (Shadowmoon Loyalist) - TODO which is correct?
-    [398154] = 20, -- Cry of Anguish (Defiled Spirit)
-    [394524] = 20, -- Void Eruptions (Void Spawn)
-    [153395] = 20, -- Body Slam (Carrion Worm)
-
-    [153232] = 20, -- Daggerfall (Sadana Bloodfury)
-    [153373] = 20, -- Daggerfall (Sadana Bloodfury) - TODO is this relevant?
-    [153224] = 20, -- Shadow Burn (Sadana Bloodfury)
-    [152800] = 20, -- Void Vortex (Nhallish)
-    [153070] = 20, -- Void Devastation (Nhallish)
-    [153908] = 20, -- Inhale (Bonemaw)
-    [153686] = 20, -- Body Slam (Bonemaw)
-    --[153692] = 20, -- Necrotic Pitch (Bonemaw) - can be used to avoid Inhale
-    [154442] = 20, -- Malevolence (Ner'zhul)
-    [154468] = 20, -- Ritual of Bones, Area (Ner'zhul)
-    [154469] = 20, -- Ritual of Bones, Debuff (Ner'zhul)
-
-
-    -- Temple of the Jade Serpent
-    [397881] = 20, -- Surging Deluge (Corrupt Living Water)
-    [396003] = 20, -- Territorial Display (The Songbird Queen)
-    [396010] = 20, -- Tears of Pain (The Crybaby Hozen)
-    [398301] = 20, -- Flames of Doubt (Shambling Infester)
-    [397899] = 20, -- Leg Sweep (Sha-Touched Guardian)
-    [110125] = 20, -- Shattered Resolve (Minion of Doubt)
-
-    [397785] = 20, -- Wash Away (Wise Mari)
-    [397793] = 20, -- Corrupted Geyser (Wise Mari)
-    [106856] = 20, -- Serpent Kick (Liu Flameheart)
-    [106938] = 20, -- Serpent Wave (Liu Flameheart)
-    [106864] = 20, -- Jade Serpent Kick (Liu Flameheart)
-    [107053] = 20, -- Jade Serpent Wave, Projectile (Liu Flameheart)
-    [118540] = 20, -- Jade Serpent Wave, Area (Liu Flameheart)
-    [396907] = 20, -- Jade Fire Breath (Yu'lon, Liu Flameheart)
-    [107103] = 20, -- Jade Fire, Impact (Yu'lon, Liu Flameheart)
-    [107110] = 20 -- Jade Fire, Area (Yu'lon, Liu Flameheart)
 }
 
 local SpellsNoTank = {
@@ -359,22 +270,12 @@ local SpellsNoTank = {
 
     -- Algeth'ar Academy
     [385958] = 20, -- Arcane Expulsion (Vexamus)
-
-    -- Court of Stars
-    [209036] = 20, -- Throw Torch (Duskwatch Sentry)
-    [209495] = 20, -- Charged Smash (Guardian Construct)
-    [209512] = 20, -- Disrupting Energy (Guardian Construct)
-
-    -- Halls of Valor
-    [198888] = 20, -- Lightning Breath (Storm Drake) - TODO is this avoidable by tank?
-    [199050] = 20, -- Mortal Hew (Valarjar Shieldmaiden)
-    [192018] = 20, -- Shield of Light (Hyrja)
-
-    -- Shadowmoon Burial Grounds
-    [153501] = 20 -- Void Blast (Nhallish)
 }
 
 local Auras = {
+    -- Affixes
+    [408777] = true, -- Entangled (Environment)
+
     -- Uldaman: Legacy of Tyr
     [369411] = true, -- Sonic Burst (Cavern Seeker)
     [372652] = true, -- Resonating Orb (Sentinel Talondras)
@@ -382,10 +283,6 @@ local Auras = {
     -- The Azure Vault
     [386368] = true, -- Polymorphed (Polymorphic Rune, Environment)
     [396722] = true, -- Absolute Zero, Root (Telash Greywing)
-
-    -- Court of Stars
-    [214987] = true, -- Righteous Indignation (Suspicious Noble) - TODO find ID for stun
-    [224333] = true -- Enveloping Winds (Advisor Melandrus)
 }
 
 local AurasNoTank = {}
