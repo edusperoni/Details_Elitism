@@ -289,6 +289,31 @@ local Spells = {
     [413146] = 20, -- Swiftwind Saber (Harlan Sweete)
     [257293] = 20, -- Swiftwind Saber (Harlan Sweete) - TODO ID?
     [257315] = 20, -- Black Powder Bomb (Irontide Grenadier, Harlan Sweete)
+
+
+    -- Neltharion's Lair
+    [183407] = 20, -- Acid Splatter (Vileshard Crawler)
+    [183465] = 20, -- Viscid Bile (Tarspitter Lurker)
+    [226388] = 20, -- Rancid Ooze (Tarspitter Luker)
+    [226287] = 20, -- Crush (Vileshard Chunk)
+    [183088] = 20, -- Avalanche, Frontal (Mightstone Breaker)
+    --[183100] = 20, -- Avalanche, Rocks (Mightstone Breaker) - TODO is this avoidable?
+    --[226347] = 20, -- Stone Shatter (Stoneclaw Hunter / Stoneclaw Grubmaster) - TODO probably not avoidable for melee
+    [186576] = 20, -- Petrifying Cloud (Petrifying Totem, Blightshard Shaper)
+    [202089] = 20, -- Scorch (Burning Geode)
+    --[183566] = 20, -- Rancid Pool (Rotdrool Grabber, Stoneclaw Grubmaster) - not really avoidable
+
+    [198028] = 20, -- Crystalline Ground (Rokmora)
+    [188169] = 20, -- Razor Shards (Rokmora)
+    [192800] = 20, -- Choking Dust (Blightshard Skitter, Rokmora)
+    --[193273] = 20, -- Falling Debris (Ularogg Cragshaper) - TODO is this avoidable?
+    [198475] = 20, -- Strike of the Mountain (Ularogg Cragshaper)
+    [210166] = 20, -- Toxic Retch, Area (Naraxas)
+    [199705] = 20, -- Devouring (Naraxas)
+    [200338] = 20, -- Crystal Spikes (Dargrul)
+    [217090] = 20, -- Magma Wave, Initial (Dargrul)
+    [200404] = 20, -- Magma Wave, Final (Dargrul)
+    [216407] = 20, -- Lava Geyser (Dargrul)
 }
 
 local SpellsNoTank = {
@@ -330,6 +355,15 @@ local SpellsNoTank = {
     -- The Underrot
     [260793] = 20, -- Indigestion (Cragmaw the Infested)
     [272457] = 20, -- Shockwave (Sporecaller Zancha)
+
+    -- Neltharion's Lair
+    [193505] = 20, -- Fracture (Vileshard Hulk)
+    [226296] = 20, -- Piercing Shards (Vileshard Hulk)
+    [226304] = 20, -- Piercing Shards (Vileshard Hulk)
+    [226406] = 20, -- Ember Swipe (Emberhusk Dominator)
+    [188494] = 20, -- Rancid Maw (Naraxas)
+    [205609] = 20, -- Rancid Maw (Naraxas) - TODO ID?
+    [200721] = 20, -- Landslide (Dargrul)
 }
 
 local Auras = {
