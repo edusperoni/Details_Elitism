@@ -314,7 +314,25 @@ local Spells = {
     [217090] = 20, -- Magma Wave, Initial (Dargrul)
     [200404] = 20, -- Magma Wave, Final (Dargrul)
     [216407] = 20, -- Lava Geyser (Dargrul)
+
+
+    -- Vortex Pinnacle
+    [410999] = 20, -- Pressurized Blast (Armored Mistral)
+    --[411001] = 20, -- Lethal Current (Lurking Tempest) - should this be considered avoidable?
+    [88075] = 20, -- Typhoon (Cloud Prince)
+    [88308] = 20, -- Chilling Breath (Young Storm Dragon / Altairus)
+    [88963] = 20, -- Lightning Lash (Minister of Air)
+    [413386] = 20, -- Overload Grounding Field (Minister of Air)
+
+    [86292] = 20, -- Cyclone Shield / Cyclone Shield Fragment (Grand Vizier Ertan)
+    [413319] = 20, -- Downwind of Altairus (Altairus)
+    [413271] = 20, -- Downburst Impact (Altairus)
+    [413296] = 20, -- Downburst, Ring (Altairus)
+    [413275] = 20, -- Cold Front (Environment, Altairus)
+    [87553] = 20, -- Supremacy of the Storm (Asaad)
+    [87618] = 20, -- Static Cling (Asaad)
 }
+
 
 local SpellsNoTank = {
     -- Uldaman: Legacy of Tyr
