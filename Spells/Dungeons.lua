@@ -139,16 +139,14 @@ local Spells = {
     [368299] = 20, -- Toxic Trap, Area (Bonebolt Hunter)
     [382556] = 20, -- Ragestorm (Bracken Warscourge)
     [384673] = 20, -- Spreading Rot (Decay Ritual, Environment)
-    --[381770] = 20, -- Gushing Ooze (Decaying Slime) - TODO probably not avoidable for melee
     [378055] = 20, -- Burst (Decaying Slime)
     [378054] = 20, -- Withering Away! (Decaying Slime)
-    --[373872] = 20, -- Gushing Ooze (Monstrous Decay) - TODO probably not avoidable for melee
     [374569] = 20, -- Burst (Monstrous Decay)
     [373943] = 20, -- Stomp (Wilted Oak)
     [385303] = 20, -- Teeth Trap (Environment)
     [385524] = 20, -- Sentry Fire (Environment)
     [385805] = 20, -- Violent Whirlwind (Stinkbreath)
-    --[385186] = 20, -- Stink Breath (Stinkbreath) - TODO can targeted player outrange?
+    --[385186] = 20, -- Stink Breath (Stinkbreath) - TODO can targeted melee outrange?
     [379425] = 20, -- Rotting Creek (Environment)
     [383392] = 20, -- Rotting Surge, Impact (Filth Caller)
     [383399] = 20, -- Rotting Surge, periodic (Filth Caller)
@@ -259,10 +257,11 @@ local Spells = {
     [258673] = 20, -- Azerite Grenade (Irontide Crackshot)
     [257426] = 20, -- Brutal Backhand (Irontide Enforcer)
     [258779] = 20, -- Sea Spout (Irontide Oarsman)
-    [274400] = 20, -- Duelist Dash (Cutwater Duelist) - not active in DF S2
+    [274400] = 20, -- Duelist Dash (Cutwater Duelist)
     [274389] = 20, -- Rat Traps (Vermin Trapper)
-    [295945] = 20, -- Rat Traps (Vermin Trapper) - TODO ID?
+    [295945] = 20, -- Rat Traps (Vermin Trapper)
     [257757] = 20, -- Goin' Bananas (Bilge Rat Buccaneer)
+    --[257784] = 20, -- Frost Blast (Bilge Rat Brinescale) - TODO avoidable frontal or unavoidable AoE?
     [276061] = 20, -- Boulder Throw (Irontide Crusher)
     [258199] = 20, -- Ground Shatter (Irontide Crusher)
     [257737] = 20, -- Thundering Squall (Irontide Stormcaller)
@@ -319,7 +318,7 @@ local Spells = {
     -- Vortex Pinnacle
     [410999] = 20, -- Pressurized Blast (Armored Mistral)
     --[411001] = 20, -- Lethal Current (Lurking Tempest) - should this be considered avoidable?
-    [88075] = 20, -- Typhoon (Cloud Prince)
+    [411005] = 20, -- Bomb Cyclone (Cloud Prince)
     [88308] = 20, -- Chilling Breath (Young Storm Dragon / Altairus)
     [88963] = 20, -- Lightning Lash (Minister of Air)
     [413386] = 20, -- Overload Grounding Field (Minister of Air)
@@ -330,7 +329,7 @@ local Spells = {
     [413296] = 20, -- Downburst, Ring (Altairus)
     [413275] = 20, -- Cold Front (Environment, Altairus)
     [87553] = 20, -- Supremacy of the Storm (Asaad)
-    [87618] = 20, -- Static Cling (Asaad)
+    [87618] = 20 -- Static Cling (Asaad)
 }
 
 
@@ -351,6 +350,7 @@ local SpellsNoTank = {
     -- Brackenhide Hollow
     [382712] = 20, -- Necrotic Breath, Initial (Wilted Oak)
     [382805] = 20, -- Necrotic Breath, DoT (Wilted Oak)
+    --[374544] = 20, -- Burst of Decay (Fetid Rotsinger) - TODO does this only target tank?
     [377807] = 20, -- Cleave (Rira Hackclaw)
     [381419] = 20, -- Savage Charge (Rira Hackclaw)
     [377559] = 20, -- Vine Whip (Treemouth)
@@ -365,7 +365,6 @@ local SpellsNoTank = {
     [375341] = 20, -- Tectonic Breath (Subterranean Proto-Drake)
     [375353] = 20, -- Oceanic Breath (Glacial Proto-Drake)
     [384524] = 20, -- Titanic Fist (Watcher Irideus)
-    --[388245] = 20, -- Gulp (Gulping Goliath) - TODO how to handle this properly?
 
     -- Algeth'ar Academy
     [385958] = 20, -- Arcane Expulsion (Vexamus)
@@ -381,15 +380,14 @@ local SpellsNoTank = {
     [226406] = 20, -- Ember Swipe (Emberhusk Dominator)
     [188494] = 20, -- Rancid Maw (Naraxas)
     [205609] = 20, -- Rancid Maw (Naraxas) - TODO ID?
-    [200721] = 20, -- Landslide (Dargrul)
+    [200721] = 20 -- Landslide (Dargrul)
 }
 
 local Auras = {
     -- Affixes
-    [408777] = true, -- Entangled (Environment)
+    [408777] = true, -- Entangled, Stun (Environment)
 
     -- Uldaman: Legacy of Tyr
-    [369411] = true, -- Sonic Burst (Cavern Seeker)
     [372652] = true, -- Resonating Orb (Sentinel Talondras)
 
     -- The Azure Vault
@@ -399,6 +397,7 @@ local Auras = {
     -- Freehold
     [274516] = true, -- Slippery Suds (Bilge Rat Swabby)
     [272554] = true, -- Bloody Mess (Trothak, Ring of Booty)
+    [268283] = true -- Obscured Vision (Booty Fanatic, Ring of Booty)
 }
 
 local AurasNoTank = {}
