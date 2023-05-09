@@ -1,9 +1,6 @@
 local addon, Engine = ...
 
 local DE = Engine.Core
-local L = Engine.L
-
-local format, ipairs, min, pairs, select, strsplit, tonumber = format, ipairs, min, pairs, select, strsplit, tonumber
 
 local Spells = {
     -- Debug
@@ -23,7 +20,6 @@ local Spells = {
     [394873] = 20, -- Lightning Strike (Thundering, Environment)
     [396411] = 20, -- Primal Overload (Thundering, Environment)
 
-
     -- Uldaman: Legacy of Tyr
     [369811] = 20, -- Brutal Slam (Hulking Berserker)
     [369854] = 20, -- Throw Rock (Burly Rock-Thrower)
@@ -40,7 +36,6 @@ local Spells = {
     [376325] = 20, -- Eternity Zone (Chrono-Lord Deios)
     [377561] = 20, -- Time Eruption (Chrono-Lord Deios)
 
-
     -- Ruby Life Pools
     [372696] = 20, -- Excavating Blast (Primal Juggernaut)
     [372697] = 20, -- Jagged Earth (Primal Juggernaut)
@@ -54,8 +49,8 @@ local Spells = {
     [391727] = 20, -- Storm Breath (Thunderhead)
     [391724] = 20, -- Flame Breath (Flamegullet)
     [373614] = 20, -- Burnout (Blazebound Destroyer)
-    --[385311] = 20, -- Thunderstorm (Primalist Shockcaster) - no indicator
-    --[392406] = 20, -- Thunderclap (Storm Warrior) - TODO probably not avoidable for melee
+    -- [385311] = 20, -- Thunderstorm (Primalist Shockcaster) - no indicator
+    -- [392406] = 20, -- Thunderclap (Storm Warrior) - TODO probably not avoidable for melee
     [392399] = 20, -- Crackling Detonation (Primal Thundercloud)
 
     [384024] = 20, -- Hailbombs, Projectiles (Melidrussa Chillworm)
@@ -67,12 +62,11 @@ local Spells = {
     [381526] = 20, -- Roaring Firebreath (Kyrakka)
     [384773] = 20, -- Flaming Embers (Kyrakka)
 
-
     -- Neltharus
     [372459] = 20, -- Burning (Environment)
     [382708] = 20, -- Volcanic Guard (Qalashi Warden)
     [372583] = 20, -- Binding Spear, Impact (Qalashi Hunter)
-    --[373540] = 20, -- Binding Spear, periodic (Qalashi Hunter) - should this be tracked?
+    -- [373540] = 20, -- Binding Spear, periodic (Qalashi Hunter) - should this be tracked?
     [376186] = 20, -- Eruptive Crush, Area (Overseer Lahar)
     [383928] = 20, -- Eruptive Crush, Projectiles (Overseer Lahar)
     [395427] = 20, -- Burning Roar (Overseer Lahar)
@@ -98,7 +92,6 @@ local Spells = {
     [377477] = 20, -- Burning Ember (Warlord Sargha)
     [377542] = 20, -- Burning Ground (Warlord Sargha)
     [391773] = 20, -- The Dragon's Eruption (Warlord Sargha)
-
 
     -- The Nokhud Offensive
     [384868] = 20, -- Multi-Shot (Nokhud Longbow)
@@ -133,7 +126,6 @@ local Spells = {
     [376892] = 20, -- Crackling Upheaval (Balakar Khan)
     [376899] = 20, -- Crackling Cloud (Balakar Khan) - TODO is first tick avoidable?
 
-
     -- Brackenhide Hollow
     [368297] = 20, -- Toxic Trap, Trigger (Bonebolt Hunter)
     [368299] = 20, -- Toxic Trap, Area (Bonebolt Hunter)
@@ -146,7 +138,7 @@ local Spells = {
     [385303] = 20, -- Teeth Trap (Environment)
     [385524] = 20, -- Sentry Fire (Environment)
     [385805] = 20, -- Violent Whirlwind (Stinkbreath)
-    --[385186] = 20, -- Stink Breath (Stinkbreath) - TODO can targeted melee outrange?
+    -- [385186] = 20, -- Stink Breath (Stinkbreath) - TODO can targeted melee outrange?
     [379425] = 20, -- Rotting Creek (Environment)
     [383392] = 20, -- Rotting Surge, Impact (Filth Caller)
     [383399] = 20, -- Rotting Surge, periodic (Filth Caller)
@@ -159,7 +151,6 @@ local Spells = {
     [376170] = 20, -- Choking Rotcloud, Frontal (Decatriarch Wratheye)
     [376149] = 20, -- Choking Rotcloud, Area (Decatriarch Wratheye)
     [379425] = 20, -- Decaying Fog (Environment, Decatriarch Wratheye)
-
 
     -- The Azure Vault
     [370766] = 20, -- Crystalline Rupture (Crystal Thrasher)
@@ -182,11 +173,10 @@ local Spells = {
     [385078] = 20, -- Arcane Eruption (Umbrelskul)
     [385267] = 20, -- Crackling Vortex (Umbrelskul)
 
-
     -- Halls of Infusion
     [374075] = 20, -- Seismic Slam (Primalist Geomancer)
     [393444] = 20, -- Spear Flurry / Gushing Wound (Refti Defender)
-    --[374045] = 20, -- Expulse (Containment Apparatus) - no indicator
+    -- [374045] = 20, -- Expulse (Containment Apparatus) - no indicator
     [375215] = 20, -- Cave In (Curious Swoglet)
     [374563] = 20, -- Dazzle (Dazzling Dragonfly)
     [374741] = 20, -- Magma Crush (Flamecaller Aymi)
@@ -207,7 +197,6 @@ local Spells = {
     [387359] = 20, -- Waterlogged (Primal Tsunami)
     [387363] = 20, -- Infused Globule, Explosion (Primal Tsunami)
     [388786] = 20, -- Rogue Waves (Primal Tsunami)
-
 
     -- Algeth'ar Academy
     [388884] = 20, -- Arcane Rain (Spellbound Scepter)
@@ -232,7 +221,6 @@ local Spells = {
     [389007] = 20, -- Arcane Rift / Wild Energy (Echo of Doragosa)
     [388996] = 20, -- Energy Eruption (Echo of Doragosa)
 
-
     -- The Underrot
     [265540] = 20, -- Rotten Bile (Fetid Maggot)
     [265542] = 20, -- Rotten Bile (Fetid Maggot)
@@ -247,11 +235,10 @@ local Spells = {
     [264757] = 20, -- Sanguine Feast (Elder Leaxa)
     [260312] = 20, -- Charge (Cragmaw the Infested)
     [259720] = 20, -- Upheaval (Sporecaller Zancha)
-    --[259714] = 20, -- Decaying Spores, Hit (Sporecaller Zancha) - might be necessary to eat
+    -- [259714] = 20, -- Decaying Spores, Hit (Sporecaller Zancha) - might be necessary to eat
     [269843] = 20, -- Vile Expulsion, Impact (Unbound Abomination)
     [269838] = 20, -- Vile Expulsion, periodic (Unbound Abomination)
     [270108] = 20, -- Rotting Spore (Unbound Abomination)
-
 
     -- Freehold
     [258673] = 20, -- Azerite Grenade (Irontide Crackshot)
@@ -261,7 +248,7 @@ local Spells = {
     [274389] = 20, -- Rat Traps (Vermin Trapper)
     [295945] = 20, -- Rat Traps (Vermin Trapper)
     [257757] = 20, -- Goin' Bananas (Bilge Rat Buccaneer)
-    --[257784] = 20, -- Frost Blast (Bilge Rat Brinescale) - TODO avoidable frontal or unavoidable AoE?
+    -- [257784] = 20, -- Frost Blast (Bilge Rat Brinescale) - TODO avoidable frontal or unavoidable AoE?
     [276061] = 20, -- Boulder Throw (Irontide Crusher)
     [258199] = 20, -- Ground Shatter (Irontide Crusher)
     [257737] = 20, -- Thundering Squall (Irontide Stormcaller)
@@ -278,7 +265,7 @@ local Spells = {
     [278467] = 20, -- Caustic Freehold Brew (Rummy Mancomb, Council o' Captains)
     [257902] = 20, -- Shell Bounce (Ludwig Von Tortollan, Ring of Booty)
     [256546] = 20, -- Shark Tornado (Trothak, Ring of Booty)
-    --[256477] = 20, -- Shark Toss (Trothak, Ring of Booty) - TODO is this avoidable?
+    -- [256477] = 20, -- Shark Toss (Trothak, Ring of Booty) - TODO is this avoidable?
     [256552] = 20, -- Flailing Shark (Trothak, Ring of Booty)
     [256706] = 20, -- Rearm (Trothak, Ring of Booty)
     [257310] = 20, -- Cannon Barrage (Harlan Sweete)
@@ -289,23 +276,22 @@ local Spells = {
     [257293] = 20, -- Swiftwind Saber (Harlan Sweete) - TODO ID?
     [257315] = 20, -- Black Powder Bomb (Irontide Grenadier, Harlan Sweete)
 
-
     -- Neltharion's Lair
     [183407] = 20, -- Acid Splatter (Vileshard Crawler)
     [183465] = 20, -- Viscid Bile (Tarspitter Lurker)
     [226388] = 20, -- Rancid Ooze (Tarspitter Luker)
     [226287] = 20, -- Crush (Vileshard Chunk)
     [183088] = 20, -- Avalanche, Frontal (Mightstone Breaker)
-    --[183100] = 20, -- Avalanche, Rocks (Mightstone Breaker) - TODO is this avoidable?
-    --[226347] = 20, -- Stone Shatter (Stoneclaw Hunter / Stoneclaw Grubmaster) - TODO probably not avoidable for melee
+    -- [183100] = 20, -- Avalanche, Rocks (Mightstone Breaker) - TODO is this avoidable?
+    -- [226347] = 20, -- Stone Shatter (Stoneclaw Hunter / Stoneclaw Grubmaster) - TODO probably not avoidable for melee
     [186576] = 20, -- Petrifying Cloud (Petrifying Totem, Blightshard Shaper)
     [202089] = 20, -- Scorch (Burning Geode)
-    --[183566] = 20, -- Rancid Pool (Rotdrool Grabber, Stoneclaw Grubmaster) - not really avoidable
+    -- [183566] = 20, -- Rancid Pool (Rotdrool Grabber, Stoneclaw Grubmaster) - not really avoidable
 
     [198028] = 20, -- Crystalline Ground (Rokmora)
     [188169] = 20, -- Razor Shards (Rokmora)
     [192800] = 20, -- Choking Dust (Blightshard Skitter, Rokmora)
-    --[193273] = 20, -- Falling Debris (Ularogg Cragshaper) - TODO is this avoidable?
+    -- [193273] = 20, -- Falling Debris (Ularogg Cragshaper) - TODO is this avoidable?
     [198475] = 20, -- Strike of the Mountain (Ularogg Cragshaper)
     [210166] = 20, -- Toxic Retch, Area (Naraxas)
     [199705] = 20, -- Devouring (Naraxas)
@@ -314,10 +300,9 @@ local Spells = {
     [200404] = 20, -- Magma Wave, Final (Dargrul)
     [216407] = 20, -- Lava Geyser (Dargrul)
 
-
     -- Vortex Pinnacle
     [410999] = 20, -- Pressurized Blast (Armored Mistral)
-    --[411001] = 20, -- Lethal Current (Lurking Tempest) - should this be considered avoidable?
+    -- [411001] = 20, -- Lethal Current (Lurking Tempest) - should this be considered avoidable?
     [411005] = 20, -- Bomb Cyclone (Cloud Prince)
     [88308] = 20, -- Chilling Breath (Young Storm Dragon / Altairus)
     [88963] = 20, -- Lightning Lash (Minister of Air)
@@ -331,7 +316,6 @@ local Spells = {
     [87553] = 20, -- Supremacy of the Storm (Asaad)
     [87618] = 20 -- Static Cling (Asaad)
 }
-
 
 local SpellsNoTank = {
     -- Uldaman: Legacy of Tyr
@@ -350,7 +334,7 @@ local SpellsNoTank = {
     -- Brackenhide Hollow
     [382712] = 20, -- Necrotic Breath, Initial (Wilted Oak)
     [382805] = 20, -- Necrotic Breath, DoT (Wilted Oak)
-    --[374544] = 20, -- Burst of Decay (Fetid Rotsinger) - TODO does this only target tank?
+    -- [374544] = 20, -- Burst of Decay (Fetid Rotsinger) - TODO does this only target tank?
     [377807] = 20, -- Cleave (Rira Hackclaw)
     [381419] = 20, -- Savage Charge (Rira Hackclaw)
     [377559] = 20, -- Vine Whip (Treemouth)
