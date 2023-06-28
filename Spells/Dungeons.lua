@@ -20,6 +20,7 @@ local Spells = {
     [394873] = 20, -- Lightning Strike (Thundering, Environment)
     [396411] = 20, -- Primal Overload (Thundering, Environment)
 
+
     -- Uldaman: Legacy of Tyr
     [369811] = 20, -- Brutal Slam (Hulking Berserker)
     [369854] = 20, -- Throw Rock (Burly Rock-Thrower)
@@ -35,6 +36,7 @@ local Spells = {
     [369052] = 20, -- Seeking Flame (Vault Keeper, Emberon)
     [376325] = 20, -- Eternity Zone (Chrono-Lord Deios)
     [377561] = 20, -- Time Eruption (Chrono-Lord Deios)
+
 
     -- Ruby Life Pools
     [372696] = 20, -- Excavating Blast (Primal Juggernaut)
@@ -61,6 +63,7 @@ local Spells = {
     [373087] = 20, -- Burnout (Blazebound Firestorm, Kokia Blazehoof)
     [381526] = 20, -- Roaring Firebreath (Kyrakka)
     [384773] = 20, -- Flaming Embers (Kyrakka)
+
 
     -- Neltharus
     [372459] = 20, -- Burning (Environment)
@@ -92,6 +95,7 @@ local Spells = {
     [377477] = 20, -- Burning Ember (Warlord Sargha)
     [377542] = 20, -- Burning Ground (Warlord Sargha)
     [391773] = 20, -- The Dragon's Eruption (Warlord Sargha)
+
 
     -- The Nokhud Offensive
     [384868] = 20, -- Multi-Shot (Nokhud Longbow)
@@ -126,6 +130,7 @@ local Spells = {
     [376892] = 20, -- Crackling Upheaval (Balakar Khan)
     [376899] = 20, -- Crackling Cloud (Balakar Khan) - TODO is first tick avoidable?
 
+
     -- Brackenhide Hollow
     [368297] = 20, -- Toxic Trap, Trigger (Bonebolt Hunter)
     [368299] = 20, -- Toxic Trap, Area (Bonebolt Hunter)
@@ -151,6 +156,7 @@ local Spells = {
     [376149] = 20, -- Choking Rotcloud, Area (Decatriarch Wratheye)
     [379425] = 20, -- Decaying Fog (Environment, Decatriarch Wratheye)
 
+
     -- The Azure Vault
     [370766] = 20, -- Crystalline Rupture (Crystal Thrasher)
     [371021] = 20, -- Splintering Shards, Aura (Crystal Thrasher)
@@ -171,6 +177,7 @@ local Spells = {
     [384699] = 20, -- Crystalline Roar (Umbrelskul)
     [385078] = 20, -- Arcane Eruption (Umbrelskul)
     [385267] = 20, -- Crackling Vortex (Umbrelskul)
+
 
     -- Halls of Infusion
     [374075] = 20, -- Seismic Slam (Primalist Geomancer)
@@ -197,6 +204,7 @@ local Spells = {
     [387363] = 20, -- Infused Globule, Explosion (Primal Tsunami)
     [388786] = 20, -- Rogue Waves (Primal Tsunami)
 
+
     -- Algeth'ar Academy
     [388884] = 20, -- Arcane Rain (Spellbound Scepter)
     [388957] = 20, -- Riftbreath (Arcane Ravager)
@@ -220,6 +228,72 @@ local Spells = {
     [389007] = 20, -- Arcane Rift / Wild Energy (Echo of Doragosa)
     [388996] = 20, -- Energy Eruption (Echo of Doragosa)
 
+
+    -- Dawn of the Infinite: Galakrond's Fall
+    [419380] = 20, -- Timeline Conflux, small Swirlies (Environment) TODO Swirlies before door, this is a guess
+    [419383] = 20, -- Timeline Conflux, big Swirlies (Environment) TODO Swirlies before door, this is a guess
+    [412065] = 20, -- Timerip (Epoch Ripper)
+    [414032] = 20, -- Errant Time (Environment) - TODO Swirlies before Timeways, this is a guess
+    [413332] = 20, -- Sand Zone (Environment) - TODO Area before Timeways, this is a guess
+    [415773] = 20, -- Temporal Detonation (Interval)
+    [413536] = 20, -- Untwist, Swirly (Timestream Anomaly)
+    [413618] = 20, -- Timeless Curse (Infinite Infiltrator)
+    [419526] = 20, -- Loose Time (Environment)
+    [412810] = 20, -- Blight Spew (Risen Dragon)
+
+    [401794] = 20, -- Withering Sandpool, Area (Chronikar)
+    [403088] = 20, -- Eon Shatter (Chronikar)
+    [405970] = 20, -- Eon Fragment (Chronikar)
+    [403259] = 20, -- Residue Blast (Chronikar)
+    [404650] = 20, -- Fragments of Time (Manifested Timeways)
+    [407147] = 20, -- Blight Seep (Blight of Galakrond)
+    [407027] = 20, -- Corrosive Expulsion (Blight of Galakrond)
+    [408008] = 20, -- Necrotic Winds, Tornado (Ahnzon, Blight of Galakrond)
+    [408177] = 20, -- Incinerating Blightbreath (Dazhak, Blight of Galakrond)
+    [409287] = 20, -- Rending Earthspikes (Iridikron)
+    [414376] = 20, -- Punctured Ground (Iridikron)
+    [409642] = 20, -- Pulverizing Exhalation (Iridikron)
+    [409969] = 20, -- Stone Dispersion (Iridikron)
+
+
+    -- Dawn of the Infinite: Murozond's Rise
+    [412137] = 20, -- Temporal Strike (Valow, Timesworn Keeper)
+    [412131] = 20, -- Orb of Contemplation (Leirai, Timesworm Maiden)
+    [412242] = 20, -- Shrouding Sandstorm, Hit (Spurlok, Timesworn Sentinel)
+    [413618] = 20, -- Timeless Curse (Infinite Watchkeeper / Infinite Saboteur / Infinite Diversionist / Infinite Slayer)
+    [419328] = 20, -- Infinite Schism, Swirlies (Timeline Marauder)
+    [409038] = 20, -- Displacement (Infinite Protector / Infinite Warder, Bronze Temple Run)
+    [413536] = 20, -- Untwist, Swirly (Timestream Anomaly)
+    [412378] = 20, -- Dizzying Sands (Infinite Timebender) - TODO is this a frontal?
+    [411610] = 20, -- Bubbly Barrage (Time-Lost Waveshaper)
+    [412225] = 20, -- Electro-Juiced Gigablast (Time-Lost Aerobot) - TODO is this avoidable for tanks?
+    [412181] = 20, -- Bombing Run (Time-Lost Aerobot)
+    [413428] = 20, -- Time Beam, Swirlies (Pendule)
+    [419517] = 20, -- Chronal Eruption (Chronaxie)
+    [407312] = 20, -- Volatile Mortar (Alliance Destroyer / Horde Destroyer)
+    [407315] = 20, -- Embers (Alliance Destroyer / Horde Destroyer)
+    [407317] = 20, -- Shrapnel Shell (Alliance Destroyer / Horde Destroyer)
+    [407313] = 20, -- Shrapnel (Alliance Destroyer / Horde Destroyer)
+    [419629] = 20, -- Kaboom! (Dwarven Bomber)
+    [407715] = 20, -- Kaboom! (Goblin Sapper)
+    [407125] = 20, -- Sundering Slam (Alliance Knight / Horde Raider)
+    [417002] = 20, -- Consecration (Paladin of the Silver Hand)
+    [407906] = 20, -- Earthquake (Horde Farseer)
+    [419526] = 20, -- Loose Time (Environment)
+
+    [400597] = 20, -- Infinite Annihilation (Tyr, the Infinite Keeper)
+    [403724] = 20, -- Consecrated Ground (Tyr, the Infinite Keeper)
+    [404365] = 20, -- Dragon's Breath (Morchie)
+    [413208] = 20, -- Sand Buffeted (Morchie)
+    [412769] = 20, -- Anachronistic Decay (Familiar Face, Morchie)
+    [410238] = 20, -- Bladestorm (Anduin Lothar / Grommash Hellscream, Time-Lost Battlefield)
+    [417026] = 20, -- Blizzard (Alliance Conjuror, Time-Lost Battlefield)
+    [407123] = 20, -- Rain of Fire (Horde Warlock, Time-Lost Battlefield)
+    [416265] = 20, -- Infinite Corruption, small Swirlies (Chrono-Lord Deios)
+    [416266] = 20, -- Infinite Corruption, big Swirlies (Chrono-Lord Deios)
+    [417413] = 20, -- Temporal Scar (Chrono-Lord Deios)
+
+
     -- The Underrot
     [265540] = 20, -- Rotten Bile (Fetid Maggot)
     [265542] = 20, -- Rotten Bile (Fetid Maggot)
@@ -238,6 +312,7 @@ local Spells = {
     [269843] = 20, -- Vile Expulsion, Impact (Unbound Abomination)
     [269838] = 20, -- Vile Expulsion, periodic (Unbound Abomination)
     [270108] = 20, -- Rotting Spore (Unbound Abomination)
+
 
     -- Freehold
     [258673] = 20, -- Azerite Grenade (Irontide Crackshot)
@@ -274,6 +349,7 @@ local Spells = {
     [257293] = 20, -- Swiftwind Saber (Harlan Sweete) - TODO ID?
     [257315] = 20, -- Black Powder Bomb (Irontide Grenadier, Harlan Sweete)
 
+
     -- Neltharion's Lair
     [183407] = 20, -- Acid Splatter (Vileshard Crawler)
     [183465] = 20, -- Viscid Bile (Tarspitter Lurker)
@@ -296,6 +372,7 @@ local Spells = {
     [217090] = 20, -- Magma Wave, Initial (Dargrul)
     [200404] = 20, -- Magma Wave, Final (Dargrul)
     [216407] = 20, -- Lava Geyser (Dargrul)
+
 
     -- Vortex Pinnacle
     [410999] = 20, -- Pressurized Blast (Armored Mistral)
@@ -350,6 +427,23 @@ local SpellsNoTank = {
     -- Algeth'ar Academy
     [385958] = 20, -- Arcane Expulsion (Vexamus)
 
+    -- Dawn of the Infinite: Galakrond's Fall
+    [413532] = 20, -- Untwist, Frontal (Timestream Anomaly)
+    [414304] = 20, -- Unwind (Manifested Timeways)
+    [407159] = 20, -- Blight Reclamation (Blight of Galakrond)
+
+    -- Dawn of the Infinite: Murozond's Rise
+    [412505] = 20, -- Rending Cleave (Tyr's Vanguard)
+    [419351] = 20, -- Bronze Exhalation (Infinite Saboteur)
+    [418092] = 20, -- Twisted Timeways (Environment) - TODO is this reasonable?
+    [413532] = 20, -- Untwist, Frontal (Timestream Anomaly)
+    [412029] = 20, -- Millennium Aid (Infinite Timebender)
+    [417339] = 20, -- Titanic Blow (Tyr, the Infinite Keeper)
+    [404917] = 20, -- Sand Blast (Morchie)
+    [418056] = 20, -- Shockwave (Anduin Lothar, Time-Lost Battlefield)
+    [408228] = 20, -- Shockwave (Grommash Hellscream, Time-Lost Battlefield)
+    [416139] = 20, -- Temporal Breath (Chrono-Lord Deios)
+
     -- The Underrot
     [260793] = 20, -- Indigestion (Cragmaw the Infested)
     [272457] = 20, -- Shockwave (Sporecaller Zancha)
@@ -374,6 +468,12 @@ local Auras = {
     -- The Azure Vault
     [386368] = true, -- Polymorphed (Polymorphic Rune, Environment)
     [396722] = true, -- Absolute Zero, Root (Telash Greywing)
+
+    -- Dawn of the Infinite: Galakrond's Fall
+    [418346] = true, -- Corrupted Mind (Blight of Galakrond)
+
+    -- Dawn of the Infinite: Murozond's Rise
+    [401667] = true, -- Time Stasis (Morchie)
 
     -- Freehold
     [274516] = true, -- Slippery Suds (Bilge Rat Swabby)
