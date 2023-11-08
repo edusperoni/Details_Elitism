@@ -294,102 +294,6 @@ local Spells = {
     [416265] = 20, -- Infinite Corruption, small Swirlies (Chrono-Lord Deios)
     [416266] = 20, -- Infinite Corruption, big Swirlies (Chrono-Lord Deios)
     [417413] = 20, -- Temporal Scar (Chrono-Lord Deios)
-
-
-    -- The Underrot
-    [265540] = 20, -- Rotten Bile (Fetid Maggot)
-    [265542] = 20, -- Rotten Bile (Fetid Maggot)
-    [265019] = 20, -- Savage Cleave (Chosen Blood Matron)
-    [278789] = 20, -- Wave of Decay (Living Rot)
-    [265665] = 20, -- Foul Sludge (Living Rot)
-    [265511] = 20, -- Spirit Drain (Spirit Drain Totem, Bloodsworn Defiler)
-    [272609] = 20, -- Maddening Gaze (Faceless Corruptor)
-    [272469] = 20, -- Abyssal Slam (Abyssal Reach, Faceless Corruptor)
-
-    [261498] = 20, -- Creeping Rot (Elder Leaxa)
-    [264757] = 20, -- Sanguine Feast (Elder Leaxa)
-    [260312] = 20, -- Charge (Cragmaw the Infested)
-    [259720] = 20, -- Upheaval (Sporecaller Zancha)
-    -- [259714] = 20, -- Decaying Spores, Hit (Sporecaller Zancha) - might be necessary to eat
-    [269843] = 20, -- Vile Expulsion, Impact (Unbound Abomination)
-    [269838] = 20, -- Vile Expulsion, periodic (Unbound Abomination)
-    [270108] = 20, -- Rotting Spore (Unbound Abomination)
-
-
-    -- Freehold
-    [258673] = 20, -- Azerite Grenade (Irontide Crackshot)
-    [257426] = 20, -- Brutal Backhand (Irontide Enforcer)
-    [258779] = 20, -- Sea Spout (Irontide Oarsman)
-    [274400] = 20, -- Duelist Dash (Cutwater Duelist)
-    [274389] = 20, -- Rat Traps (Vermin Trapper)
-    [295945] = 20, -- Rat Traps (Vermin Trapper)
-    [257757] = 20, -- Goin' Bananas (Bilge Rat Buccaneer)
-    [276061] = 20, -- Boulder Throw (Irontide Crusher)
-    [258199] = 20, -- Ground Shatter (Irontide Crusher)
-    [257737] = 20, -- Thundering Squall (Irontide Stormcaller)
-    [257871] = 20, -- Blade Barrage (Irontide Buccaneer)
-
-    [258773] = 20, -- Charrrrrge (Sharkbait, Skycap'n Kragg)
-    [257274] = 20, -- Vile Coating (Sharkbait, Skycap'n Kragg)
-    [272046] = 20, -- Dive Bomb (Sharkbait, Skycap'n Kragg)
-    [256594] = 20, -- Barrel Smash (Captain Raoul, Council o' Captains)
-    [258352] = 20, -- Grapeshot (Captain Eudora, Council o' Captains)
-    [267523] = 20, -- Cutting Surge (Captain Jolly, Council o' Captains) - not active in DF S2
-    [272374] = 20, -- Whirlpool of Blades, Impact (Captain Jolly, Council o' Captains) - not active in DF S2
-    [272397] = 20, -- Whirlpool of Blades, periodic (Captain Jolly, Council o' Captains) - not active in DF S2
-    [278467] = 20, -- Caustic Freehold Brew (Rummy Mancomb, Council o' Captains)
-    [257902] = 20, -- Shell Bounce (Ludwig Von Tortollan, Ring of Booty)
-    [256546] = 20, -- Shark Tornado (Trothak, Ring of Booty)
-    -- [256477] = 20, -- Shark Toss (Trothak, Ring of Booty) - TODO is this avoidable?
-    [256552] = 20, -- Flailing Shark (Trothak, Ring of Booty)
-    [256706] = 20, -- Rearm (Trothak, Ring of Booty)
-    [268287] = 20, -- Rotten Food (Booty Fanatic, Ring of Booty)
-    [257310] = 20, -- Cannon Barrage (Harlan Sweete)
-    [257963] = 20, -- Cannon Barrage (Harlan Sweete) - TODO ID?
-    [257460] = 20, -- Fiery Debris (Harlan Sweete)
-    [413146] = 20, -- Swiftwind Saber (Harlan Sweete)
-    [257293] = 20, -- Swiftwind Saber (Harlan Sweete) - TODO ID?
-    [257315] = 20, -- Black Powder Bomb (Irontide Grenadier, Harlan Sweete)
-
-
-    -- Neltharion's Lair
-    [183407] = 20, -- Acid Splatter (Vileshard Crawler)
-    [183465] = 20, -- Viscid Bile (Tarspitter Lurker)
-    [226388] = 20, -- Rancid Ooze (Tarspitter Luker)
-    [226287] = 20, -- Crush (Vileshard Chunk)
-    [183088] = 20, -- Avalanche, Frontal (Mightstone Breaker)
-    [183100] = 20, -- Avalanche, Rocks (Mightstone Breaker)
-    [186576] = 20, -- Petrifying Cloud (Petrifying Totem, Blightshard Shaper)
-    [202089] = 20, -- Scorch (Burning Geode)
-    -- [183566] = 20, -- Rancid Pool (Rotdrool Grabber, Stoneclaw Grubmaster) - not really avoidable
-
-    [198028] = 20, -- Crystalline Ground (Rokmora)
-    [188169] = 20, -- Razor Shards (Rokmora)
-    [192800] = 20, -- Choking Dust (Blightshard Skitter, Rokmora)
-    [198475] = 20, -- Strike of the Mountain (Ularogg Cragshaper)
-    [210166] = 20, -- Toxic Retch, Area (Naraxas)
-    [199705] = 20, -- Devouring (Naraxas)
-    [200338] = 20, -- Crystal Spikes (Dargrul)
-    [217090] = 20, -- Magma Wave, Initial (Dargrul)
-    [200404] = 20, -- Magma Wave, Final (Dargrul)
-    [216407] = 20, -- Lava Geyser (Dargrul)
-
-
-    -- Vortex Pinnacle
-    [410999] = 20, -- Pressurized Blast (Armored Mistral)
-    -- [411001] = 20, -- Lethal Current (Lurking Tempest) - should this be considered avoidable?
-    [411005] = 20, -- Bomb Cyclone (Cloud Prince)
-    [88308] = 20, -- Chilling Breath (Young Storm Dragon / Altairus)
-    [88963] = 20, -- Lightning Lash (Minister of Air)
-    [413386] = 20, -- Overload Grounding Field (Minister of Air)
-
-    [86292] = 20, -- Cyclone Shield / Cyclone Shield Fragment (Grand Vizier Ertan)
-    [413319] = 20, -- Downwind of Altairus (Altairus)
-    [413271] = 20, -- Downburst Impact (Altairus)
-    [413296] = 20, -- Downburst, Ring (Altairus)
-    [413275] = 20, -- Cold Front (Environment, Altairus)
-    [87553] = 20, -- Supremacy of the Storm (Asaad)
-    [87618] = 20 -- Static Cling (Asaad)
 }
 
 local SpellsNoTank = {
@@ -442,20 +346,6 @@ local SpellsNoTank = {
     [417339] = 20, -- Titanic Blow (Tyr, the Infinite Keeper)
     [404917] = 20, -- Sand Blast (Morchie)
     [416139] = 20, -- Temporal Breath (Chrono-Lord Deios)
-
-    -- The Underrot
-    [260793] = 20, -- Indigestion (Cragmaw the Infested)
-    [272457] = 20, -- Shockwave (Sporecaller Zancha)
-
-    -- Neltharion's Lair
-    [193505] = 20, -- Fracture (Vileshard Hulk)
-    [226296] = 20, -- Piercing Shards (Vileshard Hulk)
-    [226304] = 20, -- Piercing Shards (Vileshard Hulk)
-    [226347] = 20, -- Stone Shatter (Stoneclaw Hunter / Stoneclaw Grubmaster)
-    [226406] = 20, -- Ember Swipe (Emberhusk Dominator)
-    [188494] = 20, -- Rancid Maw (Naraxas)
-    [205609] = 20, -- Rancid Maw (Naraxas) - TODO ID?
-    [200721] = 20 -- Landslide (Dargrul)
 }
 
 local Auras = {
@@ -474,10 +364,6 @@ local Auras = {
 
     -- Dawn of the Infinite: Murozond's Rise
     [401667] = true, -- Time Stasis (Morchie)
-
-    -- Freehold
-    [274516] = true, -- Slippery Suds (Bilge Rat Swabby)
-    [272554] = true -- Bloody Mess (Trothak, Ring of Booty)
 }
 
 local AurasNoTank = {}
