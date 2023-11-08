@@ -294,6 +294,129 @@ local Spells = {
     [416265] = 20, -- Infinite Corruption, small Swirlies (Chrono-Lord Deios)
     [416266] = 20, -- Infinite Corruption, big Swirlies (Chrono-Lord Deios)
     [417413] = 20, -- Temporal Scar (Chrono-Lord Deios)
+
+
+    -- Atal'Dazar
+    [253654] = 20, -- Fiery Enchant (Dazar'ai Augur)
+    [253666] = 20, -- Fiery Bolt (Dazar'ai Augur)
+    [257692] = 20, -- Tiki Blaze (Environment)
+    [256884] = 20, -- Wild Thrash (Monzumi)
+    [258723] = 20, -- Grotesque Pool (Reanimated Honor Guard)
+    [255620] = 20, -- Festering Eruption (Reanimated Honor Guard)
+
+    [258709] = 20, -- Corrupted Gold (Priestess Alun'za)
+    [255373] = 20, -- Tail (Rezan)
+    [255445] = 20, -- Devour (Rezan)
+    [250259] = 20, -- Toxic Leap (Vol'kaal)
+    [250585] = 20, -- Toxic Pool (Vol'kaal)
+    [250028] = 20, -- Echoes of Shadra, Swirly (Yazma)
+    [263093] = 20, -- Echoes of Shadra, Swirly (Yazma)
+    [250022] = 20, -- Echoes of Shadra, Explosion (Echoes of Shadra, Yazma)
+    [263096] = 20, -- Echoes of Shadra, Explosion (Echoes of Shadra, Yazma)
+    [250036] = 20, -- Shadowy Remains (Echoes of Shadra, Yazma)
+    [263098] = 20, -- Shadowy Remains (Echoes of Shadra, Yazma)
+
+
+    -- Waycrest Manor
+    --[278849] = 20, -- Uproot (Coven Thornshaper) - TODO probably not avoidable
+    [264040] = 20, -- Uprooted Thorns (Coven Thornshaper)
+    [264150] = 20, -- Shatter (Thornguard)
+    [265757] = 20, -- Splinter Spike (Matron Bryndle)
+    [264531] = 20, -- Shrapnel Trap (Maddened Survivalist)
+    [271174] = 20, -- Retch (Pallid Gorger)
+    [265407] = 20, -- Dinner Bell (Banquet Steward)
+
+    [260570] = 20, -- Wildfire, Swirly (Soulbound Goliath)
+    [260569] = 20, -- Wildfire, Area (Soulbound Goliath)
+    [272669] = 20, -- Burning Fists (Burning Soul, Soulbound Goliath)
+    [264923] = 20, -- Tenderize (Raal the Gluttonous)
+    [264698] = 20, -- Rotten Expulsion, Impact (Raal the Gluttonous)
+    [264712] = 20, -- Rotten Expulsion, Area (Raal the Gluttonous)
+    [268234] = 20, -- Bile Explosion (Bile Oozeling, Raal the Gluttonous)
+    [268387] = 20, -- Contagious Remnants (Lord Waycrest)
+    [268308] = 20, -- Discordant Cadenza (Lady Waycrest)
+
+
+    -- Black Rook Hold
+    [200261] = 20, -- Bonebreaking Strike (Soul-Torn Champion / Commander Shendah'sohn)
+    [200344] = 20, -- Arrow Barrage (Risen Archer)
+    [200256] = 20, -- Phased Explosion (Arcane Minion)
+    [222397] = 20, -- Boulder Crush (Environment)
+    [201175] = 20, -- Throw Priceless Artifact (Wyrmtongue Scavenger)
+    [200914] = 20, -- Indigestion (Wyrmtongue Scavenger)
+    [201062] = 20, -- Bowled Over! (Wyrmtongue Scavenger)
+    [214002] = 20, -- Raven's Dive (Risen Lancer)
+
+    [196517] = 20, -- Swirling Scythe (Amalgam of Souls)
+    [194960] = 20, -- Soul Echoes, Explosion (Lord Etheldrin Ravencrest / Amalgam of Souls)
+    [194956] = 20, -- Reap Soul (Amalgam of Souls)
+    [197521] = 20, -- Blazing Trail (Illysanna Ravencrest)
+    [197821] = 20, -- Felblazed Ground (Illysanna Ravencrest)
+    [197974] = 20, -- Bonecrushing Strike (Soul-Torn Vanguard, Illysanna Ravencrest)
+    [198501] = 20, -- Fel Vomitus (Fel Bat, Smashspite the Hateful)
+    [198781] = 20, -- Whirling Blade (Lord Kur'talos Ravencrest)
+    [198820] = 20, -- Dark Blast (Latosius, Lord Kur'talos Ravencrest)
+    [199567] = 20, -- Dark Obliteration (Image of Latosius, Lord Kur'talos Ravencrest)
+
+
+    -- Darkheart Thicket
+    [218759] = 20, -- Corruption Pool (Nightmare Abomination, Festerhide Grizzly / Archdruid Glaidalis) - TODO check ID of boss version
+    [204402] = 20, -- Star Shower (Dreadsoul Ruiner)
+    [201123] = 20, -- Root Burst (Vilethorn Blossom)
+    [198916] = 20, -- Vile Burst (Rotheart Keeper)
+    [212797] = 20, -- Hatespawn Detonation (Hatespawn Whelpling) - TODO removed?
+    [201273] = 20, -- Blood Bomb (Bloodtainted Fury)
+    [201227] = 20, -- Blood Assault (Bloodtainted Fury) - TODO is this avoidable for tanks?
+    [201842] = 20, -- Curse of Isolation (Taintheart Summoner)
+
+    [198408] = 20, -- Nightfall (Archdruid Glaidalis)
+    [198386] = 20, -- Primal Rampage, Dash (Archdruid Glaidalis)
+    [199063] = 20, -- Strangling Roots (Oakheart)
+    [191326] = 20, -- Breath of Corruption (Dresaron)
+    [199460] = 20, -- Falling Rocks (Dresaron) - TODO is first tick avoidable?
+    [200329] = 20, -- Overwhelming Terror (Shade of Xavius)
+    [200111] = 20, -- Apocalyptic Fire (Shade of Xavius)
+
+
+    -- The Everbloom
+    [172579] = 20, -- Bounding Whirl (Melded Berserker)
+    [169495] = 20, -- Living Leaves (Gnarlroot)
+    [426849] = 20, -- Cold Fusion (Infested Icecaller)
+    [426982] = 20, -- Spatial Disruption (Addled Arcanomancer)
+
+    [177734] = 20, -- Agitated Water (Witherbark)
+    [164294] = 20, -- Unchecked Growth, Area (Witherbark)
+    [427922] = 20, -- Cinderbolt Storm, Swirlies (Archmage Sol)
+    [426991] = 20, -- Blazing Cinders (Archmage Sol)
+    [428084] = 20, -- Glacial Fusion (Archmage Sol)
+    [428148] = 20, -- Spatial Compression (Archmage Sol)
+    [169179] = 20, -- Colossal Blow (Yalnu) - always does damage to party as well
+    [428834] = 20, -- Verdant Eruption (Yalnu)
+    [169930] = 20, -- Lumbering Swipe (Flourishing Ancient, Yalnu)
+
+    [172643] = 20, -- Descend (Xeri'tac) - not part of M+
+    [173081] = 20, -- Burst (Gorged Burster, Xeri'tac) - not part of M+
+    [169223] = 20, -- Toxic Gas (Xeri'tac / Toxic Spiderling, Xeri'tac) - not part of M+
+
+
+    -- Throne of the Tides
+    [426685] = 20, -- Volatile Bolt (Naz'jar Ravager)
+    [426688] = 20, -- Volatile Acid (Naz'jar Ravager)
+    [426681] = 20, -- Electric Jaws (Environment) - TODO ID?
+    [76590] = 20, -- Shadow Smash (Faceless Watcher)
+    [426808] = 20, -- Null Blast (Faceless Seer)
+
+    [427769] = 20, -- Geyser (Lady Naz'jar)
+    [428048] = 20, -- Shock Orb (Lady Naz'jar)
+    [428294] = 20, -- Trident Flurry (Naz'jar Honor Guard, Lady Naz'jar)
+    [427565] = 20, -- Bubbling Fissure (Commander Ulthok)
+    [427559] = 20, -- Bubbling Ooze (Commander Ulthok)
+    [429057] = 20, -- Earthfury (Erunak Stonespeaker, Mindbender Ghur'sha)
+    [429172] = 20, -- Terrifying Vision (Mindbender Ghur'sha)
+    [428404] = 20, -- Blotting Darkness (Ink of Ozumat / Sludge, Ozumat)
+    [428616] = 20, -- Deluge of Filth (Ozumat)
+    [428618] = 20, -- Deluge of Filth (Ozumat)
+    [428809] = 20, -- Gushing Ink (Sludge, Ozumat)
 }
 
 local SpellsNoTank = {
@@ -346,6 +469,31 @@ local SpellsNoTank = {
     [417339] = 20, -- Titanic Blow (Tyr, the Infinite Keeper)
     [404917] = 20, -- Sand Blast (Morchie)
     [416139] = 20, -- Temporal Breath (Chrono-Lord Deios)
+
+    -- Waycrest Manor
+    [265372] = 20, -- Shadow Cleave (Enthralled Guard)
+
+    -- Black Rook Hold
+    [225909] = 20, -- Soul Venom (Rook Spiderling)
+
+    -- Darkheart Thicket
+    [200589] = 20, -- Festering Swipe (Festerhide Grizzly) - TODO removed?
+    [200771] = 20, -- Propelling Charge (Crazed Razorbeak) - TODO is this avoidable for tanks?
+    [198376] = 20, -- Primal Rampage, Frontal (Archdruid Glaidalis)
+    [204667] = 20, -- Nightmare Breath (Oakheart)
+
+    -- The Everbloom
+    [164357] = 20, -- Parched Gasp (Witherbark)
+    [427512] = 20, -- Noxious Charge (Dulhu, Ancient Protectors)
+    [427513] = 20, -- Noxious Discharge (Dulhu, Ancient Protectors)
+    [170411] = 20, -- Spore Breath (Infested Venomfang) - not part of M+
+    [169371] = 20, -- Swipe (Venom-Crazed Pale One, Xeri'tac) - not part of M+
+    [169267] = 20, -- Toxic Blood (Toxic Spiderling, Xeri'tac) - not part of M+
+
+    -- Throne of the Tides
+    [426645] = 20, -- Acid Barrage, Hit (Naz'jar Ravager)
+    [426727] = 20, -- Acid Barrage, DoT (Naz'jar Ravager)
+    [428530] = 20, -- Murk Spew (Ink of Ozumat, Ozumat)
 }
 
 local Auras = {
@@ -364,6 +512,20 @@ local Auras = {
 
     -- Dawn of the Infinite: Murozond's Rise
     [401667] = true, -- Time Stasis (Morchie)
+
+    -- Atal'Dazar
+    [257483] = true, -- Pile of Bones (Environment, Rezan)
+    [255371] = true, -- Terrifying Visage (Rezan)
+
+    -- Waycrest Manor
+    [265352] = true, -- Toad Blight (Blight Toad)
+    [278468] = true, -- Freezing Trap (Maddened Survivalist)
+
+    -- Black Rook Hold
+    [199097] = true, -- Cloud of Hypnosis (Dantalionax, Lord Kur'talos Ravencrest)
+
+    -- Darkheart Thicket
+    [200273] = true, -- Cowardice (Shade of Xavius)
 }
 
 local AurasNoTank = {}
