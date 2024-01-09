@@ -376,7 +376,7 @@ local Spells = {
     [426991] = 20, -- Blazing Cinders (Archmage Sol)
     [428084] = 20, -- Glacial Fusion (Archmage Sol)
     [428148] = 20, -- Spatial Compression (Archmage Sol)
-    [169179] = 20, -- Colossal Blow (Yalnu) - always does damage to party as well
+    --[169179] = 20, -- Colossal Blow (Yalnu) - always does damage to party as well
     [428834] = 20, -- Verdant Eruption (Yalnu)
     [169930] = 20, -- Lumbering Swipe (Flourishing Ancient, Yalnu)
 
@@ -507,7 +507,10 @@ local Auras = {
     [199097] = true, -- Cloud of Hypnosis (Dantalionax, Lord Kur'talos Ravencrest)
 
     -- Darkheart Thicket
-    [200273] = true -- Cowardice (Shade of Xavius)
+    [200273] = true, -- Cowardice (Shade of Xavius)
+
+	-- The Everbloom
+	[169179] = true -- Colossal Blow (Yalnu)
 }
 
 local AurasNoTank = {}
