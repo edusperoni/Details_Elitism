@@ -306,6 +306,7 @@ local Spells = {
     [263098] = 20, -- Shadowy Remains (Echoes of Shadra, Yazma)
 
     -- Waycrest Manor
+    [265372] = 20, -- Shadow Cleave (Enthralled Guard)
     -- [278849] = 20, -- Uproot (Coven Thornshaper) - TODO probably not avoidable
     [264040] = 20, -- Uprooted Thorns (Coven Thornshaper)
     [264150] = 20, -- Shatter (Thornguard)
@@ -454,9 +455,6 @@ local SpellsNoTank = {
     [417339] = 20, -- Titanic Blow (Tyr, the Infinite Keeper)
     [404917] = 20, -- Sand Blast (Morchie)
     [416139] = 20, -- Temporal Breath (Chrono-Lord Deios)
-
-    -- Waycrest Manor
-    [265372] = 20, -- Shadow Cleave (Enthralled Guard)
 
     -- Black Rook Hold
     [225909] = 20, -- Soul Venom (Rook Spiderling)
