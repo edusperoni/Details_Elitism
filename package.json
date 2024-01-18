@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/edusperoni/Details_Elitism/issues"
   },
-  "homepage": "https://github.com/edusperoni/Details_Elitism#readme"
+  "homepage": "https://github.com/edusperoni/Details_Elitism#readme",
+  "devDependencies": {
+    "conventional-changelog-cli": "^4.1.0"
+  }
 }

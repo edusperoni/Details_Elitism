@@ -1,3 +1,4 @@
 .vscode
 .DS_Store
 .release
+node_modules/
