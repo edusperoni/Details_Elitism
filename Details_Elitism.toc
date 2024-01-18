@@ -1,4 +1,4 @@
-## Interface: 100200
+## Interface: 100205
 ## Title: Details!: Elitism (plugin)
 ## Notes: Show avoidable damage and abilities taken by players.
 ## RequiredDeps: Details
