@@ -1,4 +1,24 @@
 local Spells = {
+    -- Throne of the Tides
+    [426685] = 20, -- Volatile Bolt (Naz'jar Ravager)
+    [426688] = 20, -- Volatile Acid (Naz'jar Ravager)
+    [426681] = 20, -- Electric Jaws (Environment)
+    [76590] = 20, -- Shadow Smash (Faceless Watcher)
+    [426808] = 20, -- Null Blast (Faceless Seer)
+
+    [427769] = 20, -- Geyser (Lady Naz'jar)
+    [428048] = 20, -- Shock Orb (Lady Naz'jar)
+    [428294] = 20, -- Trident Flurry (Naz'jar Honor Guard, Lady Naz'jar)
+    [427565] = 20, -- Bubbling Fissure (Commander Ulthok)
+    [427559] = 20, -- Bubbling Ooze (Commander Ulthok)
+    [429057] = 20, -- Earthfury (Erunak Stonespeaker, Mindbender Ghur'sha)
+    [429172] = 20, -- Terrifying Vision (Mindbender Ghur'sha)
+    [428404] = 20, -- Blotting Darkness (Ink of Ozumat / Sludge, Ozumat)
+    [428616] = 20, -- Deluge of Filth (Ozumat)
+    [428618] = 20, -- Deluge of Filth (Ozumat)
+    [428809] = 20, -- Gushing Ink (Sludge, Ozumat)
+
+
     -- Vortex Pinnacle
     [410999] = 20, -- Pressurized Blast (Armored Mistral)
     -- [411001] = 20, -- Lethal Current (Lurking Tempest) - should this be considered avoidable?
@@ -17,7 +37,10 @@ local Spells = {
 }
 
 
-local SpellsNoTank = {}
+local SpellsNoTank = {
+    -- Throne of the Tides
+    [428530] = 20, -- Murk Spew (Ink of Ozumat, Ozumat)
+}
 
 local Auras = {}
 
