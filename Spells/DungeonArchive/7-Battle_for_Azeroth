@@ -1,4 +1,25 @@
 local Spells = {
+    -- Atal'Dazar
+    [253654] = 20, -- Fiery Enchant (Dazar'ai Augur)
+    [253666] = 20, -- Fiery Bolt (Dazar'ai Augur)
+    [257692] = 20, -- Tiki Blaze (Environment)
+    [255567] = 20, -- Frenzied Charge (T'lonja)
+    [258723] = 20, -- Grotesque Pool (Reanimated Honor Guard)
+    [255620] = 20, -- Festering Eruption (Reanimated Honor Guard)
+
+    [258709] = 20, -- Corrupted Gold (Priestess Alun'za)
+    [255373] = 20, -- Tail (Rezan)
+    [255445] = 20, -- Devour (Rezan)
+    [250259] = 20, -- Toxic Leap (Vol'kaal)
+    [250585] = 20, -- Toxic Pool (Vol'kaal)
+    [250028] = 20, -- Echoes of Shadra, Swirly (Yazma)
+    [263093] = 20, -- Echoes of Shadra, Swirly (Yazma)
+    [250022] = 20, -- Echoes of Shadra, Explosion (Echoes of Shadra, Yazma)
+    [263096] = 20, -- Echoes of Shadra, Explosion (Echoes of Shadra, Yazma)
+    [250036] = 20, -- Shadowy Remains (Echoes of Shadra, Yazma)
+    [263098] = 20, -- Shadowy Remains (Echoes of Shadra, Yazma)
+
+
     -- The Underrot
     [265540] = 20, -- Rotten Bile (Fetid Maggot)
     [265542] = 20, -- Rotten Bile (Fetid Maggot)
@@ -53,6 +74,27 @@ local Spells = {
     [413146] = 20, -- Swiftwind Saber (Harlan Sweete)
     [257293] = 20, -- Swiftwind Saber (Harlan Sweete) - TODO ID?
     [257315] = 20, -- Black Powder Bomb (Irontide Grenadier, Harlan Sweete)
+
+
+    -- Waycrest Manor
+    [265372] = 20, -- Shadow Cleave (Enthralled Guard)
+    -- [278849] = 20, -- Uproot (Coven Thornshaper) - TODO probably not avoidable
+    [264040] = 20, -- Uprooted Thorns (Coven Thornshaper)
+    [264150] = 20, -- Shatter (Thornguard)
+    [265757] = 20, -- Splinter Spike (Matron Bryndle)
+    [264531] = 20, -- Shrapnel Trap (Maddened Survivalist)
+    [271174] = 20, -- Retch (Pallid Gorger)
+    [265407] = 20, -- Dinner Bell (Banquet Steward)
+
+    [260570] = 20, -- Wildfire, Swirly (Soulbound Goliath)
+    [260569] = 20, -- Wildfire, Area (Soulbound Goliath)
+    [272669] = 20, -- Burning Fists (Burning Soul, Soulbound Goliath)
+    [264923] = 20, -- Tenderize (Raal the Gluttonous)
+    [264698] = 20, -- Rotten Expulsion, Impact (Raal the Gluttonous)
+    [264712] = 20, -- Rotten Expulsion, Area (Raal the Gluttonous)
+    [268234] = 20, -- Bile Explosion (Bile Oozeling, Raal the Gluttonous)
+    [268387] = 20, -- Contagious Remnants (Lord Waycrest)
+    [268308] = 20, -- Discordant Cadenza (Lady Waycrest)
 
 
     -- Operation: Mechagon - Junkyard
@@ -121,9 +163,17 @@ local SpellsNoTank = {
 
 
 local Auras = {
+    -- Atal'Dazar
+    [257483] = true, -- Pile of Bones (Environment, Rezan)
+    [255371] = true, -- Terrifying Visage (Rezan)
+
     -- Freehold
     [274516] = true, -- Slippery Suds (Bilge Rat Swabby)
     [272554] = true -- Bloody Mess (Trothak, Ring of Booty)
+
+    -- Waycrest Manor
+    [265352] = true, -- Toad Blight (Blight Toad)
+    [278468] = true, -- Freezing Trap (Maddened Survivalist)
 
     -- Operation: Mechagon - Junkyard
     [398529] = true, -- Gooped (Gunker)
