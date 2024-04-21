@@ -41,7 +41,6 @@ local Spells = {
     -- Ruby Life Pools
     [372696] = 20, -- Excavating Blast (Primal Juggernaut)
     [372697] = 20, -- Jagged Earth (Primal Juggernaut)
-    [373458] = 20, -- Stone Missile (Primal Terrasentry)
     [372088] = 20, -- Blazing Rush, Hit (Defier Draghar)
     [372796] = 20, -- Blazing Rush, DoT (Defier Draghar)
     [385292] = 20, -- Molten Steel (Defier Draghar)
@@ -81,11 +80,12 @@ local Spells = {
     [378831] = 20, -- Explosive Concoction (Qalashi Plunderer)
 
     [373756] = 20, -- Magma Wave (Chargath, Bane of Scales)
+    [374854] = 20, -- Erupted Ground (Chargath, Bane of Scales)
     [375397] = 20, -- Lava Splash (Chargath, Bane of Scales)
     [375061] = 20, -- Blazing Eruption (Forgemaster Gorek)
     [375241] = 20, -- Forgestorm (Forgemaster Gorek)
-    [374397] = 20, -- Heated Swings, Jump (Forgemaster Gorek) - TODO which one is correct?
-    [374517] = 20, -- Heated Swings, Jump (Forgemaster Gorek) - TODO which one is correct?
+    [374397] = 20, -- Heated Swings, Jump (Forgemaster Gorek)
+    [374517] = 20, -- Heated Swings, Jump (Forgemaster Gorek)
     [381482] = 20, -- Forgefire (Forgemaster Gorek)
     [375071] = 20, -- Magma Lob (Magmatusk)
     [375204] = 20, -- Liquid Hot Magma (Magmatusk)
@@ -98,7 +98,6 @@ local Spells = {
 
 
     -- The Nokhud Offensive
-    [384868] = 20, -- Multi-Shot (Nokhud Longbow)
     [384479] = 20, -- Rain of Arrows (Nokhud Longbow)
     [384336] = 20, -- War Stomp (Nokhud Plainstomper / Nokhud Lancemaster / Nokhud Defender)
     [386028] = 20, -- Thunder Clap (Primalist Thunderbeast)
@@ -107,7 +106,6 @@ local Spells = {
     [386912] = 20, -- Stormsurge Cloud (Stormsurge Totem)
     [396376] = 20, -- Chant of the Dead (Ukhel Deathspeaker)
     [387611] = 20, -- Necrotic Eruption (Ukhel Corruptor)
-    [387629] = 20, -- Rotting Wind (Desecrated Ohuna)
     [388451] = 20, -- Stormcaller's Fury (Environment)
     [382233] = 20, -- Broad Stomp (Nokhud Defender / Batak)
     [382274] = 20, -- Vehement Charge (Nokhud Defender / Balara)
@@ -143,6 +141,7 @@ local Spells = {
     [385303] = 20, -- Teeth Trap (Environment)
     [385524] = 20, -- Sentry Fire (Environment)
     [385805] = 20, -- Violent Whirlwind (Stinkbreath)
+    [385186] = 20, -- Stink Breath (Stinkbreath)
     [379425] = 20, -- Rotting Creek (Environment)
     [383392] = 20, -- Rotting Surge, Impact (Filth Caller)
     [383399] = 20, -- Rotting Surge, periodic (Filth Caller)
@@ -168,7 +167,6 @@ local Spells = {
     [386536] = 20, -- Null Stomp (Nullmagic Hornswog)
 
     [374523] = 20, -- Stinging Sap (Leymor)
-    [386660] = 20, -- Erupting Fissure (Leymor)
     [374582] = 20, -- Explosive Brand, Area (Leymor)
     [385579] = 20, -- Ancient Orb (Azureblade)
     [390462] = 20, -- Ancient Orb Fragment (Azureblade)
@@ -187,7 +185,6 @@ local Spells = {
     [374563] = 20, -- Dazzle (Dazzling Dragonfly)
     [374741] = 20, -- Magma Crush (Flamecaller Aymi)
     [375080] = 20, -- Whirling Fury (Squallbringer Cyraz)
-    [385168] = 20, -- Thunderstorm (Primalist Galesinger) - TODO is first tick avoidable?
     [375384] = 20, -- Rumbling Earth (Primalist Earthshaker)
     [383204] = 20, -- Crashing Tsunami (Environment)
     [390290] = 20, -- Flash Flood (Infuser Sariya)
@@ -206,7 +203,6 @@ local Spells = {
 
 
     -- Algeth'ar Academy
-    [388884] = 20, -- Arcane Rain (Spellbound Scepter)
     [388957] = 20, -- Riftbreath (Arcane Ravager)
     [378011] = 20, -- Deadly Winds (Guardian Sentry)
     [377516] = 20, -- Dive Bomb (Territorial Eagle)
@@ -216,7 +212,7 @@ local Spells = {
     [387932] = 20, -- Astral Whirlwind (Algeth'ar Echoknight)
 
     [385970] = 20, -- Arcane Orb, Spawn (Vexamus)
-    [386201] = 20, -- Corrupted Mana (Vexamus) - TODO is first tick avoidable?
+    [386201] = 20, -- Corrupted Mana (Vexamus)
     [388546] = 20, -- Arcane Fissure, Swirly (Vexamus)
     [377034] = 20, -- Overpowering Gust (Crawth)
     [376449] = 20, -- Firestorm (Crawth)
@@ -303,9 +299,6 @@ local SpellsNoTank = {
     [369061] = 20, -- Searing Clap (Emberon)
     [375727] = 20, -- Sand Breath (Chrono-Lord Deios)
 
-    -- Neltharus
-    [384019] = 20, -- Fiery Focus (Chargath, Bane of Scales)
-
     -- The Nokhud Offensive
     [384512] = 20, -- Cleaving Strikes (Nokhud Lancemaster / Nokhud Defender)
     [387135] = 20, -- Arcing Strike (Primalist Arcblade)
@@ -322,6 +315,7 @@ local SpellsNoTank = {
     [370764] = 20, -- Piercing Shards (Crystal Fury)
     [391120] = 20, -- Spellfrost Breath (Scalebane Lieutenant)
     [372222] = 20, -- Arcane Cleave (Azureblade)
+    [386660] = 20, -- Erupting Fissure (Leymor)
 
     -- Halls of Infusion
     [375349] = 20, -- Gusting Breath (Gusting Proto-Drake)
