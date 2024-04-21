@@ -50,6 +50,27 @@ local Spells = {
     [161588] = 20, -- Diffused Energy (Skylord Tovra)
 
 
+    -- The Everbloom
+    [172579] = 20, -- Bounding Whirl (Melded Berserker)
+    [169495] = 20, -- Living Leaves (Gnarlroot)
+    [426849] = 20, -- Cold Fusion (Infested Icecaller)
+    [426982] = 20, -- Spatial Disruption (Addled Arcanomancer)
+
+    [177734] = 20, -- Agitated Water (Witherbark)
+    [164294] = 20, -- Unchecked Growth, Area (Witherbark)
+    [427922] = 20, -- Cinderbolt Storm, Swirlies (Archmage Sol)
+    [426991] = 20, -- Blazing Cinders (Archmage Sol)
+    [428084] = 20, -- Glacial Fusion (Archmage Sol)
+    [428148] = 20, -- Spatial Compression (Archmage Sol)
+    --[169179] = 20, -- Colossal Blow (Yalnu) - always does damage to party as well
+    [428834] = 20, -- Verdant Eruption (Yalnu)
+    [169930] = 20, -- Lumbering Swipe (Flourishing Ancient, Yalnu)
+
+    [172643] = 20, -- Descend (Xeri'tac) - not part of M+
+    [173081] = 20, -- Burst (Gorged Burster, Xeri'tac) - not part of M+
+    [169223] = 20, -- Toxic Gas (Xeri'tac / Toxic Spiderling, Xeri'tac) - not part of M+
+
+
     -- Shadowmoon Burial Grounds
     [152688] = 20, -- Shadow Rune (Environment)
     [152690] = 20, -- Shadow Rune (Environment)
@@ -87,6 +108,14 @@ local SpellsNoTank = {
     [164170] = 20, -- Dash (Grimrail Overseer) - always targets tank despite marker?
     [164163] = 20, -- Hewing Swipe (Grimrail Overseer)
 
+    -- The Everbloom
+    [164357] = 20, -- Parched Gasp (Witherbark)
+    [427512] = 20, -- Noxious Charge (Dulhu, Ancient Protectors)
+    [427513] = 20, -- Noxious Discharge (Dulhu, Ancient Protectors)
+    [170411] = 20, -- Spore Breath (Infested Venomfang) - not part of M+
+    [169371] = 20, -- Swipe (Venom-Crazed Pale One, Xeri'tac) - not part of M+
+    [169267] = 20, -- Toxic Blood (Toxic Spiderling, Xeri'tac) - not part of M+
+
     -- Shadowmoon Burial Grounds
     [153501] = 20, -- Void Blast (Nhallish)
 }
@@ -96,6 +125,9 @@ local Auras = {
      -- Iron Docks
     [164504] = true, -- Intimidated (Fleshrender Nok'gar)
     [172631] = true, -- Knocked Down (Slippery Grease, Grom'kar Technician)
+
+	-- The Everbloom
+	[169179] = true, -- Colossal Blow (Yalnu)
  }
 
 local AurasNoTank = {}
