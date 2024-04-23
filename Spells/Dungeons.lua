@@ -20,7 +20,6 @@ local Spells = {
     [394873] = 20, -- Lightning Strike (Thundering, Environment)
     [396411] = 20, -- Primal Overload (Thundering, Environment)
 
-
     -- Uldaman: Legacy of Tyr
     [369811] = 20, -- Brutal Slam (Hulking Berserker)
     [369854] = 20, -- Throw Rock (Burly Rock-Thrower)
@@ -36,7 +35,6 @@ local Spells = {
     [369052] = 20, -- Seeking Flame (Vault Keeper, Emberon)
     [376325] = 20, -- Eternity Zone (Chrono-Lord Deios)
     [377561] = 20, -- Time Eruption (Chrono-Lord Deios)
-
 
     -- Ruby Life Pools
     [372696] = 20, -- Excavating Blast (Primal Juggernaut)
@@ -62,7 +60,6 @@ local Spells = {
     [373087] = 20, -- Burnout (Blazebound Firestorm, Kokia Blazehoof)
     [381526] = 20, -- Roaring Firebreath (Kyrakka)
     [384773] = 20, -- Flaming Embers (Kyrakka)
-
 
     -- Neltharus
     [372459] = 20, -- Burning (Environment)
@@ -96,7 +93,6 @@ local Spells = {
     [377542] = 20, -- Burning Ground (Warlord Sargha)
     [391773] = 20, -- The Dragon's Eruption (Warlord Sargha)
 
-
     -- The Nokhud Offensive
     [384479] = 20, -- Rain of Arrows (Nokhud Longbow)
     [384336] = 20, -- War Stomp (Nokhud Plainstomper / Nokhud Lancemaster / Nokhud Defender)
@@ -128,7 +124,6 @@ local Spells = {
     [376892] = 20, -- Crackling Upheaval (Balakar Khan)
     [376899] = 20, -- Crackling Cloud (Balakar Khan) - TODO is first tick avoidable?
 
-
     -- Brackenhide Hollow
     [368297] = 20, -- Toxic Trap, Trigger (Bonebolt Hunter)
     [368299] = 20, -- Toxic Trap, Area (Bonebolt Hunter)
@@ -155,7 +150,6 @@ local Spells = {
     [376149] = 20, -- Choking Rotcloud, Area (Decatriarch Wratheye)
     [379425] = 20, -- Decaying Fog (Environment, Decatriarch Wratheye)
 
-
     -- The Azure Vault
     [370766] = 20, -- Crystalline Rupture (Crystal Thrasher)
     [371021] = 20, -- Splintering Shards, Aura (Crystal Thrasher)
@@ -175,7 +169,6 @@ local Spells = {
     [384699] = 20, -- Crystalline Roar (Umbrelskul)
     [385078] = 20, -- Arcane Eruption (Umbrelskul)
     [385267] = 20, -- Crackling Vortex (Umbrelskul)
-
 
     -- Halls of Infusion
     [374075] = 20, -- Seismic Slam (Primalist Geomancer)
@@ -201,7 +194,6 @@ local Spells = {
     [387363] = 20, -- Infused Globule, Explosion (Primal Tsunami)
     [388786] = 20, -- Rogue Waves (Primal Tsunami)
 
-
     -- Algeth'ar Academy
     [388957] = 20, -- Riftbreath (Arcane Ravager)
     [378011] = 20, -- Deadly Winds (Guardian Sentry)
@@ -223,7 +215,6 @@ local Spells = {
     [374361] = 20, -- Astral Breath (Echo of Doragosa)
     [389007] = 20, -- Arcane Rift / Wild Energy (Echo of Doragosa)
     [388996] = 20, -- Energy Eruption (Echo of Doragosa)
-
 
     -- Dawn of the Infinite: Galakrond's Fall
     [419447] = 20, -- Bronze Radiance (Environment)
@@ -251,7 +242,6 @@ local Spells = {
     [414376] = 20, -- Punctured Ground (Iridikron)
     [409642] = 20, -- Pulverizing Exhalation (Iridikron)
     [409969] = 20, -- Stone Dispersion (Iridikron)
-
 
     -- Dawn of the Infinite: Murozond's Rise
     [412137] = 20, -- Temporal Strike (Valow, Timesworn Keeper)
@@ -289,7 +279,7 @@ local Spells = {
     [407123] = 20, -- Rain of Fire (Horde Warlock, Time-Lost Battlefield)
     [416265] = 20, -- Infinite Corruption, small Swirlies (Chrono-Lord Deios)
     [416266] = 20, -- Infinite Corruption, big Swirlies (Chrono-Lord Deios)
-    [417413] = 20, -- Temporal Scar (Chrono-Lord Deios)
+    [417413] = 20 -- Temporal Scar (Chrono-Lord Deios)
 }
 
 local SpellsNoTank = {
@@ -339,7 +329,7 @@ local SpellsNoTank = {
     [412029] = 20, -- Millennium Aid (Infinite Timebender)
     [417339] = 20, -- Titanic Blow (Tyr, the Infinite Keeper)
     [404917] = 20, -- Sand Blast (Morchie)
-    [416139] = 20, -- Temporal Breath (Chrono-Lord Deios)
+    [416139] = 20 -- Temporal Breath (Chrono-Lord Deios)
 }
 
 local Auras = {
@@ -357,7 +347,7 @@ local Auras = {
     [418346] = true, -- Corrupted Mind (Blight of Galakrond)
 
     -- Dawn of the Infinite: Murozond's Rise
-    [401667] = true, -- Time Stasis (Morchie)
+    [401667] = true -- Time Stasis (Morchie)
 }
 
 local AurasNoTank = {}
