@@ -1,22 +1,67 @@
 local Spells = {
-    -- Court of Stars
-    [209027] = 20, -- Quelling Strike (Duskwatch Guard)
-    [209477] = 20, -- Wild Detonation (Mana Wyrm)
-    [212031] = 20, -- Charged Blast (Bound Energy)
-    [209404] = 20, -- Seal Magic (Duskwatch Arcanist)
-    [211391] = 20, -- Felblaze Puddle (Legion Hound) - TODO is first tick avoidable?
+    -- Darkheart Thicket
+    [218759] = 20, -- Corruption Pool (Nightmare Abomination, Festerhide Grizzly / Archdruid Glaidalis) - TODO check ID of boss version
+    [200771] = 20, -- Propelling Charge (Crazed Razorbeak)
+    [204402] = 20, -- Star Shower (Dreadsoul Ruiner)
+    [201123] = 20, -- Root Burst (Vilethorn Blossom)
+    [198916] = 20, -- Vile Burst (Rotheart Keeper)
+    [212797] = 20, -- Hatespawn Detonation (Hatespawn Whelpling) - TODO removed?
+    [201273] = 20, -- Blood Bomb (Bloodtainted Fury)
+    [201227] = 20, -- Blood Assault (Bloodtainted Fury)
+    [201842] = 20, -- Curse of Isolation (Taintheart Summoner)
 
-    [206574] = 20, -- Resonant Slash, Front (Patrol Captain Gerdo)
-    [206580] = 20, -- Resonant Slash, Back (Patrol Captain Gerdo)
-    [219498] = 20, -- Streetsweeper (Patrol Captain Gerdo)
-    [209378] = 20, -- Whirling Blades (Imacu'tya, Talixae Flamewreath)
-    [207979] = 20, -- Shockwave (Jazshariu, Talixae Flamewreath)
-    [397903] = 20, -- Crushing Leap (Jazshariu, Talixae Flamewreath)
-    [207887] = 20, -- Infernal Eruption, Impact (Talixae Flamewreath)
-    [211457] = 20, -- Infernal Eruption, Area (Talixae Flamewreath)
-    [209628] = 20, -- Piercing Gale (Advisor Melandrus)
-    [209630] = 20, -- Piercing Gale (Image of Advisor Melandrus, Advisor Melandrus)
-    [209667] = 20, -- Blade Surge (Advisor Melandrus)
+    [198408] = 20, -- Nightfall (Archdruid Glaidalis)
+    [198386] = 20, -- Primal Rampage, Dash (Archdruid Glaidalis)
+    [199063] = 20, -- Strangling Roots (Oakheart)
+    [191326] = 20, -- Breath of Corruption (Dresaron)
+    [199460] = 20, -- Falling Rocks (Dresaron) - TODO is first tick avoidable?
+    [200329] = 20, -- Overwhelming Terror (Shade of Xavius)
+    [200111] = 20, -- Apocalyptic Fire (Shade of Xavius)
+
+
+    -- Black Rook Hold
+    [200261] = 20, -- Bonebreaking Strike (Soul-Torn Champion / Commander Shendah'sohn)
+    [200344] = 20, -- Arrow Barrage (Risen Archer)
+    [200256] = 20, -- Phased Explosion (Arcane Minion)
+    [222397] = 20, -- Boulder Crush (Environment)
+    [201175] = 20, -- Throw Priceless Artifact (Wyrmtongue Scavenger)
+    [200914] = 20, -- Indigestion (Wyrmtongue Scavenger)
+    [201062] = 20, -- Bowled Over! (Wyrmtongue Scavenger)
+    [214002] = 20, -- Raven's Dive (Risen Lancer)
+
+    [196517] = 20, -- Swirling Scythe (Amalgam of Souls)
+    [194960] = 20, -- Soul Echoes, Explosion (Lord Etheldrin Ravencrest / Amalgam of Souls)
+    [194956] = 20, -- Reap Soul (Amalgam of Souls)
+    [197521] = 20, -- Blazing Trail (Illysanna Ravencrest)
+    [197821] = 20, -- Felblazed Ground (Illysanna Ravencrest)
+    [197974] = 20, -- Bonecrushing Strike (Soul-Torn Vanguard, Illysanna Ravencrest)
+    [198501] = 20, -- Fel Vomitus (Fel Bat, Smashspite the Hateful)
+    [198781] = 20, -- Whirling Blade (Lord Kur'talos Ravencrest)
+    [198820] = 20, -- Dark Blast (Latosius, Lord Kur'talos Ravencrest)
+    [199567] = 20, -- Dark Obliteration (Image of Latosius, Lord Kur'talos Ravencrest)
+
+
+    -- Neltharion's Lair
+    [183407] = 20, -- Acid Splatter (Vileshard Crawler)
+    [183465] = 20, -- Viscid Bile (Tarspitter Lurker)
+    [226388] = 20, -- Rancid Ooze (Tarspitter Luker)
+    [226287] = 20, -- Crush (Vileshard Chunk)
+    [183088] = 20, -- Avalanche, Frontal (Mightstone Breaker)
+    [183100] = 20, -- Avalanche, Rocks (Mightstone Breaker)
+    [186576] = 20, -- Petrifying Cloud (Petrifying Totem, Blightshard Shaper)
+    [202089] = 20, -- Scorch (Burning Geode)
+    -- [183566] = 20, -- Rancid Pool (Rotdrool Grabber, Stoneclaw Grubmaster) - not really avoidable
+
+    [198028] = 20, -- Crystalline Ground (Rokmora)
+    [188169] = 20, -- Razor Shards (Rokmora)
+    [192800] = 20, -- Choking Dust (Blightshard Skitter, Rokmora)
+    [198475] = 20, -- Strike of the Mountain (Ularogg Cragshaper)
+    [210166] = 20, -- Toxic Retch, Area (Naraxas)
+    [199705] = 20, -- Devouring (Naraxas)
+    [200338] = 20, -- Crystal Spikes (Dargrul)
+    [217090] = 20, -- Magma Wave, Initial (Dargrul)
+    [200404] = 20, -- Magma Wave, Final (Dargrul)
+    [216407] = 20, -- Lava Geyser (Dargrul)
 
 
     -- Halls of Valor
@@ -41,27 +86,24 @@ local Spells = {
     [198412] = 20, -- Feedback (Odyn)
 
 
-    -- Neltharion's Lair
-    [183407] = 20, -- Acid Splatter (Vileshard Crawler)
-    [183465] = 20, -- Viscid Bile (Tarspitter Lurker)
-    [226388] = 20, -- Rancid Ooze (Tarspitter Luker)
-    [226287] = 20, -- Crush (Vileshard Chunk)
-    [183088] = 20, -- Avalanche, Frontal (Mightstone Breaker)
-    [183100] = 20, -- Avalanche, Rocks (Mightstone Breaker)
-    [186576] = 20, -- Petrifying Cloud (Petrifying Totem, Blightshard Shaper)
-    [202089] = 20, -- Scorch (Burning Geode)
-    -- [183566] = 20, -- Rancid Pool (Rotdrool Grabber, Stoneclaw Grubmaster) - not really avoidable
+    -- Court of Stars
+    [209027] = 20, -- Quelling Strike (Duskwatch Guard)
+    [209477] = 20, -- Wild Detonation (Mana Wyrm)
+    [212031] = 20, -- Charged Blast (Bound Energy)
+    [209404] = 20, -- Seal Magic (Duskwatch Arcanist)
+    [211391] = 20, -- Felblaze Puddle (Legion Hound) - TODO is first tick avoidable?
 
-    [198028] = 20, -- Crystalline Ground (Rokmora)
-    [188169] = 20, -- Razor Shards (Rokmora)
-    [192800] = 20, -- Choking Dust (Blightshard Skitter, Rokmora)
-    [198475] = 20, -- Strike of the Mountain (Ularogg Cragshaper)
-    [210166] = 20, -- Toxic Retch, Area (Naraxas)
-    [199705] = 20, -- Devouring (Naraxas)
-    [200338] = 20, -- Crystal Spikes (Dargrul)
-    [217090] = 20, -- Magma Wave, Initial (Dargrul)
-    [200404] = 20, -- Magma Wave, Final (Dargrul)
-    [216407] = 20, -- Lava Geyser (Dargrul)
+    [206574] = 20, -- Resonant Slash, Front (Patrol Captain Gerdo)
+    [206580] = 20, -- Resonant Slash, Back (Patrol Captain Gerdo)
+    [219498] = 20, -- Streetsweeper (Patrol Captain Gerdo)
+    [209378] = 20, -- Whirling Blades (Imacu'tya, Talixae Flamewreath)
+    [207979] = 20, -- Shockwave (Jazshariu, Talixae Flamewreath)
+    [397903] = 20, -- Crushing Leap (Jazshariu, Talixae Flamewreath)
+    [207887] = 20, -- Infernal Eruption, Impact (Talixae Flamewreath)
+    [211457] = 20, -- Infernal Eruption, Area (Talixae Flamewreath)
+    [209628] = 20, -- Piercing Gale (Advisor Melandrus)
+    [209630] = 20, -- Piercing Gale (Image of Advisor Melandrus, Advisor Melandrus)
+    [209667] = 20, -- Blade Surge (Advisor Melandrus)
 
 
     -- Return to Karazhan: Lower
@@ -123,15 +165,13 @@ local Spells = {
 
 
 local SpellsNoTank = {
-    -- Court of Stars
-    [209036] = 20, -- Throw Torch (Duskwatch Sentry)
-    [209495] = 20, -- Charged Smash (Guardian Construct)
-    [209512] = 20, -- Disrupting Energy (Guardian Construct)
+    -- Darkheart Thicket
+    [200589] = 20, -- Festering Swipe (Festerhide Grizzly) - TODO removed?
+    [198376] = 20, -- Primal Rampage, Frontal (Archdruid Glaidalis)
+    [204667] = 20, -- Nightmare Breath (Oakheart)
 
-    -- Halls of Valor
-    [198888] = 20, -- Lightning Breath (Storm Drake) - TODO is this avoidable by tank?
-    [199050] = 20, -- Mortal Hew (Valarjar Shieldmaiden)
-    [192018] = 20, -- Shield of Light (Hyrja)
+    -- Black Rook Hold
+    [225909] = 20, -- Soul Venom (Rook Spiderling)
 
     -- Neltharion's Lair
     [193505] = 20, -- Fracture (Vileshard Hulk)
@@ -142,6 +182,16 @@ local SpellsNoTank = {
     [188494] = 20, -- Rancid Maw (Naraxas)
     [205609] = 20, -- Rancid Maw (Naraxas) - TODO ID?
     [200721] = 20 -- Landslide (Dargrul)
+
+    -- Halls of Valor
+    [198888] = 20, -- Lightning Breath (Storm Drake) - TODO is this avoidable by tank?
+    [199050] = 20, -- Mortal Hew (Valarjar Shieldmaiden)
+    [192018] = 20, -- Shield of Light (Hyrja)
+
+    -- Court of Stars
+    [209036] = 20, -- Throw Torch (Duskwatch Sentry)
+    [209495] = 20, -- Charged Smash (Guardian Construct)
+    [209512] = 20, -- Disrupting Energy (Guardian Construct)
 
     -- Return to Karazhan: Lower
     [99758] = 20, -- Flame Breath (Ancient Core Hound)
@@ -160,6 +210,12 @@ local SpellsNoTank = {
 
 
 local Auras = {
+    -- Darkheart Thicket
+    [200273] = true, -- Cowardice (Shade of Xavius)
+
+    -- Black Rook Hold
+    [199097] = true, -- Cloud of Hypnosis (Dantalionax, Lord Kur'talos Ravencrest)
+
     -- Court of Stars
     [214987] = true, -- Righteous Indignation (Suspicious Noble) - TODO find ID for stun
     [224333] = true, -- Enveloping Winds (Advisor Melandrus)
