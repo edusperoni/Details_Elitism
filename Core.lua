@@ -775,7 +775,7 @@ function DE:OnInitialize()
     self:RegisterEvent('PLAYER_ENTERING_WORLD', 'InitDataCollection') ---@diagnostic disable-line: undefined-field
     self:RegisterEvent('CHALLENGE_MODE_START', 'InitDataCollection') ---@diagnostic disable-line: undefined-field
 
-    self:SecureHook(Details, 'StartMeUp', 'LoadHooks') ---@diagnostic disable-line: undefined-field
+    self:RegisterEvent('PLAYER_LOGIN', 'LoadHooks') ---@diagnostic disable-line: undefined-field
 end
 
 function DE:srcGUIDtoID(srcGUID)
