@@ -66,6 +66,29 @@ local Spells = {
 
 
     -- Mists of Tirna Scithe
+    [321968] = 20, -- Bewildering Pollen (Tirnenn Villager)
+    [325027] = 20, -- Bramble Burst (Drust Boughbreaker)
+    [463257] = 20, -- Mist Ward (Mistveil Defender)
+    --[331748] = 20, -- Bucking Rampage / Back Kick (Mistveil Guardian) - TODO removed?
+    [340300] = 20, -- Tongue Lashing (Mistveil Gorgegullet)
+    [340304] = 20, -- Poisonous Secretions (Mistveil Gorgegullet)
+    [340311] = 20, -- Crushing Leap (Mistveil Gorgegullet)
+    [340160] = 20, -- Radiant Breath (Mistveil Matriarch)
+    [340283] = 20, -- Poisonous Discharge (Mistveil Nightblossom)
+    [326022] = 20, -- Acid Globule (Spinemaw Gorger)
+    [326017] = 20, -- Decomposing Acid (Spinemaw Larva)
+
+    [323263] = 20, -- Tears of the Forest (Droman Oulfarran, Ingra Maloch)
+    [323250] = 20, -- Anima Puddle (Droman Oulfarran, Ingra Maloch)
+    [323137] = 20, -- Bewildering Pollen (Droman Oulfarran, Ingra Maloch)
+    [321834] = 20, -- Dodge Ball (Mistcaller)
+    [336759] = 20, -- Dodge Ball (Mistcaller)
+    [321893] = 20, -- Freezing Burst (Mistcaller)
+    [321828] = 20, -- Patty Cake (Mistcaller)
+    [322655] = 20, -- Acid Expulsion (Tred'ova)
+    [326309] = 20, -- Decomposing Acid (Tred'ova)
+    [463603] = 20, -- Coalescing Poison (Tred'ova)
+    [326263] = 20, -- Anima Shedding (Tred'ova)
 
 
     -- Siege of Boralus
@@ -79,11 +102,17 @@ local SpellsNoTank = {
     -- The Necrotic Wake
     [324323] = 20, -- Gruesome Cleave (Skeletal Marauder)
     [323489] = 20, -- Throw Cleaver (Flesh Crafter / Stitching Assistant)
+
+    -- Mists of Tirna Scithe
+    [325163] = 20, -- Cleaving Strike (Mistveil Defender) - TODO removed?
 }
 
 local Auras = {
     -- The Necrotic Wake
     [324293] = true, -- Rasping Scream (Skeletal Marauder)
+
+    -- Mists of Tirna Scithe
+    [322968] = true, -- Dying Breath (Drust Spiteclaw)
 }
 
 local AurasNoTank = {}
