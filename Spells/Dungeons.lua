@@ -69,7 +69,6 @@ local Spells = {
     [321968] = 20, -- Bewildering Pollen (Tirnenn Villager)
     [325027] = 20, -- Bramble Burst (Drust Boughbreaker)
     [463257] = 20, -- Mist Ward (Mistveil Defender)
-    --[331748] = 20, -- Bucking Rampage / Back Kick (Mistveil Guardian) - TODO removed?
     [340300] = 20, -- Tongue Lashing (Mistveil Gorgegullet)
     [340304] = 20, -- Poisonous Secretions (Mistveil Gorgegullet)
     [340311] = 20, -- Crushing Leap (Mistveil Gorgegullet)
@@ -92,6 +91,36 @@ local Spells = {
 
 
     -- Siege of Boralus
+    [256627] = 20, -- Slobber Knocker (Scrimshaw Enforcer)
+    [275775] = 20, -- Savage Tempest (Irontide Raider)
+    [257069] = 20, -- Watertight Shell, Explosion (Irontide Waveshaper)
+    [256660] = 20, -- Burning Tar, Impact (Blacktar Bomber)
+    [256663] = 20, -- Burning Tar, Area (Blacktar Bomber)
+    [272140] = 20, -- Iron Volley (Irontide Powdershot, Gauntlet)
+    [272426] = 20, -- Sighted Artillery (Ashvane Spotter / Dread Captain Lockwood)
+    [280679] = 20, -- Cannon Barrage (Environment)
+    [268260] = 20, -- Broadside (Ashvane Canoneer)
+    [277432] = 20, -- Iron Volley (Ashvane Sniper, Gauntlet)
+    [272546] = 20, -- Banana Rampage (Bilge Rat Buccaneer)
+    [277535] = 20, -- Viq'Goth's Wrath (Environment)
+
+    [273681] = 20, -- Heavy Hitter (Chopper Redhook) - is this reasonable?
+    [257585] = 20, -- Cannon Barrage (Chopper Redhook)
+    [273716] = 20, -- Heavy Ordnance, Impact (Chopper Redhook)
+    [273718] = 20, -- Heavy Ordnance, Explosion (Chopper Redhook) - is this reasonable?
+    --[257326] = 20, -- Gore Crash (Chopper Redhook) - always does damage to party as well
+    [257292] = 20, -- Heavy Slash (Irontide Cleaver, Chopper Redhook)
+    [269029] = 20, -- Clear the Deck (Dread Captain Lockwood)
+    [268443] = 20, -- Dread Volley (Dread Captain Lockwood)
+    [261565] = 20, -- Crashing Tide (Hadal Darkfathom)
+    [257886] = 20, -- Brine Pool (Hadal Darkfathom)
+    --[257883] = 20, -- Break Water (Hadal Darkfathom) - always does damage to party as well
+    [276042] = 20, -- Tidal Surge (Hadal Darkfathom)
+    [270187] = 20, -- Call of the Deep (Viq'Goth)
+    [270484] = 20, -- Call of the Deep (Viq'Goth)
+    [275051] = 20, -- Putrid Waters, Dispel (Viq'Goth)
+    [280485] = 20, -- Terror from Below / Crushing Embrace (Viq'Goth)
+    [269484] = 20, -- Eradication (Viq'Goth)
 
 
     -- Grim Batol
@@ -105,6 +134,9 @@ local SpellsNoTank = {
 
     -- Mists of Tirna Scithe
     [325163] = 20, -- Cleaving Strike (Mistveil Defender) - TODO removed?
+
+    -- Siege of Boralus
+    --[273720] = 20, -- Heavy Ordnance, Contact (Chopper Redhook) - is this reasonable?
 }
 
 local Auras = {
@@ -113,6 +145,10 @@ local Auras = {
 
     -- Mists of Tirna Scithe
     [322968] = true, -- Dying Breath (Drust Spiteclaw)
+
+    -- Siege of Boralus
+    [257169] = true, -- Terrifying Roar (Bilge Rat Demolisher)
+    [274942] = true, -- Banana Rampage (Bilge Rat Buccaneer)
 }
 
 local AurasNoTank = {}
