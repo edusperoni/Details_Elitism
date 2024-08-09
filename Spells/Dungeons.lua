@@ -4,7 +4,6 @@ local DE = Engine.Core
 
 local Spells = {
     -- Debug
-    -- [] = 20,        -- ()
     -- [252144] = 1,
     -- [190984] = 1,         -- DEBUG Druid Wrath
     -- [285452] = 1,         -- DEBUG Shaman Lava Burst
@@ -124,6 +123,26 @@ local Spells = {
 
 
     -- Grim Batol
+    [456701] = 20, -- Obsidian Stomp (Twilight Brute)
+    [451614] = 20, -- Twilight Ember (Twilight Destroyer)
+    [454216] = 20, -- Boiling Lava (Environment)
+    [462219] = 20, -- Blazing Shadowflame, Frontal (Twilight Flamerender)
+    [462220] = 20, -- Blazing Shadowflame, Area (Twilight Flamerender)
+    [456711] = 20, -- Shadowlava Blast (Twilight Lavabender)
+    [451389] = 20, -- Ascension, Swirly (Twilight Lavabender)
+    [451394] = 20, -- Mind Piercer (Faceless Corruptor)
+
+    [448566] = 20, -- Shadowflame Breath (Twilight Drake, General Umbriss)
+    [448953] = 20, -- Rumbling Earth (General Umbriss)
+    [449536] = 20, -- Molten Pool (Forgemaster Throngus)
+    [447395] = 20, -- Fiery Cleave (Forgemaster Throngus)
+    [448028] = 20, -- Invocation of Shadowflame, Swirly (Drahga Shadowburner)
+    [75238] = 20, -- Shadowflame Nova (Invoked Shadowflame Spirit, Drahga Shadowburner) - is this reasonable?
+    [448105] = 20, -- Devouring Flame (Valiona, Drahga Shadowburner)
+    [456773] = 20, -- Twilight Wind (Valiona, Drahga Shadowburner)
+    [450087] = 20, -- Depth's Grasp (Void Tendril, Erudax)
+    [461513] = 20, -- Shadow Gale, shrinking (Erudax) - TODO check
+    [449985] = 20, -- Shadow Gale, formed (Erudax)
 }
 
 
