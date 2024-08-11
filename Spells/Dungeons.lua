@@ -18,6 +18,24 @@ local Spells = {
 
 
     -- The Stonevault
+    [425027] = 20, -- Seismic Wave (Earth Infused Golem)
+    [447145] = 20, -- Pulverizing Pounce (Repurposed Loaderbot)
+    [449070] = 20, -- Crystal Salvo (Void Touched Elemental)
+    [449129] = 20, -- Lava Cannon (Forge Loader)
+    [448975] = 20, -- Shield Stampede (Cursedforge Honor Guard)
+    [428709] = 20, -- Granite Eruption (Rock Smasher)
+
+    [422261] = 20, -- Crystal Shard, Impact (Skarmorak)
+    [423538] = 20, -- Unstable Crash (Skarmorak)
+    [443405] = 20, -- Unstable Fragments, Impact (Skarmorak)
+    [428547] = 20, -- Scrap Cube (Speaker Brokk, Forge Speakers)
+    [428819] = 20, -- Exhaust Vents, Vents (Speaker Brokk, Forge Speakers)
+    [429999] = 20, -- Flaming Scrap (Speaker Brokk, Forge Speakers)
+    [449169] = 20, -- Lava Cannon (Speaker Dorlita, Forge Speakers)
+    [464392] = 20, -- Blazing Shrapnel (Speaker Dorlita, Forge Speakers)
+    [463145] = 20, -- Magma Wave (Speaker Dorlita, Forge Speakers)
+    [427869] = 20, -- Unbridled Void (Void Speaker Eirich)
+    [457465] = 20, -- Entropy (Void Speaker Eirich)
 
 
     -- Darkflame Cleft
