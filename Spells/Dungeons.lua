@@ -45,6 +45,29 @@ local Spells = {
 
 
     -- The Dawnbreaker
+    --[432454] = 20, -- Stygian Seed, Explosion (Nightfall Ritualist) - TODO check
+    [430655] = 20, -- Arathi Ariship Cannon (Environment)
+    [451093] = 20, -- Arathi Bomb (Environment)
+    [431494] = 20, -- Black Edge (Nightfall Tactician)
+    [432606] = 20, -- Black Hail (Manifested Shadow)
+    [451098] = 20, -- Tacky Nova (Sureki Militant)
+    [451115] = 20, -- Terrifying Slam, Area (Ixkreten the Unbreakable)
+    [460135] = 20, -- Dark Scars (Deathscreamer Iken'tak)
+    [431352] = 20, -- Tormenting Eruption, Splash (Nightfall Dark Architect)
+
+    [453214] = 20, -- Obsidian Beam, Beams (Speaker Shadowcrown)
+    --[453171] = 20, -- Collapsing Night, Spawn (Speaker Shadowcrown) - TODO avoidable?
+    [453173] = 20, -- Collapsing Night, Area (Speaker Shadowcrown)
+    [451032] = 20, -- Darkness Comes (Speaker Shadowcrown)
+    [427007] = 20, -- Terrifying Slam, Area (Anub'ikkaj)
+    [427378] = 20, -- Dark Scars (Anub'ikkaj)
+    [434655] = 20, -- Arathi Bomb, Explosion (Rasha'nan)
+    [448215] = 20, -- Expel Webs (Rasha'nan)
+    [434579] = 20, -- Rolling Acid, Corrosion (Rasha'nan)
+    [449335] = 20, -- Encroaching Shadows (Environment)
+    [434096] = 20, -- Sticky Web (Rasha'nan)
+    [438956] = 20, -- Acid Pools (Rasha'nan)
+    [438957] = 20, -- Acid Pools (Rasha'nan)
 
 
     -- City of Threads
@@ -173,10 +196,13 @@ local SpellsNoTank = {
     [325163] = 20, -- Cleaving Strike (Mistveil Defender) - TODO removed?
 
     -- Siege of Boralus
-    --[273720] = 20, -- Heavy Ordnance, Contact (Chopper Redhook) - is this reasonable?
+    [273720] = 20, -- Heavy Ordnance, Contact (Chopper Redhook) - is this reasonable?
 }
 
 local Auras = {
+    -- The Dawnbreaker
+    [451104] = true, -- Bursting Cocoon, Explosion (Sureki Webmage)
+
     -- The Necrotic Wake
     [324293] = true, -- Rasping Scream (Skeletal Marauder)
 
