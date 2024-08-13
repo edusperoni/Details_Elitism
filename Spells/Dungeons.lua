@@ -45,7 +45,7 @@ local Spells = {
 
 
     -- The Dawnbreaker
-    --[432454] = 20, -- Stygian Seed, Explosion (Nightfall Ritualist) - TODO check
+    [432454] = 20, -- Stygian Seed, Explosion (Nightfall Ritualist) - TODO check
     [430655] = 20, -- Arathi Ariship Cannon (Environment)
     [451093] = 20, -- Arathi Bomb (Environment)
     [431494] = 20, -- Black Edge (Nightfall Tactician)
@@ -71,6 +71,36 @@ local Spells = {
 
 
     -- City of Threads
+    [443500] = 20, -- Earthshatter (Royal Swarmguard / Royal Venomshell / Retired Lord Vul'azak)
+    [443438] = 20, -- Doubt (Herald of Ansurek)
+    [443435] = 20, -- Twist Thoughts, Area (Herald of Ansurek)
+    [451426] = 20, -- Gossamer Barrage (Xeph'itik)
+    [450783] = 20, -- Perfume Toss (Xeph'itik)
+    [451543] = 20, -- Null Slam (Eye of the Queen)
+    [448047] = 20, -- Web Wrap (Pale Priest)
+    [441792] = 20, -- Dark Slam (Reposing Knight)
+    -- TODO additional mob types around High Hollows Market or are those in non-dungeon variant? (Engorged Crawler, Ravenous Crawler, Jabbing Flyer, Loyal Attendant, Royal Acolyte, etc)
+    [434133] = 20, -- Venomous Spray, Swirlies (Royal Venomshell)
+    [445838] = 20, -- Dark Barrage (Unstable Test Subject)
+    [453841] = 20, -- Awakening Calling (Sureki Unnaturaler) - TODO removed?
+    --[447271] = 20, -- Tremor Slam (Hulking Warshell) - always does damage to party as well
+
+    [434710] = 20, -- Chains of Oppression (Orator Krix'vizk)
+    [434779] = 20, -- Terrorize (Orator Krix'vizk)
+    [448562] = 20, -- Doubt (Orator Krix'vizk)
+    [434926] = 20, -- Lingering Influence (Orator Krix'vizk)
+    [440049] = 20, -- Synergic Step (Nx / Vx, Fangs of the Queen)
+    [439686] = 20, -- Shade Slash, Physical (Nx, Fangs of the Queen)
+    [439687] = 20, -- Shade Slash, Shadow (Nx, Fangs of the Queen)
+    [439696] = 20, -- Duskbringer, Area (Nx, Fangs of the Queen)
+    [458741] = 20, -- Frozen Solid (Vx, Fangs of the Queen)
+    [443311] = 20, -- Black Blood (The Coaglamation) - TODO check ID
+    [462439] = 20, -- Black Blood (The Coaglamation) - TODO check ID
+    [461825] = 20, -- Black Blood (The Coaglamation) - TODO check ID
+    [461880] = 20, -- Blood Surge, Area (The Coaglamation)
+    [443641] = 20, -- Blood Surge, ??? (The Coaglamation) - TODO check ID
+    [439481] = 20, -- Shifting Anomalies (Izo the Grand Splicer)
+    --[437700] = 20, -- Tremor Slam (Izo the Grand Splicer) - always does damage to party as well
 
 
     -- Ara-Kara, City of Echoes
@@ -188,6 +218,11 @@ local Spells = {
 
 
 local SpellsNoTank = {
+    -- City of Threads
+    [439764] = 20, -- Process of Elimination, Physical (Izo the Grand Splicer)
+    [439763] = 20, -- Process of Elimination, Shadow (Izo the Grand Splicer)
+    [450055] = 20, -- Gutburst (Ravenous Scarab, Izo the Grand Splicer) - is this reasonable?
+
     -- The Necrotic Wake
     [324323] = 20, -- Gruesome Cleave (Skeletal Marauder)
     [323489] = 20, -- Throw Cleaver (Flesh Crafter / Stitching Assistant)
