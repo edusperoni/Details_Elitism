@@ -79,7 +79,7 @@ local Spells = {
     [451543] = 20, -- Null Slam (Eye of the Queen)
     [448047] = 20, -- Web Wrap (Pale Priest)
     [441792] = 20, -- Dark Slam (Reposing Knight)
-    -- TODO additional mob types around High Hollows Market or are those in non-dungeon variant? (Engorged Crawler, Ravenous Crawler, Jabbing Flyer, Loyal Attendant, Royal Acolyte, etc)
+    -- TODO additional mob types around High Hollows Market (Loyal Attendant, Royal Acolyte, etc)
     [434133] = 20, -- Venomous Spray, Swirlies (Royal Venomshell)
     [445838] = 20, -- Dark Barrage (Unstable Test Subject)
     [453841] = 20, -- Awakening Calling (Sureki Unnaturaler) - TODO removed?
@@ -104,6 +104,24 @@ local Spells = {
 
 
     -- Ara-Kara, City of Echoes
+    [438623] = 20, -- Toxic Rupture (Engorged Crawler)
+    [434830] = 20, -- Vile Webbing (Environment / Ixin / Nakt / Atik / Avanoxx)
+    [434824] = 20, -- Web Spray, Cone (Ixin / Nakt / Atik)
+    [439469] = 20, -- Web Spray, Swirly (Ixin / Nakt / Atik)
+    [438832] = 20, -- Poisonous Cloud, Impact (Atik)
+    [438825] = 20, -- Poisonous Cloud, Area (Atik)
+    [453160] = 20, -- Impale (Hulking Bloodguard)
+    [433843] = 20, -- Erupting Webs (Blood Overseer)
+    [432031] = 20, -- Grasping Blood (Black Blood) - TODO necessary for Ki'katal Cosmic Singularity?
+
+    [438966] = 20, -- Gossamer Onslaught, Swirly (Avanoxx)
+    [433443] = 20, -- Impale (Anub'zekt)
+    [433781] = 20, -- Ceaseless Swarm (Anub'zekt)
+    [434284] = 20, -- Burrow Charge, Dash (Anub'zekt) - TODO difficult for target to avoid, impossible without dash?
+    [433731] = 20, -- Burrow Charge, End (Anub'zekt)
+    [432132] = 20, -- Erupting Webs (Ki'katal the Harvester)
+    [461507] = 20, -- Cultivated Poisons, Wave (Ki'katal the Harvester)
+    [432117] = 20, -- Cosmic Singularity (Ki'katal the Harvester)
 
 
     -- The Necrotic Wake
@@ -237,6 +255,9 @@ local SpellsNoTank = {
 local Auras = {
     -- The Dawnbreaker
     [451104] = true, -- Bursting Cocoon, Explosion (Sureki Webmage)
+
+    -- Ara-Kara, City of Echoes
+    [436614] = true, -- Web Wrap (Environment / Ixin / Nakt / Atik / Avanoxx)
 
     -- The Necrotic Wake
     [324293] = true, -- Rasping Scream (Skeletal Marauder)
