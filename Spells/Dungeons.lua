@@ -39,6 +39,28 @@ local Spells = {
 
 
     -- Darkflame Cleft
+    [423501] = 20, -- Wild Wallop (Rank Overseer)
+    [426883] = 20, -- Bonk! (Kobold Taskworker)
+    [426779] = 20, -- Explosive Flame (Blazing Fiend)
+    [440652] = 20, -- Surging Wax, Impact (Wandering Candle)
+    [440653] = 20, -- Surging Wax, Area (Wandering Candle)
+    [428650] = 20, -- Burning Backlash (Environment)
+    [426265] = 20, -- Ceaseless Flame (Sootsnout) - TODO always towards One-Hand Headlock stunned player?
+    [426259] = 20, -- Pyro-Pummel (Torchsnarl)
+    [422393] = 20, -- Suffocating Darkness (Skittering Darkness)
+    [422414] = 20, -- Shadow Smash (Shuffling Horror)
+
+    [422125] = 20, -- Reckless Charge (Ol' Waxbeard)
+    [422274] = 20, -- Cave-In (Ol' Waxbeard)
+    [424821] = 20, -- High Speed Collision (Ol' Waxbeard)
+    [429093] = 20, -- Underhanded Track-tics, Explosion (Ol' Waxbeard)
+    [421638] = 20, -- Wicklighter Barrage (Blazikon)
+    [424223] = 20, -- Incite Flames (Blazikon)
+    [422700] = 20, -- Extinguishing Gust (Blazikon)
+    [443969] = 20, -- Enkindling Inferno (Blazikon)
+    [421067] = 20, -- Molten Wax (The Candle King)
+    [427100] = 20, -- Umbral Slash (The Darkness)
+    [426943] = 20, -- Rising Gloom (The Darkness) - is this reasonable?
 
 
     -- Priory of the Sacred Flame
@@ -47,7 +69,7 @@ local Spells = {
     [427473] = 20, -- Flamestrike, Area (Fanatical Conjuror)
     [427601] = 20, -- Burst of Light (Lightspawn)
     [448492] = 20, -- Thunderclap (Guard Captain Suleyman) - TODO is this reasonable?
-    [428151] = 20, -- Reflective Shield (High Priest Aemya) - TODO is this reasonable?
+    [428151] = 20, -- Reflective Shield (High Priest Aemya) - is this reasonable?
     [427900] = 20, -- Molten Pool (Forge Master Damian)
     [444705] = 20, -- Divine Storm (Zealous Templar) - TODO is this reasonable?
     [424430] = 20, -- Consecration (Ardent Paladin)
@@ -63,11 +85,11 @@ local Spells = {
     [425554] = 20, -- Purify (Prioress Murrpray)
     [425556] = 20, -- Sanctified Ground (Prioress Murrpray)
     [428170] = 20, -- Blinding Light, Disorient (Prioress Murrpray)
-    --[xxxx] = 20, -- ongoing dmg after Stoke the Flame (Prioress Murrpray)
+    --[xxxx] = 20, -- ongoing dmg after Stoke the Flame (Prioress Murrpray) - TODO ID?
 
 
     -- The Dawnbreaker
-    [432454] = 20, -- Stygian Seed, Explosion (Nightfall Ritualist) - TODO check
+    [432454] = 20, -- Stygian Seed, Explosion (Nightfall Ritualist)
     [430655] = 20, -- Arathi Ariship Cannon (Environment)
     [451093] = 20, -- Arathi Bomb (Environment)
     [431494] = 20, -- Black Edge (Nightfall Tactician)
@@ -78,7 +100,6 @@ local Spells = {
     [431352] = 20, -- Tormenting Eruption, Splash (Nightfall Dark Architect)
 
     [453214] = 20, -- Obsidian Beam, Beams (Speaker Shadowcrown)
-    --[453171] = 20, -- Collapsing Night, Spawn (Speaker Shadowcrown) - TODO avoidable?
     [453173] = 20, -- Collapsing Night, Area (Speaker Shadowcrown)
     [451032] = 20, -- Darkness Comes (Speaker Shadowcrown)
     [427007] = 20, -- Terrifying Slam, Area (Anub'ikkaj)
@@ -120,7 +141,6 @@ local Spells = {
     [462439] = 20, -- Black Blood (The Coaglamation) - TODO check ID
     [461825] = 20, -- Black Blood (The Coaglamation) - TODO check ID
     [461880] = 20, -- Blood Surge, Area (The Coaglamation)
-    [443641] = 20, -- Blood Surge, ??? (The Coaglamation) - TODO check ID
     [439481] = 20, -- Shifting Anomalies (Izo the Grand Splicer)
     --[437700] = 20, -- Tremor Slam (Izo the Grand Splicer) - always does damage to party as well
 
@@ -252,12 +272,15 @@ local Spells = {
     [448105] = 20, -- Devouring Flame (Valiona, Drahga Shadowburner)
     [456773] = 20, -- Twilight Wind (Valiona, Drahga Shadowburner)
     [450087] = 20, -- Depth's Grasp (Void Tendril, Erudax)
-    [461513] = 20, -- Shadow Gale, shrinking (Erudax) - TODO check
+    [461513] = 20, -- Shadow Gale, shrinking (Erudax)
     [449985] = 20, -- Shadow Gale, formed (Erudax)
 }
 
 
 local SpellsNoTank = {
+    -- Darkflame Cleft
+    [421282] = 20, -- Darkflame Pickaxe (The Candle King)
+
     -- City of Threads
     [439764] = 20, -- Process of Elimination, Physical (Izo the Grand Splicer)
     [439763] = 20, -- Process of Elimination, Shadow (Izo the Grand Splicer)
@@ -267,14 +290,14 @@ local SpellsNoTank = {
     [324323] = 20, -- Gruesome Cleave (Skeletal Marauder)
     [323489] = 20, -- Throw Cleaver (Flesh Crafter / Stitching Assistant)
 
-    -- Mists of Tirna Scithe
-    [325163] = 20, -- Cleaving Strike (Mistveil Defender) - TODO removed?
-
     -- Siege of Boralus
     [273720] = 20, -- Heavy Ordnance, Contact (Chopper Redhook) - is this reasonable?
 }
 
 local Auras = {
+    -- Darkflame Cleft
+    [421653] = 20, -- Cursed Wax (The Candle King)
+
     -- The Dawnbreaker
     [451104] = true, -- Bursting Cocoon, Explosion (Sureki Webmage)
 
