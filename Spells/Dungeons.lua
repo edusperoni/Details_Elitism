@@ -15,6 +15,26 @@ local Spells = {
 
 
     -- Cinderbrew Meadery
+    [437965] = 20, -- Pulsing Flames (Venture Co. Pyromaniac)
+    [434707] = 20, -- Cinderbrew Toss (Tasting Room Attendant)
+    [435000] = 20, -- High Steaks (Chef Chewie)
+    [448920] = 20, -- Reckless Delivery, Charge (Careless Hopgoblin)
+    [441179] = 20, -- Oozing Honey (Brew Drop)
+    [442589] = 20, -- Beeswax (Venture Co. Honey Harvester)
+    [440887] = 20, -- Rain of Honey (Royal Jelly Purveyor)
+    [448855] = 20, -- Drop Shipment (Environment)
+    [439468] = 20, -- Downward Trend (Yes Man / Assent Bloke / Agree Gentleman / Concur Sir)
+
+    [432196] = 20, -- Hot Honey (Brew Master Aldryr)
+    [432198] = 20, -- Blazing Belch (Brew Master Aldryr)
+    [445180] = 20, -- Crawling Brawl (Brew Master Aldryr)
+    [439991] = 20, -- Spouting Stout, Swirly (I'pa)
+    [440087] = 20, -- Oozing Honey (Brew Drop, I'pa)
+    [438651] = 20, -- Snack Time (Benk Buzzbee)
+    [440141] = 20, -- Honey Marinade, Area (Benk Buzzbee)
+    [438933] = 20, -- Sticky Situation (Benk Buzzbee) - TODO check ID
+    [438931] = 20, -- Sticky Situation (Benk Buzzbee) - TODO check ID
+    [435788] = 20, -- Cinder-BOOM!, Waves (Goldie Baronbottom)
 
 
     -- The Stonevault
@@ -278,6 +298,10 @@ local Spells = {
 
 
 local SpellsNoTank = {
+    -- Cinderbrew Meadery
+    [440138] = 20, -- Honey Marinade, Explosion (Benk Buzzbee)
+    [436592] = 20, -- Cash Cannon (Goldie Baronbottom)
+
     -- Darkflame Cleft
     [421282] = 20, -- Darkflame Pickaxe (The Candle King)
 
@@ -296,7 +320,7 @@ local SpellsNoTank = {
 
 local Auras = {
     -- Darkflame Cleft
-    [421653] = 20, -- Cursed Wax (The Candle King)
+    [421653] = true, -- Cursed Wax (The Candle King)
 
     -- The Dawnbreaker
     [451104] = true, -- Bursting Cocoon, Explosion (Sureki Webmage)
