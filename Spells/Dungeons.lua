@@ -12,6 +12,28 @@ local Spells = {
     -- Affixes
 
     -- The Rookery
+    --[427331] = 20, -- Charged Bombardment, Dash (Voidrider) - TODO is this avoidable?
+    [432605] = 20, -- Charged Bombardment, Swirlies (Voidrider)
+    [426968] = 20, -- Bounding Void (Quartermaster Koratite)
+    [430013] = 20, -- Thunderstrike (Unruly Stormrook)
+    [452932] = 20, -- Attracting Shadows, Explosion (Coalescing Void Diffuser)
+    [430186] = 20, -- Seeping Corruption (Corrupted Oracle)
+    [423981] = 20, -- Implosion, Explosion (Void Cursed Crusher)
+    [443847] = 20, -- Instability (Inflicted Civilian)
+    --[xxxx] = 20, -- void swirlies (Environment) - TODO ID? same as Embrace the Void?
+    [430288] = 20, -- Crushing Darkness (Void Fragment)
+    [438848] = 20, -- Embrace the Void, Swirly (Radiating Voidstone)
+
+    [419871] = 20, -- Lightning Dash (Kyrioss)
+    [444411] = 20, -- Stormheart (Kyrioss) - TODO new, is this a swirly?
+    [444250] = 20, -- Lightning Torrent (Kyrioss)
+    [425113] = 20, -- Crush Reality (Stormguard Gorren)
+    [424966] = 20, -- Lingering Void (Stormguard Gorren)
+    [426136] = 20, -- Reality Tear (Stormguard Gorren)
+    [425052] = 20, -- Dark Gravity, Explosion (Stormguard Gorren)
+    [426171] = 20, -- Chaotic Explosion (Stormguard Gorren) - TODO check
+    [423356] = 20, -- Null Upheaval, Swirlies (Voidstone Monstrosity)
+    --[433067] = 20, -- Seeping Fragment (Voidstone Monstrosity) - unavoidable to destroy Seeping Fragment with Stormrider's Charge
 
 
     -- Cinderbrew Meadery
@@ -298,6 +320,11 @@ local Spells = {
 
 
 local SpellsNoTank = {
+    -- The Rookery
+    [427616] = 20, -- Energized Barrage (Unruly Stormrook)
+    [433078] = 20, -- Implosion, Impact (Void Cursed Crusher) - TODO check
+    [445537] = 20, -- Oblivion Wave (Voidstone Monstrosity)
+
     -- Cinderbrew Meadery
     [440138] = 20, -- Honey Marinade, Explosion (Benk Buzzbee)
     [436592] = 20, -- Cash Cannon (Goldie Baronbottom)
