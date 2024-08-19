@@ -25,7 +25,7 @@ local Spells = {
     [438848] = 20, -- Embrace the Void, Swirly (Radiating Voidstone)
 
     [419871] = 20, -- Lightning Dash (Kyrioss)
-    [444411] = 20, -- Stormheart (Kyrioss) - TODO new, is this a swirly?
+    [444411] = 20, -- Stormheart (Kyrioss)
     [444250] = 20, -- Lightning Torrent (Kyrioss)
     [425113] = 20, -- Crush Reality (Stormguard Gorren)
     [424966] = 20, -- Lingering Void (Stormguard Gorren)
