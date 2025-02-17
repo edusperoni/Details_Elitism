@@ -13,30 +13,32 @@ local Spells = {
 
 
     -- The Necrotic Wake
-    [324391] = 20, -- Frigid Spikes (Skeletal Monstrosity)
-    [324381] = 20, -- Chill Scythe / Reaping Winds (Skeletal Monstrosity)
-    [323957] = 20, -- Animate Dead (Zolramus Necromancer - summons Warrior)
-    [324026] = 20, -- Animate Dead (Zolramus Necromancer - summons Crossbowman)
-    [324027] = 20, -- Animate Dead (Zolramus Necromancer - summons Mage)
+    [323957] = 20, -- Animate Dead, Warrior (Zolramus Necromancer)
+    [324026] = 20, -- Animate Dead, Crossbowman (Zolramus Necromancer)
+    [324027] = 20, -- Animate Dead, Mage (Zolramus Necromancer)
     [320574] = 20, -- Shadow Well (Zolramus Sorcerer)
-    [333477] = 20, -- Gut Slice (Goregrind)
     [345625] = 20, -- Death Burst (Nar'zudah)
+    [324391] = 20, -- Frigid Spikes (Skeletal Monstrosity)
+    [324381] = 20, -- Reaping Winds / Chill Scythe (Skeletal Monstrosity)
     [327240] = 20, -- Spine Crush (Loyal Creation)
+    [333477] = 20, -- Gut Slice (Goregrind)
 
     [320646] = 20, -- Fetid Gas (Blightbone)
-    [319897] = 20, -- Land of the Dead (Amarth - summons Crossbowman)
-    [319902] = 20, -- Land of the Dead (Amarth - summons Warrior)
-    [333627] = 20, -- Land of the Dead (Amarth - summons Mage)
-    [321253] = 20, -- Final Harvest (Amarth)
+    [319897] = 20, -- Land of the Dead, Crossbowman (Amarth)
+    [319902] = 20, -- Land of the Dead, Warrior (Amarth)
+    [333627] = 20, -- Land of the Dead, Mage (Amarth)
+    [321253] = 20, -- Final Harvest, Swirly (Amarth)
     [333489] = 20, -- Necrotic Breath (Amarth)
     [333492] = 20, -- Necrotic Ichor (Amarth)
-    [320365] = 20, -- Embalming Ichor (Surgeon Stitchflesh)
-    [320366] = 20, -- Embalming Ichor (Surgeon Stitchflesh)
-    [327952] = 20, -- Meat Hook (Surgeon Stitchflesh - Stitchflesh's Creation)
-    [327100] = 20, -- Noxious Fog (Surgeon Stitchflesh)
-    [328212] = 20, -- Razorshard Ice (Nalthor the Rimebinder)
+    [320365] = 20, -- Embalming Ichor, Swirly (Surgeon Stitchflesh)
+    [320366] = 20, -- Embalming Ichor, Area (Surgeon Stitchflesh)
+    [327952] = 20, -- Meat Hook (Stitchflesh's Creation, Surgeon Stitchflesh)
+    [327100] = 20, -- Noxious Fog (Environment, Surgeon Stitchflesh)
     [320784] = 20, -- Comet Storm (Nalthor the Rimebinder)
-    [321956] = 20, -- Comet Storm (Nalthor the Rimebinder - Dark Exile Version)
+    [321956] = 20, -- Comet Storm, Dark Exile (Nalthor the Rimebinder)
+    [322793] = 20, -- Blizzard, Dark Exile (Nalthor the Rimebinder)
+    [327875] = 20, -- Blizzard, Dark Exile (Nalthor the Rimebinder)
+    [328212] = 20, -- Razorshard Ice (Nalthor the Rimebinder)
 
 
     -- Spires of Ascension
@@ -112,24 +114,26 @@ local Spells = {
 
     -- Mists of Tirna Scithe
     [321968] = 20, -- Bewildering Pollen (Tirnenn Villager)
-    [323137] = 20, -- Bewildering Pollen (Tirnenn Villager)
     [325027] = 20, -- Bramble Burst (Drust Boughbreaker)
-    [326022] = 20, -- Acid Globule (Spinemaw Gorger)
+    [463257] = 20, -- Mist Ward (Mistveil Defender)
     [340300] = 20, -- Tongue Lashing (Mistveil Gorgegullet)
     [340304] = 20, -- Poisonous Secretions (Mistveil Gorgegullet)
     [340311] = 20, -- Crushing Leap (Mistveil Gorgegullet)
-    [331743] = 20, -- Bucking Rampage (Mistveil Guardian)
-    [331748] = 20, -- Back Kick (Mistveil Guardian)
     [340160] = 20, -- Radiant Breath (Mistveil Matriarch)
+    [340283] = 20, -- Poisonous Discharge (Mistveil Nightblossom)
+    [326022] = 20, -- Acid Globule (Spinemaw Gorger)
+    [326017] = 20, -- Decomposing Acid (Spinemaw Larva)
 
-    [323263] = 20, -- Tears of the Forest (Ingra Maloch)
-    [323250] = 20, -- Anima Puddle (Droman Oulfarran)
+    [323263] = 20, -- Tears of the Forest (Droman Oulfarran, Ingra Maloch)
+    [323250] = 20, -- Anima Puddle (Droman Oulfarran, Ingra Maloch)
+    [323137] = 20, -- Bewildering Pollen (Droman Oulfarran, Ingra Maloch)
     [321834] = 20, -- Dodge Ball (Mistcaller)
     [336759] = 20, -- Dodge Ball (Mistcaller)
     [321893] = 20, -- Freezing Burst (Mistcaller)
     [321828] = 20, -- Patty Cake (Mistcaller)
     [322655] = 20, -- Acid Expulsion (Tred'ova)
     [326309] = 20, -- Decomposing Acid (Tred'ova)
+    [463603] = 20, -- Coalescing Poison (Tred'ova)
     [326263] = 20, -- Anima Shedding (Tred'ova)
 
 
@@ -247,9 +251,6 @@ local SpellsNoTank = {
     [317943] = 20, -- Sweeping Blow (Frostsworn Vanguard)
     [324608] = 20, -- Charged Stomp (Oryphrion)
 
-    -- Mists of Tirna Scithe
-    [331721] = 20, -- Spear Flurry (Mistveil Defender)
-
     -- De Other Side
     [332157] = 20, -- Spinning Up (Headless Client)
 
@@ -270,6 +271,9 @@ local Auras = {
 
     -- Spires of Ascension
     [324205] = true, -- Blinding Flash (Ventunax)
+
+    -- Mists of Tirna Scithe
+    [322968] = true, -- Dying Breath (Drust Spiteclaw)
 
     -- De Other Side
     [331381] = true, -- Slipped (Lubricator)
