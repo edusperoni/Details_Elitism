@@ -202,114 +202,67 @@ local Spells = {
     [432117] = 20, -- Cosmic Singularity (Ki'katal the Harvester)
 
 
-    -- The Necrotic Wake
-    [323957] = 20, -- Animate Dead, Warrior (Zolramus Necromancer)
-    [324026] = 20, -- Animate Dead, Crossbowman (Zolramus Necromancer)
-    [324027] = 20, -- Animate Dead, Mage (Zolramus Necromancer)
-    [320574] = 20, -- Shadow Well (Zolramus Sorcerer)
-    [345625] = 20, -- Death Burst (Nar'zudah)
-    [324391] = 20, -- Frigid Spikes (Skeletal Monstrosity)
-    [324381] = 20, -- Reaping Winds / Chill Scythe (Skeletal Monstrosity)
-    [327240] = 20, -- Spine Crush (Loyal Creation)
-    [333477] = 20, -- Gut Slice (Goregrind)
-
-    [320646] = 20, -- Fetid Gas (Blightbone)
-    [319897] = 20, -- Land of the Dead, Crossbowman (Amarth)
-    [319902] = 20, -- Land of the Dead, Warrior (Amarth)
-    [333627] = 20, -- Land of the Dead, Mage (Amarth)
-    [321253] = 20, -- Final Harvest, Swirly (Amarth)
-    [333489] = 20, -- Necrotic Breath (Amarth)
-    [333492] = 20, -- Necrotic Ichor (Amarth)
-    [320365] = 20, -- Embalming Ichor, Swirly (Surgeon Stitchflesh)
-    [320366] = 20, -- Embalming Ichor, Area (Surgeon Stitchflesh)
-    [327952] = 20, -- Meat Hook (Stitchflesh's Creation, Surgeon Stitchflesh)
-    [327100] = 20, -- Noxious Fog (Environment, Surgeon Stitchflesh)
-    [320784] = 20, -- Comet Storm (Nalthor the Rimebinder)
-    [321956] = 20, -- Comet Storm, Dark Exile (Nalthor the Rimebinder)
-    [322793] = 20, -- Blizzard, Dark Exile (Nalthor the Rimebinder)
-    [327875] = 20, -- Blizzard, Dark Exile (Nalthor the Rimebinder)
-    [328212] = 20, -- Razorshard Ice (Nalthor the Rimebinder)
+    -- Operation: Floodgate
 
 
-    -- Mists of Tirna Scithe
-    [321968] = 20, -- Bewildering Pollen (Tirnenn Villager)
-    [325027] = 20, -- Bramble Burst (Drust Boughbreaker)
-    [463257] = 20, -- Mist Ward (Mistveil Defender)
-    [340300] = 20, -- Tongue Lashing (Mistveil Gorgegullet)
-    [340304] = 20, -- Poisonous Secretions (Mistveil Gorgegullet)
-    [340311] = 20, -- Crushing Leap (Mistveil Gorgegullet)
-    [340160] = 20, -- Radiant Breath (Mistveil Matriarch)
-    [340283] = 20, -- Poisonous Discharge (Mistveil Nightblossom)
-    [326022] = 20, -- Acid Globule (Spinemaw Gorger)
-    [326017] = 20, -- Decomposing Acid (Spinemaw Larva)
+    -- Theater of Pain
+    [342126] = 20, -- Brutal Leap (Dokigg the Brutalizer)
+    [337037] = 20, -- Whirling Blade (Nekthara the Mangler)
+    [317605] = 20, -- Whirlwind (Nekthara the Mangler / Rek the Hardened)
+    [332708] = 20, -- Ground Smash (Heavin the Breaker)
+    [334025] = 20, -- Bloodthirsty Charge (Haruga the Bloodthirsty)
+    [333301] = 20, -- Curse of Desolation (Nefarious Darkspeaker)
+    [333297] = 20, -- Death Winds (Nefarious Darkspeaker)
+    [331243] = 20, -- Bone Spikes (Soulforged Bonereaver)
+    [331224] = 20, -- Bonestorm (Soulforged Bonereaver)
+    [330592] = 20, -- Vile Eruption (Rancid Gasbag - back)
+    [330608] = 20, -- Vile Eruption (Rancid Gasbag - front)
+    [321039] = 20, -- Disgusting Burst (Disgusting Refuse / Blighted Sludge-Spewer)
+    [321041] = 20, -- Disgusting Burst (Disgusting Refuse / Blighted Sludge-Spewer)
 
-    [323263] = 20, -- Tears of the Forest (Droman Oulfarran, Ingra Maloch)
-    [323250] = 20, -- Anima Puddle (Droman Oulfarran, Ingra Maloch)
-    [323137] = 20, -- Bewildering Pollen (Droman Oulfarran, Ingra Maloch)
-    [321834] = 20, -- Dodge Ball (Mistcaller)
-    [336759] = 20, -- Dodge Ball (Mistcaller)
-    [321893] = 20, -- Freezing Burst (Mistcaller)
-    [321828] = 20, -- Patty Cake (Mistcaller)
-    [322655] = 20, -- Acid Expulsion (Tred'ova)
-    [326309] = 20, -- Decomposing Acid (Tred'ova)
-    [463603] = 20, -- Coalescing Poison (Tred'ova)
-    [326263] = 20, -- Anima Shedding (Tred'ova)
-
-
-    -- Siege of Boralus
-    [256627] = 20, -- Slobber Knocker (Scrimshaw Enforcer)
-    [275775] = 20, -- Savage Tempest (Irontide Raider)
-    [257069] = 20, -- Watertight Shell, Explosion (Irontide Waveshaper)
-    [256660] = 20, -- Burning Tar, Impact (Blacktar Bomber)
-    [256663] = 20, -- Burning Tar, Area (Blacktar Bomber)
-    [272140] = 20, -- Iron Volley (Irontide Powdershot, Gauntlet)
-    [272426] = 20, -- Sighted Artillery (Ashvane Spotter / Dread Captain Lockwood)
-    [280679] = 20, -- Cannon Barrage (Environment)
-    [268260] = 20, -- Broadside (Ashvane Canoneer)
-    [277432] = 20, -- Iron Volley (Ashvane Sniper, Gauntlet)
-    [272546] = 20, -- Banana Rampage (Bilge Rat Buccaneer)
-    [277535] = 20, -- Viq'Goth's Wrath (Environment)
-
-    [273681] = 20, -- Heavy Hitter (Chopper Redhook)
-    [257585] = 20, -- Cannon Barrage (Chopper Redhook)
-    [273716] = 20, -- Heavy Ordnance, Impact (Chopper Redhook)
-    [273718] = 20, -- Heavy Ordnance, Explosion (Chopper Redhook) - is this reasonable?
-    --[257326] = 20, -- Gore Crash (Chopper Redhook) - always does damage to party as well
-    [257292] = 20, -- Heavy Slash (Irontide Cleaver, Chopper Redhook)
-    [269029] = 20, -- Clear the Deck (Dread Captain Lockwood)
-    [268443] = 20, -- Dread Volley (Dread Captain Lockwood)
-    [261565] = 20, -- Crashing Tide (Hadal Darkfathom)
-    [257886] = 20, -- Brine Pool (Hadal Darkfathom)
-    --[257883] = 20, -- Break Water (Hadal Darkfathom) - always does damage to party as well
-    [276042] = 20, -- Tidal Surge (Hadal Darkfathom)
-    [270187] = 20, -- Call of the Deep (Viq'Goth)
-    [270484] = 20, -- Call of the Deep (Viq'Goth)
-    [275051] = 20, -- Putrid Waters, Dispel (Viq'Goth)
-    [280485] = 20, -- Terror from Below / Crushing Embrace (Viq'Goth)
-    [269484] = 20, -- Eradication (Viq'Goth)
+    [317231] = 20, -- Crushing Slam (Xav the Unfallen)
+    [339415] = 20, -- Deafening Crash (Xav the Unfallen)
+    [320729] = 20, -- Massive Cleave (Xav the Unfallen)
+    [318406] = 20, -- Tenderizing Smash (Gorechop)
+    [323406] = 20, -- Jagged Gash (Gorechop)
+    [323130] = 20, -- Coagulating Ooze (Gorechop)
+    [317367] = 20, -- Necrotic Volley (Kul'tharok)
+    [319639] = 20, -- Grasping Hands (Kul'tharok)
+    [323681] = 20, -- Dark Devastation (Mordretha)
+    [339550] = 20, -- Echo of Battle (Mordretha)
+    [323831] = 20, -- Death Grasp (Mordretha)
+    [339751] = 20, -- Ghostly Charge (Mordretha)
 
 
-    -- Grim Batol
-    [456701] = 20, -- Obsidian Stomp (Twilight Brute)
-    [451614] = 20, -- Twilight Ember (Twilight Destroyer)
-    [454216] = 20, -- Boiling Lava (Environment)
-    [462219] = 20, -- Blazing Shadowflame, Frontal (Twilight Flamerender)
-    [462220] = 20, -- Blazing Shadowflame, Area (Twilight Flamerender)
-    [456711] = 20, -- Shadowlava Blast (Twilight Lavabender)
-    [451389] = 20, -- Ascension, Swirly (Twilight Lavabender)
-    [451394] = 20, -- Mind Piercer (Faceless Corruptor)
+    -- The MOTHERLODE!!
 
-    [448566] = 20, -- Shadowflame Breath (Twilight Drake, General Umbriss)
-    [448953] = 20, -- Rumbling Earth (General Umbriss)
-    [449536] = 20, -- Molten Pool (Forgemaster Throngus)
-    [447395] = 20, -- Fiery Cleave (Forgemaster Throngus)
-    [448028] = 20, -- Invocation of Shadowflame, Swirly (Drahga Shadowburner)
-    [75238] = 20, -- Shadowflame Nova (Invoked Shadowflame Spirit, Drahga Shadowburner) - is this reasonable?
-    [448105] = 20, -- Devouring Flame (Valiona, Drahga Shadowburner)
-    [456773] = 20, -- Twilight Wind (Valiona, Drahga Shadowburner)
-    [450087] = 20, -- Depth's Grasp (Void Tendril, Erudax)
-    [461513] = 20, -- Shadow Gale, shrinking (Erudax)
-    [449985] = 20, -- Shadow Gale, formed (Erudax)
+
+    -- Operation: Mechagon - Workshop
+    [282943] = 20, -- Piston Smasher (Environment)
+    [282945] = 20, -- Buzz Saw (Environment)
+    [294128] = 20, -- Rocket Barrage (Rocket Tonk)
+    [294073] = 20, -- Flying Peck (Strider Tonk)
+    [294349] = 20, -- Volatile Waste (Living Waste)
+    [301299] = 20, -- Furnace Flames (Environment)
+    [293861] = 20, -- Anti-Personnel Squirrel (Anti-Personnel Squirrel)
+    [294324] = 20, -- Mega Drill (Waste Processing Unit)
+    [295168] = 20, -- Capacitor Discharge (Blastatron X-80)
+    [293986] = 20, -- Sonic Pulse (Spider Tank / Blastatron X-80)
+    [294058] = 20, -- High-Explosive Rockets (Spider Tank / Blastatron X-80)
+
+    [285020] = 20, -- Whirling Edge (The Platinum Pummeler)
+    [285377] = 20, -- B.4.T.T.L.3. Mine (The Platinum Pummeler)
+    [283422] = 20, -- Maximum Thrust (Gnomercy 4.U.)
+    [291930] = 20, -- Air Drop (K.U-J.0.)
+    [291953] = 20, -- Junk Bomb (K.U.-J.0.)
+    [291949] = 20, -- Venting Flames (K.U-J.0.)
+    [294954] = 20, -- Self-Trimming Hedge (Machinist's Garden)
+    [285443] = 20, -- "Hidden" Flame Cannon (Machinist's Garden)
+    [285460] = 20, -- Discom-BOMB-ulator (Machinist's Garden)
+    [294869] = 20, -- Roaring Flame (Machinist's Garden)
+    [291613] = 20, -- Take Off! (King Mechagon)
+    [291915] = 20, -- Plasma Orb (King Mechagon)
+    [291856] = 20, -- Recalibrate (King Mechagon)
 }
 
 
@@ -338,12 +291,8 @@ local SpellsNoTank = {
     [439763] = 20, -- Process of Elimination, Shadow (Izo the Grand Splicer)
     [450055] = 20, -- Gutburst (Ravenous Scarab, Izo the Grand Splicer) - is this reasonable?
 
-    -- The Necrotic Wake
-    [324323] = 20, -- Gruesome Cleave (Skeletal Marauder)
-    [323489] = 20, -- Throw Cleaver (Flesh Crafter / Stitching Assistant)
-
-    -- Siege of Boralus
-    --[273720] = 20, -- Heavy Ordnance, Contact (Chopper Redhook) - is this reasonable?
+    -- Operation: Mechagon - Workshop
+    [294291] = 20, -- Process Waste (Waste Processing Unit)
 }
 
 local Auras = {
@@ -356,15 +305,8 @@ local Auras = {
     -- Ara-Kara, City of Echoes
     [436614] = true, -- Web Wrap (Environment / Ixin / Nakt / Atik / Avanoxx)
 
-    -- The Necrotic Wake
-    [324293] = true, -- Rasping Scream (Skeletal Marauder)
-
-    -- Mists of Tirna Scithe
-    [322968] = true, -- Dying Breath (Drust Spiteclaw)
-
-    -- Siege of Boralus
-    [257169] = true, -- Terrifying Roar (Bilge Rat Demolisher)
-    [274942] = true, -- Banana Rampage (Bilge Rat Buccaneer)
+    -- Operation: Mechagon - Workshop
+    [285153] = true, -- Foe Flipper (Gnomercy 4.U.)
 }
 
 local AurasNoTank = {}
