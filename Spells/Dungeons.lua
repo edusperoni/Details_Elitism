@@ -12,27 +12,24 @@ local Spells = {
     -- Affixes
 
     -- The Rookery
-    [427331] = 20, -- Charged Bombardment, Dash (Voidrider)
-    [432605] = 20, -- Charged Bombardment, Swirlies (Voidrider)
+    [474017] = 20, -- Wild Lightning (Voidrider / Kyrioss)
     [426968] = 20, -- Bounding Void (Quartermaster Koratite)
-    [430013] = 20, -- Thunderstrike (Unruly Stormrook)
+    [420679] = 20, -- Tornado Winds (Environment)
     [452932] = 20, -- Attracting Shadows, Explosion (Coalescing Void Diffuser)
-    [430186] = 20, -- Seeping Corruption (Corrupted Oracle)
-    [423981] = 20, -- Implosion, Explosion (Void Cursed Crusher)
-    [443847] = 20, -- Instability (Inflicted Civilian)
+    [430186] = 20, -- Seeping Corruption, Area (Corrupted Oracle)
+    [443847] = 20, -- Instability (Afflicted Civilian)
     [442192] = 20, -- Oppressive Void (Environment)
-    [430288] = 20, -- Crushing Darkness (Void Fragment)
-    [438848] = 20, -- Embrace the Void, Swirly (Radiating Voidstone)
+    [1214550] = 20, -- Umbral Wave (Void Ascendant)
+    [1214645] = 20, -- Erupting Darkness (Consuming Voidstone)
 
+    [444250] = 20, -- Lightning Torrent, Beams (Kyrioss)
+    [1214318] = 20, -- Grounding Bolt (Kyrioss)
     [419871] = 20, -- Lightning Dash (Kyrioss)
-    [444411] = 20, -- Stormheart (Kyrioss)
-    [444250] = 20, -- Lightning Torrent (Kyrioss)
-    [425113] = 20, -- Crush Reality (Stormguard Gorren)
-    [424966] = 20, -- Lingering Void (Stormguard Gorren)
     [426136] = 20, -- Reality Tear (Stormguard Gorren)
+    [424966] = 20, -- Lingering Void (Stormguard Gorren)
     [425052] = 20, -- Dark Gravity, Explosion (Stormguard Gorren)
     [423356] = 20, -- Null Upheaval, Swirlies (Voidstone Monstrosity)
-    --[433067] = 20, -- Seeping Fragment (Voidstone Monstrosity) - unavoidable to destroy Seeping Fragment with Stormrider's Charge
+    [433067] = 20, -- Seeping Corruption (Voidstone Monstrosity)
 
 
     -- Cinderbrew Meadery
@@ -268,8 +265,6 @@ local Spells = {
 
 local SpellsNoTank = {
     -- The Rookery
-    [427616] = 20, -- Energized Barrage (Unruly Stormrook)
-    [433078] = 20, -- Implosion, Impact (Void Cursed Crusher)
     [445537] = 20, -- Oblivion Wave (Voidstone Monstrosity)
 
     -- Cinderbrew Meadery
