@@ -79,26 +79,25 @@ local Spells = {
     -- Darkflame Cleft
     [423501] = 20, -- Wild Wallop (Rank Overseer)
     [426883] = 20, -- Bonk! (Kobold Taskworker)
-    [426779] = 20, -- Explosive Flame (Blazing Fiend)
-    [440652] = 20, -- Surging Wax, Impact (Wandering Candle)
-    [440653] = 20, -- Surging Wax, Area (Wandering Candle)
+    [440652] = 20, -- Surging Flame, Impact (Wandering Candle)
+    [440653] = 20, -- Surging Flame, Area (Wandering Candle)
     [428650] = 20, -- Burning Backlash (Environment)
-    [426265] = 20, -- Ceaseless Flame (Sootsnout) - TODO always towards One-Hand Headlock stunned player?
-    [426259] = 20, -- Pyro-Pummel (Torchsnarl)
+    [426265] = 20, -- Ceaseless Flame (Sootsnout) - TODO is this reasonable?
+    [1218133] = 20, -- Burning Candles (Sootsnout)
     [422393] = 20, -- Suffocating Darkness (Skittering Darkness)
-    [422414] = 20, -- Shadow Smash (Shuffling Horror)
 
     [422125] = 20, -- Reckless Charge (Ol' Waxbeard)
     [422274] = 20, -- Cave-In (Ol' Waxbeard)
     [424821] = 20, -- High Speed Collision (Ol' Waxbeard)
-    [429093] = 20, -- Underhanded Track-tics, Explosion (Ol' Waxbeard)
+    [429093] = 20, -- Underhanded Track-tics, Explosion (Ol' Waxbeard) - TODO is this reasonable?
     [421638] = 20, -- Wicklighter Barrage (Blazikon)
-    [424223] = 20, -- Incite Flames (Blazikon)
-    [422700] = 20, -- Extinguishing Gust (Blazikon)
     [443969] = 20, -- Enkindling Inferno (Blazikon)
+    [422700] = 20, -- Extinguishing Gust (Blazikon)
+    [424223] = 20, -- Incite Flames (Blazikon)
+    [421282] = 20, -- Darkflame Pickaxe (The Candle King)
     [421067] = 20, -- Molten Wax (The Candle King)
     [427100] = 20, -- Umbral Slash (The Darkness)
-    [426943] = 20, -- Rising Gloom (The Darkness) - is this reasonable?
+    [426943] = 20, -- Rising Gloom (The Darkness)
 
 
     -- Priory of the Sacred Flame
@@ -270,9 +269,6 @@ local SpellsNoTank = {
     -- Cinderbrew Meadery
     [440138] = 20, -- Honey Marinade, Explosion (Benk Buzzbee)
     [436592] = 20, -- Cash Cannon (Goldie Baronbottom)
-
-    -- Darkflame Cleft
-    [421282] = 20, -- Darkflame Pickaxe (The Candle King)
 
     -- Priory of the Sacred Flame
     [444705] = 20, -- Divine Storm (Zealous Templar) - potentially still unreasonable
