@@ -50,8 +50,8 @@ local Spells = {
     [440087] = 20, -- Oozing Honey (Brew Drop, I'pa)
     [438651] = 20, -- Snack Time (Benk Buzzbee)
     [440141] = 20, -- Honey Marinade, Area (Benk Buzzbee)
-    [438933] = 20, -- Sticky Situation (Benk Buzzbee)
-    [438931] = 20, -- Sticky Situation (Benk Buzzbee)
+    [438933] = 20, -- Sticky Situation (Benk Buzzbee) - TODO check
+    [438931] = 20, -- Sticky Situation (Benk Buzzbee) - TODO check
     [435788] = 20, -- Cinder-BOOM!, Waves (Goldie Baronbottom)
 
 
