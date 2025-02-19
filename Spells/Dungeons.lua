@@ -82,7 +82,7 @@ local Spells = {
     [440652] = 20, -- Surging Flame, Impact (Wandering Candle)
     [440653] = 20, -- Surging Flame, Area (Wandering Candle)
     [428650] = 20, -- Burning Backlash (Environment)
-    [426265] = 20, -- Ceaseless Flame (Sootsnout) - TODO is this reasonable?
+    --[426265] = 20, -- Ceaseless Flame (Sootsnout) - TODO is this reasonable?
     [1218133] = 20, -- Burning Candles (Sootsnout)
     [422393] = 20, -- Suffocating Darkness (Skittering Darkness)
 
@@ -105,7 +105,6 @@ local Spells = {
     [427472] = 20, -- Flamestrike, Swirly (Fanatical Conjuror)
     [427473] = 20, -- Flamestrike, Area (Fanatical Conjuror)
     [427601] = 20, -- Burst of Light (Lightspawn)
-    --[448492] = 20, -- Thunderclap (Guard Captain Suleyman) - unreasonable
     [427900] = 20, -- Molten Pool (Forge Master Damian)
     [424430] = 20, -- Consecration (Ardent Paladin)
 
@@ -115,12 +114,10 @@ local Spells = {
     [423076] = 20, -- Hammer of Purity, Swirly (Baron Braunpyke)
     [423121] = 20, -- Hammer of Purity, Hammer (Baron Braunpyke)
     [423019] = 20, -- Castigator's Detonation (Baron Braunpyke)
-    --[xxxx] = 20, -- Sacrificial Pyre (Baron Braunpyke) - check Mythic-only mechanic
     [451606] = 20, -- Holy Flame (Prioress Murrpray)
     [425554] = 20, -- Purify (Prioress Murrpray)
     [425556] = 20, -- Sanctified Ground (Prioress Murrpray)
     [428170] = 20, -- Blinding Light, Disorient (Prioress Murrpray)
-    [425556] = 20, -- Sanctified Ground (Prioress Murrpray)
 
 
     -- The Dawnbreaker
@@ -264,14 +261,12 @@ local Spells = {
 
 local SpellsNoTank = {
     -- The Rookery
+    [472549] = 20, -- Volatile Void (Consuming Voidstone)
     [445537] = 20, -- Oblivion Wave (Voidstone Monstrosity)
 
     -- Cinderbrew Meadery
     [440138] = 20, -- Honey Marinade, Explosion (Benk Buzzbee)
     [436592] = 20, -- Cash Cannon (Goldie Baronbottom)
-
-    -- Priory of the Sacred Flame
-    [444705] = 20, -- Divine Storm (Zealous Templar) - potentially still unreasonable
 
 	-- The Dawnbreaker
 	[451115] = 20, -- Terrifying Slam, Area (Ixkreten the Unbreakable)
@@ -288,6 +283,7 @@ local SpellsNoTank = {
 
 local Auras = {
     -- Darkflame Cleft
+    --[426277] = true, -- One-Hand Headlock (Sootsnout) - TODO is this avoidable?
     [421653] = true, -- Cursed Wax (The Candle King)
 
     -- The Dawnbreaker
