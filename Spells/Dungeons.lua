@@ -199,31 +199,36 @@ local Spells = {
 
 
     -- Theater of Pain
-    [342126] = 20, -- Brutal Leap (Dokigg the Brutalizer)
+    [317605] = 20, -- Whirlwind (Dokigg the Brutalizer / Nekthara the Mangler / Rek the Hardened)
+    [1213695] = 20, -- Earthcrusher, Swirlies (Dokigg the Brutalizer)
     [337037] = 20, -- Whirling Blade (Nekthara the Mangler)
-    [317605] = 20, -- Whirlwind (Nekthara the Mangler / Rek the Hardened)
     [332708] = 20, -- Ground Smash (Heavin the Breaker)
     [334025] = 20, -- Bloodthirsty Charge (Haruga the Bloodthirsty)
+    [317367] = 20, -- Necrotic Volley (Environment)
     [333301] = 20, -- Curse of Desolation (Nefarious Darkspeaker)
     [333297] = 20, -- Death Winds (Nefarious Darkspeaker)
     [331243] = 20, -- Bone Spikes (Soulforged Bonereaver)
     [331224] = 20, -- Bonestorm (Soulforged Bonereaver)
-    [330592] = 20, -- Vile Eruption (Rancid Gasbag - back)
-    [330608] = 20, -- Vile Eruption (Rancid Gasbag - front)
-    [321039] = 20, -- Disgusting Burst (Disgusting Refuse / Blighted Sludge-Spewer)
     [321041] = 20, -- Disgusting Burst (Disgusting Refuse / Blighted Sludge-Spewer)
+    [330592] = 20, -- Vile Eruption (Rancid Gasbag)
+    [330608] = 20, -- Vile Eruption (Rancid Gasbag)
+    [342103] = 20, -- Rancid Bile (Rancid Gasbag)
 
+    [1215738] = 20, -- Decaying Breath (Paceran the Virulent, An Affront of Challengers)
+    [1215636] = 20, -- Necrotic Spores, Swirlies (Paceran the Virulent, An Affront of Challengers)
+    [320180] = 20, -- Necrotic Spores, Area (Paceran the Virulent, An Affront of Challengers)
     [317231] = 20, -- Crushing Slam (Xav the Unfallen)
     [339415] = 20, -- Deafening Crash (Xav the Unfallen)
     [320729] = 20, -- Massive Cleave (Xav the Unfallen)
+    [473519] = 20, -- Death Spiral, Orb (Kul'tharok)
+    [1223240] = 20, -- Death Spiral, Area (Kul'tharok)
     [318406] = 20, -- Tenderizing Smash (Gorechop)
     [323406] = 20, -- Jagged Gash (Gorechop)
-    [323130] = 20, -- Coagulating Ooze (Gorechop)
-    [317367] = 20, -- Necrotic Volley (Kul'tharok)
-    [319639] = 20, -- Grasping Hands (Kul'tharok)
+    [323750] = 20, -- Vile Gas (Gorechop)
+    [323130] = 20, -- Coagulating Ooze (Oozing Leftover, Gorechop)
     [323681] = 20, -- Dark Devastation (Mordretha)
-    [339550] = 20, -- Echo of Battle (Mordretha)
     [323831] = 20, -- Death Grasp (Mordretha)
+    [339550] = 20, -- Echo of Battle (Mordretha)
     [339751] = 20, -- Ghostly Charge (Mordretha)
 
 
@@ -276,6 +281,9 @@ local SpellsNoTank = {
     [439764] = 20, -- Process of Elimination, Physical (Izo the Grand Splicer)
     [439763] = 20, -- Process of Elimination, Shadow (Izo the Grand Splicer)
     [450055] = 20, -- Gutburst (Ravenous Scarab, Izo the Grand Splicer) - is this reasonable?
+
+    -- Theater of Pain
+    [474084] = 20, -- Necrotic Eruption (Kul'tharok)
 
     -- Operation: Mechagon - Workshop
     [294291] = 20, -- Process Waste (Waste Processing Unit)
