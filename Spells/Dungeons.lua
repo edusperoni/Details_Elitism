@@ -239,28 +239,25 @@ local Spells = {
     [282943] = 20, -- Piston Smasher (Environment)
     [282945] = 20, -- Buzz Saw (Environment)
     [294128] = 20, -- Rocket Barrage (Rocket Tonk)
-    [294073] = 20, -- Flying Peck (Strider Tonk)
-    [294349] = 20, -- Volatile Waste (Living Waste)
     [301299] = 20, -- Furnace Flames (Environment)
     [293861] = 20, -- Anti-Personnel Squirrel (Anti-Personnel Squirrel)
-    [294324] = 20, -- Mega Drill (Waste Processing Unit)
     [295168] = 20, -- Capacitor Discharge (Blastatron X-80)
     [293986] = 20, -- Sonic Pulse (Spider Tank / Blastatron X-80)
-    [294058] = 20, -- High-Explosive Rockets (Spider Tank / Blastatron X-80)
 
-    [285020] = 20, -- Whirling Edge (The Platinum Pummeler)
-    [285377] = 20, -- B.4.T.T.L.3. Mine (The Platinum Pummeler)
-    [283422] = 20, -- Maximum Thrust (Gnomercy 4.U.)
+    [1215039] = 20, -- B.4.T.T.L.3. Mine, Swirly (Gnomercy 4.U., Tussle Tonks)
+    [285377] = 20, -- B.4.T.T.L.3. Mine, Mine (Gnomercy 4.U., Tussle Tonks)
+    [283422] = 20, -- Maximum Thrust (Gnomercy 4.U., Tussle Tonks)
     [291930] = 20, -- Air Drop (K.U-J.0.)
     [291953] = 20, -- Junk Bomb (K.U.-J.0.)
     [291949] = 20, -- Venting Flames (K.U-J.0.)
-    [294954] = 20, -- Self-Trimming Hedge (Machinist's Garden)
-    [285443] = 20, -- "Hidden" Flame Cannon (Machinist's Garden)
-    [285460] = 20, -- Discom-BOMB-ulator (Machinist's Garden)
-    [294869] = 20, -- Roaring Flame (Machinist's Garden)
-    [291613] = 20, -- Take Off! (King Mechagon)
+    [294954] = 20, -- Self-Trimming Hedge (Head Machinist Sparkflux, Machinist's Garden)
+    [285443] = 20, -- "Hidden" Flame Cannon (Head Machinist Sparkflux, Machinist's Garden)
+    [285460] = 20, -- Discom-BOMB-ulator (Head Machinist Sparkflux, Machinist's Garden)
+    [294869] = 20, -- Roaring Flame (Inconspicuous Plant, Machinist's Garden)
     [291915] = 20, -- Plasma Orb (King Mechagon)
     [291856] = 20, -- Recalibrate (King Mechagon)
+    [291613] = 20, -- Take Off! (Aerial Unit R-21/X, King Mechagon)
+    [291914] = 20, -- Cutting Beam, Beam (Aerial Unit R-21/X, King Mechagon)
 }
 
 
@@ -286,7 +283,7 @@ local SpellsNoTank = {
     [474084] = 20, -- Necrotic Eruption (Kul'tharok)
 
     -- Operation: Mechagon - Workshop
-    [294291] = 20, -- Process Waste (Waste Processing Unit)
+    [1215065] = 20, -- Platinum Pummel (The Platinum Pummeler, Tussle Tonks)
 }
 
 local Auras = {
@@ -301,7 +298,7 @@ local Auras = {
     [436614] = true, -- Web Wrap (Environment / Ixin / Nakt / Atik / Avanoxx)
 
     -- Operation: Mechagon - Workshop
-    [285153] = true, -- Foe Flipper (Gnomercy 4.U.)
+    [295130] = true, -- Neutralize Threat (Detect-o-bot)
 }
 
 local AurasNoTank = {}
