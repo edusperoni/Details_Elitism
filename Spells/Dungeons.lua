@@ -233,6 +233,31 @@ local Spells = {
 
 
     -- The MOTHERLODE!!
+    [257371] = 20, -- Tear Gas, Swirly (Mechanized Peacekeeper)
+    [1217283] = 20, -- Tear Gas, Area (Mechanized Peacekeeper)
+    [269831] = 20, -- Toxic Sludge (Environment)
+    [473198] = 20, -- Azerite Eruption (Azerite Extractor)
+    [269313] = 20, -- Final Blast (Wanton Sapper)
+    [268365] = 20, -- Mining Charge (Wanton Sapper)
+    [1214754] = 20, -- Massive Slam (Taskmaster Askari)
+    [271583] = 20, -- Black Powder Special (Environment)
+    [1215424] = 20, -- Brainstorm, Swirly (Venture Co. Mastermind)
+    [1214748] = 20, -- Brainstorm, Tornado (Venture Co. Mastermind)
+    [271432] = 20, -- Test Missile (Environment)
+    [262348] = 20, -- Mine Blast (Crawler Mine)
+    [269092] = 20, -- Artillery Barrage (Ordnance Specialist)
+
+    [1217286] = 20, -- Throw Coins (Footbomb Hooligan, Coin-Operated Crowd Pummeler)
+    [256137] = 20, -- Timed Detonation (Coin-Operated Crowd Pummeler)
+    [1217296] = 20, -- Shocking Claw (Coin-Operated Crowd Pummeler)
+    [275907] = 20, -- Tectonic Smash (Azerokk)
+    [258628] = 20, -- Resonant Quake, Area (Azerokk)
+    [1214673] = 20, -- Azerite Aftershock (Azerokk) - TODO is this reasonable?
+    [259533] = 20, -- Azerite Catalyst (Rixxa Fluxflame)
+    [260279] = 20, -- Gatling Gun (Mogul Razdunk)
+    [276234] = 20, -- Micro Missiles (B.O.O.M.B.A., Mogul Razdunk)
+    [270277] = 20, -- Big Red Rocket (Mogul Razdunk)
+    [270926] = 20, -- Drill Smash, Swirly (Mogul Razdunk)
 
 
     -- Operation: Mechagon - Workshop
@@ -240,9 +265,11 @@ local Spells = {
     [282945] = 20, -- Buzz Saw (Environment)
     [294128] = 20, -- Rocket Barrage (Rocket Tonk)
     [301299] = 20, -- Furnace Flames (Environment)
+    [294549] = 20, -- Furnace Flames (Environment)
     [293861] = 20, -- Anti-Personnel Squirrel (Anti-Personnel Squirrel)
     [295168] = 20, -- Capacitor Discharge (Blastatron X-80)
     [293986] = 20, -- Sonic Pulse (Spider Tank / Blastatron X-80)
+    [1213154] = 20, -- Electrified Floor (Environment)
 
     [1215039] = 20, -- B.4.T.T.L.3. Mine, Swirly (Gnomercy 4.U., Tussle Tonks)
     [285377] = 20, -- B.4.T.T.L.3. Mine, Mine (Gnomercy 4.U., Tussle Tonks)
@@ -281,6 +308,10 @@ local SpellsNoTank = {
 
     -- Theater of Pain
     [474084] = 20, -- Necrotic Eruption (Kul'tharok)
+
+    -- The MOTHERLODE!!
+    [258674] = 20, -- Throw Wrench (Off-Duty Laborer) - TODO is this reasonable?
+    [257544] = 20, -- Jagged Cut (Earthrager, Azerokk) - TODO is this reasonable?
 
     -- Operation: Mechagon - Workshop
     [1215065] = 20, -- Platinum Pummel (The Platinum Pummeler, Tussle Tonks)
