@@ -196,6 +196,39 @@ local Spells = {
 
 
     -- Operation: Floodgate
+    [464294] = 20, -- Weapons Stockpile Explosion (Environment)
+    [465682] = 20, -- Surprise Inspection (Darkfuse Inspector)
+    [465128] = 20, -- Wind Up (Loaderbot)
+    [461793] = 20, -- R.P.G.G. (Darkfuse Demolitionist)
+    [1215071] = 20, -- Electrified Water (Environment)
+    [472338] = 20, -- Surveyed Ground (Venture Co. Surveyor)
+    [474350] = 20, -- Shreddation Sawblade (Shreddinator 3000)
+    [474388] = 20, -- Flamethrower (Shreddinator 3000)
+    [468727] = 20, -- Seaforium Charge (Venture Co. Diver)
+    [1213790] = 20, -- Zeppelin Barrage, Swirly (Environment)
+    [1214341] = 20, -- Bomb Pile Explosion (Environment)
+    [465487] = 20, -- Bubbles Smash (Bubbles)
+    [469819] = 20, -- Bubble (Bubbles)
+    [1217496] = 20, -- Splish Splash (Bubbles)
+    [465604] = 20, -- Battery Bolt (Darkfuse Jumpstarter)
+
+    [473224] = 20, -- Sonic Boom, Wave (Big M.O.M.M.A.)
+    [473240] = 20, -- Sonic Boom, Explosion (Big M.O.M.M.A.)
+    [473287] = 20, -- Excessive Electrification (Big M.O.M.M.A.)
+    [472454] = 20, -- Doom Storm (Darkfuse Mechadrone, Big M.O.M.M.A.)
+    [473526] = 20, -- Big Bada BOOM! (Keeza Quickfuse, Demolition Duo)
+    [460787] = 20, -- Deflagration (Keeza Quickfuse, Demolition Duo) - TODO is this reasonable?
+    [472755] = 20, -- Shrapnel (Keeza Quickfuse, Demolition Duo)
+    [1217751] = 20, -- B.B.B.F.G. (Keeza Quickfuse, Demolition Duo)
+    [460965] = 20, -- Barreling Charge (Bront, Demolition Duo)
+    [473126] = 20, -- Mudslide (Swampface)
+    [473046] = 20, -- Skewering Root (Swampface)
+    [473051] = 20, -- Rushing Tide (Swampface)
+    [465982] = 20, -- Turbo Bolt (Geezle Gigazap)
+    [468604] = 20, -- Dam Rubble (Geezle Gigazap)
+    [468741] = 20, -- Shock Water, Impact (Geezle Gigazap)
+    [468723] = 20, -- Shock Water, Area (Geezle Gigazap)
+    [468647] = 20, -- Leaping Spark (Geezle Gigazap)
 
 
     -- Theater of Pain
@@ -306,6 +339,9 @@ local SpellsNoTank = {
     [439763] = 20, -- Process of Elimination, Shadow (Izo the Grand Splicer)
     [450055] = 20, -- Gutburst (Ravenous Scarab, Izo the Grand Splicer) - is this reasonable?
 
+    -- Operation: Floodgate
+    [459799] = 20, -- Wallop (Bront, Demolition Duo)
+
     -- Theater of Pain
     [474084] = 20, -- Necrotic Eruption (Kul'tharok)
 
@@ -327,6 +363,10 @@ local Auras = {
 
     -- Ara-Kara, City of Echoes
     [436614] = true, -- Web Wrap (Environment / Ixin / Nakt / Atik / Avanoxx)
+
+    -- Operation: Floodgate
+    [1215089] = true, -- Electrified Water (Environment)
+    [1213704] = true, -- Zeppelin Barrage, Spotlight (Environment)
 
     -- Operation: Mechagon - Workshop
     [295130] = true, -- Neutralize Threat (Detect-o-bot)
