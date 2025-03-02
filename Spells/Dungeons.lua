@@ -188,7 +188,7 @@ local Spells = {
     [438966] = 20, -- Gossamer Onslaught, Swirly (Avanoxx)
     [433443] = 20, -- Impale (Anub'zekt)
     [433781] = 20, -- Ceaseless Swarm (Anub'zekt)
-    [434284] = 20, -- Burrow Charge, Dash (Anub'zekt) - TODO difficult for target to avoid, impossible without dash?
+    [434284] = 20, -- Burrow Charge, Dash (Anub'zekt)
     [433731] = 20, -- Burrow Charge, End (Anub'zekt)
     [432132] = 20, -- Erupting Webs (Ki'katal the Harvester)
     [461507] = 20, -- Cultivated Poisons, Wave (Ki'katal the Harvester)
@@ -232,11 +232,11 @@ local Spells = {
 
 
     -- Theater of Pain
-    [317605] = 20, -- Whirlwind (Dokigg the Brutalizer / Nekthara the Mangler / Rek the Hardened)
-    [1213695] = 20, -- Earthcrusher, Swirlies (Dokigg the Brutalizer)
-    [337037] = 20, -- Whirling Blade (Nekthara the Mangler)
-    [332708] = 20, -- Ground Smash (Heavin the Breaker)
-    [334025] = 20, -- Bloodthirsty Charge (Haruga the Bloodthirsty)
+    [317605] = 20, -- Whirlwind (Dokigg the Brutalizer / Nekthara the Mangler / Rek the Hardened) - Champions in Halls of Might have had their abilities redistributed
+    [1213695] = 20, -- Earthcrusher, Swirlies (Dokigg the Brutalizer) - Champions in Halls of Might have had their abilities redistributed
+    [337037] = 20, -- Whirling Blade (Nekthara the Mangler) - Champions in Halls of Might have had their abilities redistributed
+    [332708] = 20, -- Ground Smash (Heavin the Breaker) - Champions in Halls of Might have had their abilities redistributed
+    [334025] = 20, -- Bloodthirsty Charge (Haruga the Bloodthirsty) - Champions in Halls of Might have had their abilities redistributed
     [317367] = 20, -- Necrotic Volley (Environment)
     [333301] = 20, -- Curse of Desolation (Nefarious Darkspeaker)
     [333297] = 20, -- Death Winds (Nefarious Darkspeaker)
@@ -337,10 +337,7 @@ local SpellsNoTank = {
     -- City of Threads
     [439764] = 20, -- Process of Elimination, Physical (Izo the Grand Splicer)
     [439763] = 20, -- Process of Elimination, Shadow (Izo the Grand Splicer)
-    [450055] = 20, -- Gutburst (Ravenous Scarab, Izo the Grand Splicer) - is this reasonable?
-
-    -- Operation: Floodgate
-    [459799] = 20, -- Wallop (Bront, Demolition Duo)
+    [450055] = 20, -- Gutburst (Ravenous Scarab, Izo the Grand Splicer)
 
     -- Theater of Pain
     [474084] = 20, -- Necrotic Eruption (Kul'tharok)
