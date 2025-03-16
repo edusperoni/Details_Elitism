@@ -76,6 +76,39 @@ local Spells = {
     [257315] = 20, -- Black Powder Bomb (Irontide Grenadier, Harlan Sweete)
 
 
+    -- Siege of Boralus
+    [256627] = 20, -- Slobber Knocker (Scrimshaw Enforcer)
+    [275775] = 20, -- Savage Tempest (Irontide Raider)
+    [257069] = 20, -- Watertight Shell, Explosion (Irontide Waveshaper)
+    [256660] = 20, -- Burning Tar, Impact (Blacktar Bomber)
+    [256663] = 20, -- Burning Tar, Area (Blacktar Bomber)
+    [272140] = 20, -- Iron Volley (Irontide Powdershot, Gauntlet)
+    [272426] = 20, -- Sighted Artillery (Ashvane Spotter / Dread Captain Lockwood)
+    [280679] = 20, -- Cannon Barrage (Environment)
+    [268260] = 20, -- Broadside (Ashvane Canoneer)
+    [277432] = 20, -- Iron Volley (Ashvane Sniper, Gauntlet)
+    [272546] = 20, -- Banana Rampage (Bilge Rat Buccaneer)
+    [277535] = 20, -- Viq'Goth's Wrath (Environment)
+
+    [273681] = 20, -- Heavy Hitter (Chopper Redhook)
+    [257585] = 20, -- Cannon Barrage (Chopper Redhook)
+    [273716] = 20, -- Heavy Ordnance, Impact (Chopper Redhook)
+    [273718] = 20, -- Heavy Ordnance, Explosion (Chopper Redhook) - is this reasonable?
+    --[257326] = 20, -- Gore Crash (Chopper Redhook) - always does damage to party as well
+    [257292] = 20, -- Heavy Slash (Irontide Cleaver, Chopper Redhook)
+    [269029] = 20, -- Clear the Deck (Dread Captain Lockwood)
+    [268443] = 20, -- Dread Volley (Dread Captain Lockwood)
+    [261565] = 20, -- Crashing Tide (Hadal Darkfathom)
+    [257886] = 20, -- Brine Pool (Hadal Darkfathom)
+    --[257883] = 20, -- Break Water (Hadal Darkfathom) - always does damage to party as well
+    [276042] = 20, -- Tidal Surge (Hadal Darkfathom)
+    [270187] = 20, -- Call of the Deep (Viq'Goth)
+    [270484] = 20, -- Call of the Deep (Viq'Goth)
+    [275051] = 20, -- Putrid Waters, Dispel (Viq'Goth)
+    [280485] = 20, -- Terror from Below / Crushing Embrace (Viq'Goth)
+    [269484] = 20, -- Eradication (Viq'Goth)
+
+
     -- Waycrest Manor
     [265372] = 20, -- Shadow Cleave (Enthralled Guard)
     -- [278849] = 20, -- Uproot (Coven Thornshaper) - TODO probably not avoidable
@@ -157,6 +190,9 @@ local SpellsNoTank = {
     [260793] = 20, -- Indigestion (Cragmaw the Infested)
     [272457] = 20, -- Shockwave (Sporecaller Zancha)
 
+    -- Siege of Boralus
+    --[273720] = 20, -- Heavy Ordnance, Contact (Chopper Redhook) - is this reasonable?
+
     -- Operation: Mechagon - Workshop
     [294291] = 20, -- Process Waste (Waste Processing Unit)
 }
@@ -170,6 +206,10 @@ local Auras = {
     -- Freehold
     [274516] = true, -- Slippery Suds (Bilge Rat Swabby)
     [272554] = true -- Bloody Mess (Trothak, Ring of Booty)
+
+    -- Siege of Boralus
+    [257169] = true, -- Terrifying Roar (Bilge Rat Demolisher)
+    [274942] = true, -- Banana Rampage (Bilge Rat Buccaneer)
 
     -- Waycrest Manor
     [265352] = true, -- Toad Blight (Blight Toad)
