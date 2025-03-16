@@ -1,9 +1,9 @@
-## [2.15.1](https://github.com/edusperoni/Details_Elitism/compare/v2.15.0...v2.15.1) (2024-09-01)
+## [2.15.2](https://github.com/edusperoni/Details_Elitism/compare/v2.15.1...v2.15.2) (2025-03-16)
 
 
 ### Features
 
-* TWW S1 corrections and cleanup ([#64](https://github.com/edusperoni/Details_Elitism/issues/64)) ([12df8bf](https://github.com/edusperoni/Details_Elitism/commit/12df8bf2a8a5af0a763905b8222ff6ec12aedbdd))
+* The War Within Season 2 ([#67](https://github.com/edusperoni/Details_Elitism/issues/67)) ([648a906](https://github.com/edusperoni/Details_Elitism/commit/648a9069ea42eb84aa7cfaf671fdfa09c9d5d982))
 
 
 
