@@ -229,93 +229,6 @@ local Spells = {
     [468741] = 20, -- Shock Water, Impact (Geezle Gigazap)
     [468723] = 20, -- Shock Water, Area (Geezle Gigazap)
     [468647] = 20, -- Leaping Spark (Geezle Gigazap)
-
-
-    -- Theater of Pain
-    [317605] = 20, -- Whirlwind (Dokigg the Brutalizer / Nekthara the Mangler / Heavin the Breaker / Rek the Hardened)
-    [1213695] = 20, -- Earthcrusher, Swirlies (Dokigg the Brutalizer)
-    [337037] = 20, -- Whirling Blade (Nekthara the Mangler / Advent Nevermore)
-    [334025] = 20, -- Bloodthirsty Charge (Haruga the Bloodthirsty)
-    [317367] = 20, -- Necrotic Volley (Environment)
-    [333301] = 20, -- Curse of Desolation, Area (Nefarious Darkspeaker)
-    [333297] = 20, -- Death Winds (Nefarious Darkspeaker)
-    [331243] = 20, -- Bone Spikes (Soulforged Bonereaver)
-    [331224] = 20, -- Bonestorm (Soulforged Bonereaver)
-    [321041] = 20, -- Disgusting Burst (Disgusting Refuse / Blighted Sludge-Spewer)
-    [330592] = 20, -- Vile Eruption (Rancid Gasbag)
-    [330608] = 20, -- Vile Eruption (Rancid Gasbag)
-    [342103] = 20, -- Rancid Bile (Rancid Gasbag)
-
-    [1215738] = 20, -- Decaying Breath (Paceran the Virulent, An Affront of Challengers)
-    [1215636] = 20, -- Necrotic Spores, Swirlies (Paceran the Virulent, An Affront of Challengers)
-    [320180] = 20, -- Necrotic Spores, Area (Paceran the Virulent, An Affront of Challengers)
-    [317231] = 20, -- Crushing Slam (Xav the Unfallen)
-    [339415] = 20, -- Deafening Crash (Xav the Unfallen)
-    [320729] = 20, -- Massive Cleave (Xav the Unfallen)
-    [473519] = 20, -- Death Spiral, Orb (Kul'tharok)
-    [1223240] = 20, -- Death Spiral, Area (Kul'tharok)
-    [318406] = 20, -- Tenderizing Smash (Gorechop)
-    [323406] = 20, -- Jagged Gash (Gorechop)
-    [323750] = 20, -- Vile Gas (Gorechop)
-    [323130] = 20, -- Coagulating Ooze (Oozing Leftover, Gorechop)
-    [323681] = 20, -- Dark Devastation (Mordretha)
-    [323831] = 20, -- Death Grasp (Mordretha)
-    [339550] = 20, -- Echo of Battle (Mordretha)
-    [339751] = 20, -- Ghostly Charge (Mordretha)
-
-
-    -- The MOTHERLODE!!
-    [257371] = 20, -- Tear Gas, Swirly (Mechanized Peacekeeper)
-    [1217283] = 20, -- Tear Gas, Area (Mechanized Peacekeeper)
-    [269831] = 20, -- Toxic Sludge (Environment)
-    [473198] = 20, -- Azerite Eruption (Azerite Extractor)
-    [269313] = 20, -- Final Blast (Wanton Sapper)
-    [268365] = 20, -- Mining Charge (Wanton Sapper)
-    [1214754] = 20, -- Massive Slam (Taskmaster Askari)
-    [271583] = 20, -- Black Powder Special (Environment)
-    [1215424] = 20, -- Brainstorm, Swirly (Venture Co. Mastermind)
-    [1214748] = 20, -- Brainstorm, Tornado (Venture Co. Mastermind)
-    [271432] = 20, -- Test Missile (Environment)
-    [262348] = 20, -- Mine Blast (Crawler Mine)
-    [269092] = 20, -- Artillery Barrage (Ordnance Specialist)
-
-    [1217286] = 20, -- Throw Coins (Footbomb Hooligan, Coin-Operated Crowd Pummeler)
-    [256137] = 20, -- Timed Detonation (Coin-Operated Crowd Pummeler)
-    [1217296] = 20, -- Shocking Claw (Coin-Operated Crowd Pummeler)
-    [275907] = 20, -- Tectonic Smash (Azerokk)
-    [258628] = 20, -- Resonant Quake, Area (Azerokk)
-    [259533] = 20, -- Azerite Catalyst (Rixxa Fluxflame)
-    [260279] = 20, -- Gatling Gun (Mogul Razdunk)
-    [276234] = 20, -- Micro Missiles (B.O.O.M.B.A., Mogul Razdunk)
-    [270277] = 20, -- Big Red Rocket (Mogul Razdunk)
-    [270926] = 20, -- Drill Smash, Swirly (Mogul Razdunk)
-
-
-    -- Operation: Mechagon - Workshop
-    [282943] = 20, -- Piston Smasher (Environment)
-    [282945] = 20, -- Buzz Saw (Environment)
-    [294128] = 20, -- Rocket Barrage (Rocket Tonk)
-    [301299] = 20, -- Furnace Flames (Environment)
-    [294549] = 20, -- Furnace Flames (Environment)
-    [293861] = 20, -- Anti-Personnel Squirrel (Anti-Personnel Squirrel)
-    [295168] = 20, -- Capacitor Discharge (Blastatron X-80)
-    [293986] = 20, -- Sonic Pulse (Spider Tank / Blastatron X-80)
-    [1213154] = 20, -- Electrified Floor (Environment)
-
-    [1215039] = 20, -- B.4.T.T.L.3. Mine, Swirly (Gnomercy 4.U., Tussle Tonks)
-    [285377] = 20, -- B.4.T.T.L.3. Mine, Mine (Gnomercy 4.U., Tussle Tonks)
-    [283422] = 20, -- Maximum Thrust (Gnomercy 4.U., Tussle Tonks)
-    [291930] = 20, -- Air Drop (K.U-J.0.)
-    [291953] = 20, -- Junk Bomb (K.U.-J.0.)
-    [291949] = 20, -- Venting Flames (K.U-J.0.)
-    [294954] = 20, -- Self-Trimming Hedge (Head Machinist Sparkflux, Machinist's Garden)
-    [285443] = 20, -- "Hidden" Flame Cannon (Head Machinist Sparkflux, Machinist's Garden)
-    [285460] = 20, -- Discom-BOMB-ulator (Head Machinist Sparkflux, Machinist's Garden)
-    [294869] = 20, -- Roaring Flame (Inconspicuous Plant, Machinist's Garden)
-    [291915] = 20, -- Plasma Orb (King Mechagon)
-    [291856] = 20, -- Recalibrate (King Mechagon)
-    [291613] = 20, -- Take Off! (Aerial Unit R-21/X, King Mechagon)
-    [291914] = 20, -- Cutting Beam, Beam (Aerial Unit R-21/X, King Mechagon)
 }
 
 
@@ -336,16 +249,6 @@ local SpellsNoTank = {
     [439764] = 20, -- Process of Elimination, Physical (Izo the Grand Splicer)
     [439763] = 20, -- Process of Elimination, Shadow (Izo the Grand Splicer)
     [450055] = 20, -- Gutburst (Ravenous Scarab, Izo the Grand Splicer)
-
-    -- Theater of Pain
-    [474084] = 20, -- Necrotic Eruption (Kul'tharok)
-
-    -- The MOTHERLODE!!
-    [258674] = 20, -- Throw Wrench (Off-Duty Laborer)
-    [257544] = 20, -- Jagged Cut (Earthrager, Azerokk)
-
-    -- Operation: Mechagon - Workshop
-    [1215065] = 20, -- Platinum Pummel (The Platinum Pummeler, Tussle Tonks)
 }
 
 local Auras = {
@@ -361,9 +264,6 @@ local Auras = {
     -- Operation: Floodgate
     [1215089] = true, -- Electrified Water (Environment)
     [1213704] = true, -- Zeppelin Barrage, Spotlight (Environment)
-
-    -- Operation: Mechagon - Workshop
-    [295130] = true, -- Neutralize Threat (Detect-o-bot)
 }
 
 local AurasNoTank = {}
